@@ -105,6 +105,14 @@ PYTHONPATH=/content/HippoRAG python /content/ColBERTv2-Colab/scripts/smoke_colbe
 ```
 
 Expected smoke output includes `ranks=...` and `scores=...` with no traceback.
+The standalone smoke script also writes:
+
+```text
+/content/drive/MyDrive/hipporag_colbert_aichip_us/aichip_us_smoke_colbertv2_gpt-5.5_top50_damping0.5.json
+```
+
+Copy that JSON into the main HippoRAG workspace at `hipporag_v1/output/` to run
+Contriever-vs-ColBERTv2 overlap and value-prior comparison.
 
 Inside the notebook, after the setup cells have defined `DRIVE_DIR`, `WORK_DIR`,
 and `run()`, the equivalent smoke cell is:
