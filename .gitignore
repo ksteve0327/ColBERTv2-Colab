@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local Colab/Drive runtime outputs
+checkpoints/
+data/
+output/
+exp/
+
+# Keep the curated cleaned artifact, exclude ad hoc large archives.
+*.tar.gz
+!artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz
