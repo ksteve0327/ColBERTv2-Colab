@@ -33,6 +33,55 @@ datasets. The committed archive was rebuilt to include only:
 - `data/lm_vectors/colbert/aichip_us*`
 - ColBERT nearest-neighbor files used by the `aichip_us` graph run
 
+These committed artifacts are dataset-specific. They can be reused only for the
+included `aichip_us` corpus. If you use a different dataset, do not reuse
+`artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz`; rebuild the graph,
+nearest-neighbor files, and ColBERTv2 indexes for that dataset.
+
+## Using Another Dataset
+
+The workflow can be applied to another corpus, but the dataset must be prepared
+in the same HippoRAG file format. Replace `aichip_us` with your dataset name and
+provide these files:
+
+```text
+<dataset>_corpus.json
+<dataset>.json
+<dataset>_queries.named_entity_output.tsv
+openie_<dataset>_results_ner_<model>_<n>.json
+```
+
+Optional but recommended:
+
+```text
+<dataset>_id_map.json
+<dataset>_value_scores.json
+```
+
+For a new dataset, update the notebook variable:
+
+```python
+DATASET = "<dataset>"
+```
+
+Then rerun the ColBERTv2 build stages in the notebook:
+
+1. Copy prepared input artifacts into `/content/HippoRAG/data` and
+   `/content/HippoRAG/output`.
+2. Run the first `create_graph.py` pass to generate `query_to_kb.tsv`,
+   `kb_to_kb.tsv`, and `rel_kb_to_kb.tsv`.
+3. Run `src/colbertv2_knn.py` for `kb_to_kb` and `query_to_kb`.
+4. Run the second `create_graph.py --create_graph --cosine_sim_edges` pass.
+5. Run `src/colbertv2_indexing.py` to build phrase and corpus indexes.
+6. Run a smoke query and archive the new `output/` and
+   `data/lm_vectors/colbert/` directories.
+
+The helper scripts in `scripts/restore_colbertv2_artifacts.py`,
+`scripts/smoke_colbert_standalone.py`, and `scripts/smoke_cell_patch.py` are
+currently specialized for the committed `aichip_us` replay. For another dataset,
+use the notebook flow or adapt those scripts to accept your dataset name, query,
+and artifact paths.
+
 ## Colab Smoke
 
 This repository is self-contained for replaying the completed `aichip_us`
