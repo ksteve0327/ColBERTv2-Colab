@@ -12,3 +12,4 @@ exp/
 # Keep the curated cleaned artifact, exclude ad hoc large archives.
 *.tar.gz
 !artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz
+!inputs/colab_inputs_aichip_us.tar.gz

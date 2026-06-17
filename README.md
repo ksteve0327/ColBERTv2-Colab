@@ -6,8 +6,13 @@ ColBERTv2 backend run.
 ## Contents
 
 - `notebooks/colbertv2_aichip_us_colab.ipynb`: stripped-output Colab notebook.
+- `inputs/colab_inputs_aichip_us.tar.gz`: prepared corpus, OpenIE, value score,
+  query, and ID-map inputs required by the notebook.
 - `scripts/colbertv2_colab_runtime_patch.py`: idempotent runtime patch for the
   legacy HippoRAG ColBERTv2 code on current Colab packages.
+- `scripts/restore_colbertv2_artifacts.py`: restores the committed inputs and
+  cleaned ColBERTv2 artifacts into `/content/HippoRAG`.
+- `scripts/smoke_colbert_standalone.py`: standalone smoke retrieval check.
 - `scripts/smoke_cell_patch.py`: smoke retrieval cell for the completed ColBERTv2
   graph/index.
 - `artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz`: filtered ColBERTv2
@@ -30,7 +35,30 @@ datasets. The committed archive was rebuilt to include only:
 
 ## Colab Smoke
 
-After copying this repo's files into the expected Drive folder:
+This repository is self-contained for replaying the completed `aichip_us`
+ColBERTv2 run. In a Colab GPU runtime:
+
+```bash
+git clone https://github.com/ksteve0327/ColBERTv2-Colab /content/ColBERTv2-Colab
+git clone https://github.com/OSU-NLP-Group/HippoRAG /content/HippoRAG
+cd /content/HippoRAG && git checkout legacy
+```
+
+Then install the notebook dependencies and checkpoint as shown in
+`notebooks/colbertv2_aichip_us_colab.ipynb`, or run the notebook setup cells
+through the checkpoint download step.
+
+To restore the committed inputs/artifacts and run a smoke retrieval:
+
+```bash
+python /content/ColBERTv2-Colab/scripts/restore_colbertv2_artifacts.py
+PYTHONPATH=/content/HippoRAG python /content/ColBERTv2-Colab/scripts/smoke_colbert_standalone.py
+```
+
+Expected smoke output includes `ranks=...` and `scores=...` with no traceback.
+
+Inside the notebook, after the setup cells have defined `DRIVE_DIR`, `WORK_DIR`,
+and `run()`, the equivalent smoke cell is:
 
 ```python
 DRIVE_DIR = "/content/drive/MyDrive/hipporag_colbert_aichip_us"
@@ -42,10 +70,8 @@ WORK_DIR = "/content/HippoRAG"
 %run -i /content/drive/MyDrive/hipporag_colbert_aichip_us/smoke_cell_patch.py
 ```
 
-Expected smoke output includes `ranks=...` and `scores=...` with no traceback.
-
 ## Security Note
 
-Notebook outputs were stripped before commit. The cleaned artifact and repository
-files were scanned for common credential patterns before publication. See
-`security/SECURITY_CHECK.md`.
+Notebook outputs were stripped before commit. The input archive, cleaned artifact,
+and repository files were scanned for common credential patterns before
+publication. See `security/SECURITY_CHECK.md`.
