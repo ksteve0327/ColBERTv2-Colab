@@ -1,0 +1,607 @@
+{
+  "dataset": "aichip_us",
+  "source_path": "hipporag_v1/output/aichip_us_colbert_step1_for_thoughts.json",
+  "generator": {
+    "provider": "codex-proxy",
+    "model": "gpt-5.5",
+    "reasoning_effort": "high"
+  },
+  "methods": {
+    "ColBERTv2": [
+      {
+        "id": "local_001",
+        "thought": "Retrieve claims describing CNN GPU memory efficiency with fast data layout transformation, pooling working-set expansion in on-chip memory, and kernel reconstruction using fusion and thread injection.",
+        "named_entities": [
+          "CNN",
+          "GPU",
+          "data layout transformation",
+          "pooling",
+          "on-chip memory",
+          "kernel reconstruction",
+          "thread injection"
+        ],
+        "type": "local",
+        "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?"
+      },
+      {
+        "id": "local_002",
+        "thought": "Retrieve distributed matrix processor passages executing tensor instructions for neural-network computation, collecting output tensor statistics, and dynamically determining decimal position for numerical representation.",
+        "named_entities": [
+          "distributed matrix processor",
+          "tensor instructions",
+          "neural-network computation",
+          "output tensor statistics",
+          "decimal position",
+          "numerical representation"
+        ],
+        "type": "local",
+        "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?"
+      },
+      {
+        "id": "local_003",
+        "thought": "Locate flow-based deep-learning wavelet disclosures for a 2D mesh of processing elements using virtual-channel, task, index, data element, and control/data specifiers.",
+        "named_entities": [
+          "flow-based deep learning",
+          "wavelet",
+          "2D mesh",
+          "processing elements",
+          "virtual-channel specifier",
+          "task specifier",
+          "index specifier",
+          "data element specifier",
+          "control/data specifier"
+        ],
+        "type": "local",
+        "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?"
+      },
+      {
+        "id": "local_004",
+        "thought": "Search claims for chiplets or SOCs on a common interposer with first and second common protocol interface circuits coupled by a communication link to form a serial protocol interface.",
+        "named_entities": [
+          "chiplets",
+          "SOCs",
+          "common interposer",
+          "common protocol interface circuits",
+          "communication link",
+          "serial protocol interface"
+        ],
+        "type": "local",
+        "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?"
+      },
+      {
+        "id": "local_005",
+        "thought": "Retrieve IC package disclosures where a first die includes FeRAM bit-cells and a vertically stacked second inference die includes multiplier computational logic coupled to memory.",
+        "named_entities": [
+          "IC package",
+          "first die",
+          "FeRAM",
+          "bit-cells",
+          "second inference die",
+          "multiplier computational logic",
+          "memory"
+        ],
+        "type": "local",
+        "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?"
+      },
+      {
+        "id": "local_006",
+        "thought": "Retrieve representative claims for a microelectronic device with a conductive via electrode, substrate surface gap region, and stress relief structure between the via and microelectronic component.",
+        "named_entities": [
+          "conductive via electrode",
+          "substrate surface",
+          "gap region",
+          "stress relief structure",
+          "microelectronic component"
+        ],
+        "type": "local",
+        "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?"
+      },
+      {
+        "id": "local_007",
+        "thought": "Retrieve memory-device method claims reciting receiving compressed data at a processing-in-memory PIM device and decompressing the compressed data on the PIM device.",
+        "named_entities": [
+          "memory device",
+          "compressed data",
+          "processing-in-memory",
+          "PIM device",
+          "decompressing"
+        ],
+        "type": "local",
+        "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?"
+      },
+      {
+        "id": "local_008",
+        "thought": "Retrieve neural network unit claims with N processing units, registers reading memory rows, multiplexed-register rotation, and column-channel-row convolution of HxWxC inputs.",
+        "named_entities": [
+          "neural network unit",
+          "processing units",
+          "registers",
+          "memory rows",
+          "multiplexed-register rotation",
+          "column-channel-row convolution",
+          "HxWxC inputs"
+        ],
+        "type": "local",
+        "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?"
+      },
+      {
+        "id": "local_009",
+        "thought": "Retrieve electronic-device claims for wafer-bonded memory and logic dies, modular memory units, three-dimensional storage-transistor arrays, and exposed control address data conductors.",
+        "named_entities": [
+          "electronic device",
+          "wafer-bonded memory die",
+          "logic die",
+          "modular memory units",
+          "three-dimensional storage-transistor arrays",
+          "control address data conductors"
+        ],
+        "type": "local",
+        "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?"
+      },
+      {
+        "id": "local_010",
+        "thought": "Retrieve artificial neural network apparatus claims where processing units receive input-neuron data and synaptic weights, generate partial results, and share partial results over an interconnect.",
+        "named_entities": [
+          "artificial neural network",
+          "processing units",
+          "input-neuron data",
+          "synaptic weights",
+          "partial results",
+          "interconnect"
+        ],
+        "type": "local",
+        "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?"
+      },
+      {
+        "id": "global_001",
+        "thought": "Retrieve tensor-processing accelerator claims on numerical representation optimization, such as quantized tensor formats or adaptive floating-point precision, to contrast with CNN GPU data layout, data locality, and inter-kernel redundancy memory behavior.",
+        "named_entities": [
+          "tensor-processing accelerator",
+          "quantized tensor formats",
+          "adaptive floating-point precision",
+          "CNN",
+          "GPU",
+          "data layout",
+          "data locality",
+          "inter-kernel redundancy"
+        ],
+        "type": "global",
+        "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?"
+      },
+      {
+        "id": "global_002",
+        "thought": "Retrieve AI processor package claims for vertically stacked memory and computational logic dies, including FeRAM storage of input data and weight factors, to compare with common protocol interface communication across chiplets on an interposer.",
+        "named_entities": [
+          "AI processor package",
+          "FeRAM",
+          "input data",
+          "weight factors",
+          "common protocol interface",
+          "chiplets",
+          "interposer"
+        ],
+        "type": "global",
+        "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?"
+      },
+      {
+        "id": "global_003",
+        "thought": "Retrieve system-integration claims for memory-side decompression circuitry and for 3-D convolution on-chip memory organization, including kernel memory space, input feature map memory clusters, output feature map memory clusters, and memory controllers.",
+        "named_entities": [
+          "memory-side decompression circuitry",
+          "3-D convolution",
+          "kernel memory space",
+          "input feature map memory clusters",
+          "output feature map memory clusters",
+          "memory controllers"
+        ],
+        "type": "global",
+        "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?"
+      },
+      {
+        "id": "global_004",
+        "thought": "Retrieve claim language comparing wafer-bonded modular memory units with exposed conductors for control, address, and data signals against cooperative ANN processing units sharing partial results over an interconnect.",
+        "named_entities": [
+          "wafer-bonded modular memory units",
+          "exposed conductors",
+          "control signals",
+          "address signals",
+          "data signals",
+          "ANN processing units",
+          "partial results",
+          "interconnect"
+        ],
+        "type": "global",
+        "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?"
+      },
+      {
+        "id": "global_005",
+        "thought": "Retrieve paired evidence for CNN GPU kernel reconstruction, data layout selection, and off-chip memory locality alongside chiplet serial protocol interface using common protocol interface circuits and data/control packets on an interposer.",
+        "named_entities": [
+          "CNN",
+          "GPU",
+          "kernel reconstruction",
+          "data layout selection",
+          "off-chip memory locality",
+          "chiplet serial protocol interface",
+          "common protocol interface circuits",
+          "data/control packets",
+          "interposer"
+        ],
+        "type": "global",
+        "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?"
+      },
+      {
+        "id": "global_006",
+        "thought": "Retrieve patent passages on CNN off-chip memory data layout, data locality, and inter-kernel redundancy versus memory-controller PIM register buffering for non-PIM read/write instructions.",
+        "named_entities": [
+          "CNN",
+          "off-chip memory",
+          "data layout",
+          "data locality",
+          "inter-kernel redundancy",
+          "memory-controller",
+          "PIM register",
+          "non-PIM read/write instructions"
+        ],
+        "type": "global",
+        "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?"
+      },
+      {
+        "id": "global_007",
+        "thought": "Retrieve claims contrasting interposer chiplet serial protocol interface using common protocol interface circuits with wafer-bonded memory die and logic die conductors for embedded high-bandwidth memory access.",
+        "named_entities": [
+          "interposer",
+          "chiplet",
+          "serial protocol interface",
+          "common protocol interface circuits",
+          "wafer-bonded memory die",
+          "logic die",
+          "conductors",
+          "high-bandwidth memory"
+        ],
+        "type": "global",
+        "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?"
+      },
+      {
+        "id": "global_008",
+        "thought": "Retrieve evidence for compressed data received and decompressed on a PIM device and embedded high-bandwidth fast-access memory formed by wafer bonding memory and logic semiconductor dies.",
+        "named_entities": [
+          "compressed data",
+          "PIM device",
+          "decompressed",
+          "high-bandwidth fast-access memory",
+          "wafer bonding",
+          "memory semiconductor die",
+          "logic semiconductor die"
+        ],
+        "type": "global",
+        "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?"
+      },
+      {
+        "id": "global_009",
+        "thought": "Retrieve technical layers for GPU CNN off-chip memory layout optimization, interposer chiplet serial data/control packet communication, and PIM-device decompression of compressed data.",
+        "named_entities": [
+          "GPU CNN",
+          "off-chip memory",
+          "layout optimization",
+          "interposer",
+          "chiplet",
+          "serial data/control packets",
+          "PIM-device",
+          "compressed data"
+        ],
+        "type": "global",
+        "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?"
+      },
+      {
+        "id": "global_010",
+        "thought": "Retrieve passages separating GPU-side CNN data layout/locality optimization from PIM in-memory decompression and wafer-bonded memory-to-logic high-bandwidth access.",
+        "named_entities": [
+          "GPU-side CNN",
+          "data layout",
+          "data locality",
+          "PIM",
+          "in-memory decompression",
+          "wafer-bonded memory-to-logic",
+          "high-bandwidth access"
+        ],
+        "type": "global",
+        "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?"
+      }
+    ],
+    "HippoRAG (ColBERTv2)": [
+      {
+        "id": "local_001",
+        "thought": "Retrieve CNN GPU memory-efficiency disclosures on fast data layout transformation, pooling-layer working set expansion in on-chip memory, inter-kernel redundancy elimination, kernel fusion, and thread-level parallelism injection.",
+        "named_entities": [
+          "CNN",
+          "GPU",
+          "fast data layout transformation",
+          "pooling-layer working set expansion",
+          "on-chip memory",
+          "inter-kernel redundancy elimination",
+          "kernel fusion",
+          "thread-level parallelism injection"
+        ],
+        "type": "local",
+        "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?"
+      },
+      {
+        "id": "local_002",
+        "thought": "Retrieve distributed matrix processor architecture claims for tensor instructions that collect output tensor value statistics and dynamically assign a decimal position for fixed-point numerical representation.",
+        "named_entities": [
+          "distributed matrix processor architecture",
+          "tensor instructions",
+          "output tensor value statistics",
+          "decimal position",
+          "fixed-point numerical representation"
+        ],
+        "type": "local",
+        "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?"
+      },
+      {
+        "id": "local_003",
+        "thought": "Retrieve accelerated deep learning wavelet representation using index specifier, virtual channel specifier, task specifier, and data element specifier routed through nearest-neighbor routers in a 2D mesh processing-element array.",
+        "named_entities": [
+          "accelerated deep learning",
+          "wavelet representation",
+          "index specifier",
+          "virtual channel specifier",
+          "task specifier",
+          "data element specifier",
+          "nearest-neighbor routers",
+          "2D mesh",
+          "processing-element array"
+        ],
+        "type": "local",
+        "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?"
+      },
+      {
+        "id": "local_004",
+        "thought": "Retrieve interposer chiplet communication interface disclosures with first and second common protocol interface circuits coupled by a communication link to form a serial protocol interface between integrated circuits.",
+        "named_entities": [
+          "interposer",
+          "chiplet communication interface",
+          "common protocol interface circuits",
+          "communication link",
+          "serial protocol interface",
+          "integrated circuits"
+        ],
+        "type": "local",
+        "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?"
+      },
+      {
+        "id": "local_005",
+        "thought": "Retrieve AI processor three-dimensional stacked memory package claims where a first die includes FeRAM bit-cells and a vertically stacked inference die includes computational logic multiplier cells coupled to stored input data and weights.",
+        "named_entities": [
+          "AI processor",
+          "three-dimensional stacked memory",
+          "first die",
+          "FeRAM bit-cells",
+          "vertically stacked inference die",
+          "computational logic",
+          "multiplier cells",
+          "input data",
+          "weights"
+        ],
+        "type": "local",
+        "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?"
+      },
+      {
+        "id": "local_006",
+        "thought": "Search for a microelectronic device with a conductive via electrode separated from a microelectronic component by a trench or gap-region stress relief structure.",
+        "named_entities": [
+          "microelectronic device",
+          "conductive via electrode",
+          "microelectronic component",
+          "trench",
+          "gap-region stress relief structure"
+        ],
+        "type": "local",
+        "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?"
+      },
+      {
+        "id": "local_007",
+        "thought": "Find memory-device claims reciting receiving compressed data to a processing-in-memory PIM device and decompressing the compressed data on the PIM device.",
+        "named_entities": [
+          "memory device",
+          "compressed data",
+          "processing-in-memory",
+          "PIM device",
+          "decompressing"
+        ],
+        "type": "local",
+        "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?"
+      },
+      {
+        "id": "local_008",
+        "thought": "Retrieve neural network unit claims with at least 512 processing units, registers reading memory rows, multiplexed-register rotation, and column-channel-row convolution.",
+        "named_entities": [
+          "neural network unit",
+          "processing units",
+          "registers",
+          "memory rows",
+          "multiplexed-register rotation",
+          "column-channel-row convolution"
+        ],
+        "type": "local",
+        "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?"
+      },
+      {
+        "id": "local_009",
+        "thought": "Search for wafer-bonded memory die and logic die providing embedded high-bandwidth high-capacity memory using modular three-dimensional storage-transistor arrays.",
+        "named_entities": [
+          "memory die",
+          "logic die",
+          "wafer bonding",
+          "high-bandwidth memory",
+          "high-capacity memory",
+          "modular three-dimensional storage-transistor arrays"
+        ],
+        "type": "local",
+        "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?"
+      },
+      {
+        "id": "local_010",
+        "thought": "Find artificial neural network processing circuits receiving input-neuron data and synaptic weights, generating partial results, and sharing partial results over an interconnect.",
+        "named_entities": [
+          "artificial neural network",
+          "processing circuits",
+          "input-neuron data",
+          "synaptic weights",
+          "partial results",
+          "interconnect"
+        ],
+        "type": "local",
+        "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?"
+      },
+      {
+        "id": "global_001",
+        "thought": "Retrieve tensor accelerator claims on numerical representation, data type conversion, precision formats, and tensor processing optimization to compare with CNN GPU memory data layout, locality, and inter-kernel redundancy.",
+        "named_entities": [
+          "tensor accelerator",
+          "numerical representation",
+          "data type conversion",
+          "precision formats",
+          "tensor processing",
+          "CNN",
+          "GPU",
+          "data layout",
+          "data locality",
+          "inter-kernel redundancy"
+        ],
+        "type": "global",
+        "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?"
+      },
+      {
+        "id": "global_002",
+        "thought": "Retrieve semiconductor package claims for interposer-mounted dies communicating through a common protocol and for vertically stacked memory-compute dies used in AI processing.",
+        "named_entities": [
+          "semiconductor package",
+          "interposer-mounted dies",
+          "common protocol",
+          "vertically stacked memory-compute dies",
+          "AI processing"
+        ],
+        "type": "global",
+        "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?"
+      },
+      {
+        "id": "global_003",
+        "thought": "Retrieve system-integration claims covering memory-side decompression engines and on-chip memory access scheduling, buffers, or address generation for three-dimensional convolution.",
+        "named_entities": [
+          "system-integration",
+          "memory-side decompression engines",
+          "on-chip memory access",
+          "address generation",
+          "three-dimensional convolution"
+        ],
+        "type": "global",
+        "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?"
+      },
+      {
+        "id": "global_004",
+        "thought": "Retrieve platform-integration claims comparing wafer-bonded logic and memory die conductors for high-bandwidth access with cooperative ANN computation across multiple processing units.",
+        "named_entities": [
+          "platform-integration",
+          "wafer-bonded logic",
+          "memory die conductors",
+          "high-bandwidth access",
+          "ANN computation",
+          "multiple processing units"
+        ],
+        "type": "global",
+        "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?"
+      },
+      {
+        "id": "global_005",
+        "thought": "Retrieve interposer chiplet communication claims using a common protocol interface to pair with CNN GPU optimization claims on data layout, locality, TLP, and kernel reconstruction.",
+        "named_entities": [
+          "interposer",
+          "chiplet communication",
+          "common protocol interface",
+          "CNN",
+          "GPU",
+          "data layout",
+          "data locality",
+          "TLP",
+          "kernel reconstruction"
+        ],
+        "type": "global",
+        "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?"
+      },
+      {
+        "id": "global_006",
+        "thought": "Retrieve evidence linking CNN off-chip memory data layout, data locality, and inter-kernel redundancy to PIM device compressed-data decompression operations.",
+        "named_entities": [
+          "CNN",
+          "off-chip memory",
+          "data layout",
+          "data locality",
+          "inter-kernel redundancy",
+          "PIM device",
+          "compressed-data decompression"
+        ],
+        "type": "global",
+        "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?"
+      },
+      {
+        "id": "global_007",
+        "thought": "Retrieve claim language comparing common interposer chiplet serial protocol interfaces with wafer-bonded memory and logic die surface conductor connectivity.",
+        "named_entities": [
+          "common interposer",
+          "chiplet",
+          "serial protocol interface",
+          "wafer-bonded memory",
+          "logic die",
+          "surface conductor"
+        ],
+        "type": "global",
+        "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?"
+      },
+      {
+        "id": "global_008",
+        "thought": "Retrieve patents describing decompression of compressed data on a PIM device and wafer-bonded high-bandwidth memory access between memory and logic dies.",
+        "named_entities": [
+          "compressed data",
+          "PIM device",
+          "wafer-bonded high-bandwidth memory",
+          "memory die",
+          "logic die"
+        ],
+        "type": "global",
+        "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?"
+      },
+      {
+        "id": "global_009",
+        "thought": "Retrieve technical layers for GPU CNN memory-efficiency techniques, interposer chiplet communication protocol circuitry, and PIM compressed-data decompression.",
+        "named_entities": [
+          "GPU",
+          "CNN",
+          "memory-efficiency techniques",
+          "interposer",
+          "chiplet communication",
+          "protocol circuitry",
+          "PIM",
+          "compressed-data decompression"
+        ],
+        "type": "global",
+        "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?"
+      },
+      {
+        "id": "global_010",
+        "thought": "Retrieve evidence separating GPU-side CNN data layout locality optimization, in-memory PIM decompression, and wafer-bonded high-bandwidth memory-to-logic access.",
+        "named_entities": [
+          "GPU-side CNN",
+          "data layout",
+          "locality optimization",
+          "PIM decompression",
+          "wafer-bonded high-bandwidth memory",
+          "memory-to-logic access"
+        ],
+        "type": "global",
+        "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?"
+      }
+    ]
+  }
+}
