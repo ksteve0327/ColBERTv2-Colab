@@ -8,10 +8,20 @@ run was executed in Google Colab instead.
 ## Contents
 
 - `notebooks/colbertv2_aichip_us_colab.ipynb`: stripped-output Colab notebook.
+- `notebooks/colbertv2_aichip_us_batch_eval.ipynb`: Colab notebook for running
+  the 20-question ColBERTv2 batch retrieval evaluation after the backend
+  artifacts have already been built.
 - `inputs/colab_inputs_aichip_us.tar.gz`: prepared corpus, OpenIE, value score,
-  query, and ID-map inputs required by the notebook.
+  query NER cache, QA dev set, local Contriever eval JSONs, and ID-map inputs
+  required by the notebooks.
+- `inputs/aichip_us_queries.named_entity_output.tsv`: expanded query NER cache
+  covering the smoke query and all 20 QA dev questions.
 - `scripts/colbertv2_colab_runtime_patch.py`: idempotent runtime patch for the
   legacy HippoRAG ColBERTv2 code on current Colab packages.
+- `scripts/colbertv2_aichip_us_batch_eval.py`: paired percent-format source for
+  the batch evaluation notebook.
+- `scripts/generate_query_ner_cache.py`: helper used in the main HippoRAG
+  workspace to precompute query NER rows before uploading inputs to Colab.
 - `scripts/restore_colbertv2_artifacts.py`: restores the committed inputs and
   cleaned ColBERTv2 artifacts into `/content/HippoRAG`.
 - `scripts/smoke_colbert_standalone.py`: standalone smoke retrieval check.
@@ -21,6 +31,8 @@ run was executed in Google Colab instead.
   artifacts containing only `aichip_us` graph/index outputs.
 - `artifacts/aichip_us_colbertv2_artifacts.cleaned.manifest.txt`: exact file list
   included in the cleaned artifact archive.
+- `results/`: completed ColBERTv2 batch retrieval outputs and JSON handoff files
+  copied back from Colab for local HippoRAG report generation.
 - `security/`: public-release security scan script and result.
 
 ## Artifact Scope
@@ -40,6 +52,23 @@ included `aichip_us` corpus. If you use a different dataset, do not reuse
 `artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz`; rebuild the graph,
 nearest-neighbor files, and ColBERTv2 indexes for that dataset.
 
+## HippoRAG Experiment Workflow
+
+The committed files cover two Colab-side stages from the HippoRAG 1
+`aichip_us` experiment:
+
+1. Build and smoke-test the ColBERTv2 backend with
+   `notebooks/colbertv2_aichip_us_colab.ipynb`.
+2. Reuse the built ColBERTv2 artifacts for the 20-question patent QA batch
+   retrieval evaluation with `notebooks/colbertv2_aichip_us_batch_eval.ipynb`.
+
+The updated `inputs/colab_inputs_aichip_us.tar.gz` includes the base
+`aichip_us` corpus files, OpenIE output, value scores, ID map, QA dev/eval
+files, local Contriever-side evaluation JSONs, and the expanded query NER cache
+needed by the batch notebook. The same NER cache is also committed separately as
+`inputs/aichip_us_queries.named_entity_output.tsv` so it can be inspected or
+regenerated without unpacking the tarball.
+
 ## Using Another Dataset
 
 The workflow can be applied to another corpus, but the dataset must be prepared
@@ -58,6 +87,7 @@ Optional but recommended:
 ```text
 <dataset>_id_map.json
 <dataset>_value_scores.json
+<dataset>_qa_dev.json
 ```
 
 For a new dataset, update the notebook variable:
@@ -128,6 +158,63 @@ WORK_DIR = "/content/HippoRAG"
 !cd "$WORK_DIR" && python -m py_compile src/named_entity_extraction_parallel.py src/openie_with_retrieval_option_parallel.py src/colbertv2_indexing.py src/hipporag.py
 %run -i /content/drive/MyDrive/hipporag_colbert_aichip_us/smoke_cell_patch.py
 ```
+
+## ColBERTv2 Batch Evaluation
+
+`notebooks/colbertv2_aichip_us_batch_eval.ipynb` is the notebook used after the
+smoke build to evaluate ColBERTv2 on the 20-question patent QA dev set. It
+restores the committed ColBERTv2 graph/index artifact, loads the latest
+`inputs/colab_inputs_aichip_us.tar.gz`, and writes ColBERTv2-side evaluation
+files back to Drive.
+
+Upload these files to the Drive folder used by the notebook:
+
+```text
+/content/drive/MyDrive/hipporag_colbert_aichip_us/
+```
+
+Required uploads from this repository:
+
+```text
+inputs/colab_inputs_aichip_us.tar.gz
+artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz
+notebooks/colbertv2_aichip_us_batch_eval.ipynb
+```
+
+The notebook accepts either artifact name:
+
+```text
+aichip_us_colbertv2_artifacts.tar.gz
+aichip_us_colbertv2_artifacts.cleaned.tar.gz
+```
+
+The batch evaluation flow writes:
+
+```text
+aichip_us_retrieval_eval_colbert.json
+aichip_us_retrieval_eval_colbert.md
+aichip_us_colbert_step1_for_thoughts.json
+aichip_us_colbert_qa_contexts_for_local.json
+```
+
+Committed copies of those first-pass ColBERTv2 outputs are available under
+`results/`.
+
+If `aichip_us_colbert_ircot_thoughts.json` is uploaded back to the same Drive
+folder after local thought generation, the notebook can also write:
+
+```text
+aichip_us_ircot_retrieval_eval_colbert.json
+aichip_us_ircot_retrieval_eval_colbert.md
+aichip_us_queries.named_entity_output.tsv
+```
+
+These files correspond to the ColBERTv2 side of the report's Table 2 and the
+local handoff files needed to finish Table 3 and Table 4 with the local
+codex-proxy. Colab cannot directly call a Mac-local `codex-proxy` unless that
+endpoint is deliberately exposed to the network, so LLM-only thought generation
+and answer generation are intended to be completed in the main local HippoRAG
+workspace after downloading the JSON handoff files.
 
 ## Security Note
 
