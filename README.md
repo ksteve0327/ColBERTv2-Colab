@@ -2,6 +2,8 @@
 
 Colab free-plan workflow and curated artifacts for the HippoRAG 1 `aichip_us`
 ColBERTv2 backend run.
+Because ColBERTv2 did not run on macOS in this HippoRAG 1 setup, the backend
+run was executed in Google Colab instead.
 
 ## Contents
 
