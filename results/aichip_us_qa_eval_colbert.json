@@ -1,0 +1,804 @@
+{
+  "qa_path": "hipporag_v1/data/aichip_us_qa_dev.json",
+  "single_step_path": "outputs/aichip_us_retrieval_eval_colbert.json",
+  "multi_step_path": "outputs/aichip_us_ircot_retrieval_eval_colbert.json",
+  "model": "gpt-5.5",
+  "n_queries": 20,
+  "methods": {
+    "ColBERTv2": {
+      "summary": {
+        "local": {
+          "EM": 0.0,
+          "F1": 76.0
+        },
+        "global": {
+          "EM": 0.0,
+          "F1": 29.2
+        },
+        "average": {
+          "EM": 0.0,
+          "F1": 52.6
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" teaches generating layout transformations, exploiting pooling-layer data locality in GPU on-chip memory, and reducing inter-kernel redundancy while increasing threads through kernel fusion and thread injection.",
+          "prediction": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units.\" It teaches CNN GPU memory-efficiency improvements using data layout selection/transformations, data locality improvements, and kernel reconstruction including kernel fusion and thread injection.",
+          "EM": 0.0,
+          "F1": 0.6575342465753424
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?",
+          "gold_answer": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" describes executing tensor instructions, collecting statistics for output tensor values, and determining a decimal position based on those statistics.",
+          "prediction": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture.\" It executes tensor instructions for neural-network computation and determines output tensor decimal positions from collected statistics.",
+          "EM": 0.0,
+          "F1": 0.689655172413793
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?",
+          "gold_answer": "Patent 16-088035, \"Wavelet representation for accelerated deep learning,\" uses wavelets of data with routing and instruction-related specifiers to communicate among processing elements in a 2D mesh for accelerated deep learning.",
+          "prediction": "Patent 16-088035, \"Wavelet representation for accelerated deep learning.\" It routes flow-based deep-learning computations over a 2D mesh using wavelets with index, virtual-channel, task, and data element specifiers.",
+          "EM": 0.0,
+          "F1": 0.5454545454545454
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" discloses first and second integrated circuits on an interposer using common protocol interface circuits and a communication link to form a serial protocol interface.",
+          "prediction": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer.\" It discloses common protocol interface circuits on first and second integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface.",
+          "EM": 0.0,
+          "F1": 0.904109589041096
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?",
+          "gold_answer": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" describes a first die with FeRAM bit-cells and a second vertically stacked die with computational logic including multiplier cells coupled to the FeRAM.",
+          "prediction": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory.\" It describes an AI IC package with a first die containing FeRAM bit-cells and a vertically stacked second die containing computational logic coupled to the memory.",
+          "EM": 0.0,
+          "F1": 0.7999999999999999
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?",
+          "gold_answer": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects a substrate with a conductive via electrode and a stress relief structure having a trench or gap region between the via and a microelectronic component.",
+          "prediction": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects the microelectronic device with a gap-region stress relief structure between a conductive via electrode and a microelectronic component.",
+          "EM": 0.0,
+          "F1": 0.7843137254901961
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data to a PIM device and decompressing it on the PIM device.",
+          "prediction": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data at a processing-in-memory (PIM) device and decompressing it on the PIM device.",
+          "EM": 0.0,
+          "F1": 0.9411764705882353
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?",
+          "gold_answer": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes an NNU with N at least 512 processing units, registers and multiplexed-registers, and rotation behavior for efficient 3D convolution.",
+          "prediction": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes the neural-network unit with processing units, registers receiving memory rows, multiplexed-register rotation, and column-channel-row convolution.",
+          "EM": 0.0,
+          "F1": 0.6666666666666666
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides a memory die with modular 3D storage-transistor arrays wafer-bonded to a logic die for embedded high-bandwidth, high-capacity memory access.",
+          "prediction": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular 3D storage-transistor arrays to a logic die.",
+          "EM": 0.0,
+          "F1": 0.9152542372881356
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?",
+          "gold_answer": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes multiple ANN processing circuits that generate partial results and share them over an interconnect to produce additional or final results.",
+          "prediction": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes ANN processing units receiving input-neuron data and synaptic weights, generating partial results, and sharing them over an interconnect.",
+          "EM": 0.0,
+          "F1": 0.696969696969697
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" targets CNN GPU memory behavior through layout transformation, pooling-layer locality, and reduced inter-kernel redundancy. Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" targets numerical representation by collecting output-tensor statistics and determining decimal positions during tensor-instruction execution.",
+          "prediction": "15-161080 targets CNN execution memory behavior on GPUs: data layout, locality, off-chip memory use, inter-kernel redundancy, kernel fusion/thread injection. 18-315625 targets numerical/compute representation: single instructions over multi-bit inputs with one-bit/ternary weights using fused XNOR/popcount or multiply-accumulate logic.",
+          "EM": 0.0,
+          "F1": 0.31111111111111106
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" focuses on protocol-based communication using common protocol interface circuits and a serial protocol interface on an interposer. Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" focuses on vertical stacking of a memory die with FeRAM and a compute die with multiplier-cell logic.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" moves decompression into the PIM device by receiving compressed data and decompressing it on that device. Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" structures on-chip computation with memory rows, at least 512 processing units, and multiplexed-register rotation for 3D convolution.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" uses wafer-bonded memory and logic dies with exposed conductors to provide embedded high-bandwidth, high-capacity memory access. Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" uses multiple processing circuits connected by an interconnect to share partial ANN results.",
+          "prediction": "16-776279 uses wafer bonding to give logic direct embedded access to high-bandwidth, high-capacity 3D memory arrays through bonded conductors. 15-521856 distributes ANN computation across multiple processing units that share partial results over an interconnect to produce additional partial or final results.",
+          "EM": 0.0,
+          "F1": 0.4731182795698925
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes CNN GPU memory use and kernels through layout transformation, locality exploitation, kernel fusion, and thread injection. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" enables chiplet or SoC communication through common protocol interface circuits and a serial protocol interface on an interposer.",
+          "prediction": "15-161080 addresses CNN/GPU performance by optimizing memory efficiency, data layout/locality, inter-kernel redundancy, and kernel reconstruction. Insufficient context for the paired common-protocol interposer patent in this item.",
+          "EM": 0.0,
+          "F1": 0.21176470588235294
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" reduces GPU-side CNN memory overhead using data layout selection, on-chip locality, and reduced inter-kernel redundancy. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" reduces data-movement or storage overhead by receiving compressed data at a PIM device and decompressing it there.",
+          "prediction": "15-161080 reduces GPU-side CNN memory overhead by optimizing data layout, locality, inter-kernel redundancy, kernel fusion, and thread injection. 17-564155 reduces host/PIM memory-transfer overhead by using PIM registers for non-PIM reads/writes before or instead of accessing the memory location.",
+          "EM": 0.0,
+          "F1": 0.4301075268817204
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" uses an interposer, common protocol interface circuits, and a communication link to form a serial protocol interface. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" wafer-bonds memory and logic dies so exposed conductors on the memory die connect to corresponding conductors on the logic die.",
+          "prediction": "16-266033 uses an interposer-level serial protocol interface between chiplets/ICs through common protocol interface circuits and ordered data/control packets. 16-776279 instead wafer-bonds a memory die to a logic die so exposed conductors on both die directly connect control, address, and data paths for embedded high-bandwidth memory access.",
+          "EM": 0.0,
+          "F1": 0.58
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" performs decompression on a PIM device after receiving compressed data. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" embeds access to high-bandwidth, high-capacity memory using wafer-bonded memory and logic dies with exposed conductors.",
+          "prediction": "15-072147 performs decompression directly in a PIM device. The supplied contexts for this item do not include a wafer-bonded memory-and-logic die patent, so that part is Insufficient context.",
+          "EM": 0.0,
+          "F1": 0.22222222222222224
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes the GPU execution layer for CNNs through layout, locality, and kernel reconstruction. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" optimizes the package/interconnect layer through common protocol interfaces on an interposer. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" optimizes the memory-operation layer by decompressing compressed data on a PIM device.",
+          "prediction": "15-161080 optimizes the GPU CNN execution/memory-efficiency layer. 16-266033 optimizes the chiplet/interposer communication layer. 15-072147 optimizes the PIM memory-device data handling layer by decompressing compressed data inside the PIM device.",
+          "EM": 0.0,
+          "F1": 0.3789473684210526
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" improves GPU-side CNN memory efficiency via layout transformation, pooling locality, and kernel fusion/thread injection. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" handles in-memory decompression by receiving compressed data at a PIM device and decompressing it there. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides high-bandwidth embedded memory access through wafer-bonded memory and logic dies.",
+          "prediction": "15-161080 addresses GPU-side CNN memory efficiency through layout, locality, redundancy, and kernel reconstruction. The supplied contexts do not identify a PIM decompression patent or a wafer-bonded high-bandwidth memory-access patent for this item, so those parts are Insufficient context.",
+          "EM": 0.0,
+          "F1": 0.3090909090909091
+        }
+      ]
+    },
+    "HippoRAG (ColBERTv2)": {
+      "summary": {
+        "local": {
+          "EM": 0.0,
+          "F1": 57.9
+        },
+        "global": {
+          "EM": 0.0,
+          "F1": 33.9
+        },
+        "average": {
+          "EM": 0.0,
+          "F1": 45.9
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" teaches generating layout transformations, exploiting pooling-layer data locality in GPU on-chip memory, and reducing inter-kernel redundancy while increasing threads through kernel fusion and thread injection.",
+          "prediction": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units.\"",
+          "EM": 0.0,
+          "F1": 0.5098039215686275
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?",
+          "gold_answer": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" describes executing tensor instructions, collecting statistics for output tensor values, and determining a decimal position based on those statistics.",
+          "prediction": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture.\"",
+          "EM": 0.0,
+          "F1": 0.5714285714285715
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?",
+          "gold_answer": "Patent 16-088035, \"Wavelet representation for accelerated deep learning,\" uses wavelets of data with routing and instruction-related specifiers to communicate among processing elements in a 2D mesh for accelerated deep learning.",
+          "prediction": "Patent 16-088035, \"Wavelet representation for accelerated deep learning.\"",
+          "EM": 0.0,
+          "F1": 0.4324324324324324
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" discloses first and second integrated circuits on an interposer using common protocol interface circuits and a communication link to form a serial protocol interface.",
+          "prediction": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer.\"",
+          "EM": 0.0,
+          "F1": 0.5714285714285715
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?",
+          "gold_answer": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" describes a first die with FeRAM bit-cells and a second vertically stacked die with computational logic including multiplier cells coupled to the FeRAM.",
+          "prediction": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory.\"",
+          "EM": 0.0,
+          "F1": 0.4736842105263158
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?",
+          "gold_answer": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects a substrate with a conductive via electrode and a stress relief structure having a trench or gap region between the via and a microelectronic component.",
+          "prediction": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects the microelectronic device with a gap-region stress relief structure between a conductive via electrode and a microelectronic component.",
+          "EM": 0.0,
+          "F1": 0.7843137254901961
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data to a PIM device and decompressing it on the PIM device.",
+          "prediction": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data at a PIM device and decompressing it on the PIM device.",
+          "EM": 0.0,
+          "F1": 0.96
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?",
+          "gold_answer": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes an NNU with N at least 512 processing units, registers and multiplexed-registers, and rotation behavior for efficient 3D convolution.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides a memory die with modular 3D storage-transistor arrays wafer-bonded to a logic die for embedded high-bandwidth, high-capacity memory access.",
+          "prediction": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" describes wafer-bonding a memory die with modular 3D storage-transistor arrays to a logic die.",
+          "EM": 0.0,
+          "F1": 0.8076923076923076
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?",
+          "gold_answer": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes multiple ANN processing circuits that generate partial results and share them over an interconnect to produce additional or final results.",
+          "prediction": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes processing units receiving input-neuron data and synaptic weights, generating partial results, and sharing them over an interconnect.",
+          "EM": 0.0,
+          "F1": 0.6769230769230768
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" targets CNN GPU memory behavior through layout transformation, pooling-layer locality, and reduced inter-kernel redundancy. Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" targets numerical representation by collecting output-tensor statistics and determining decimal positions during tensor-instruction execution.",
+          "prediction": "15-161080 optimizes CNN execution on GPUs by improving memory behavior: data layout, locality, inter-kernel redundancy, kernel fusion, and thread injection. 15-143293 optimizes tensor processing by dynamically managing numerical representation, collecting output statistics to choose decimal positions.",
+          "EM": 0.0,
+          "F1": 0.449438202247191
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" focuses on protocol-based communication using common protocol interface circuits and a serial protocol interface on an interposer. Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" focuses on vertical stacking of a memory die with FeRAM and a compute die with multiplier-cell logic.",
+          "prediction": "16-266033 focuses on protocol-based die/chiplet communication on an interposer using common protocol interface circuits and serial/parallel packets. 16-357265 focuses on vertical AI memory-compute stacking, with a memory die stacked with a computational logic die.",
+          "EM": 0.0,
+          "F1": 0.5952380952380953
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" moves decompression into the PIM device by receiving compressed data and decompressing it on that device. Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" structures on-chip computation with memory rows, at least 512 processing units, and multiplexed-register rotation for 3D convolution.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" uses wafer-bonded memory and logic dies with exposed conductors to provide embedded high-bandwidth, high-capacity memory access. Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" uses multiple processing circuits connected by an interconnect to share partial ANN results.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes CNN GPU memory use and kernels through layout transformation, locality exploitation, kernel fusion, and thread injection. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" enables chiplet or SoC communication through common protocol interface circuits and a serial protocol interface on an interposer.",
+          "prediction": "15-161080 addresses CNN/GPU bottlenecks through memory-layout, locality, redundancy, and kernel optimizations. 16-266033 addresses chiplet integration bottlenecks through a common protocol interface for communication between dies on an interposer.",
+          "EM": 0.0,
+          "F1": 0.37209302325581395
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" reduces GPU-side CNN memory overhead using data layout selection, on-chip locality, and reduced inter-kernel redundancy. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" reduces data-movement or storage overhead by receiving compressed data at a PIM device and decompressing it there.",
+          "prediction": "15-161080 reduces GPU-side CNN memory overhead through layer data-layout selection, improved locality, removal of inter-kernel redundancy, kernel fusion, and thread injection. Insufficient context for the paired PIM data-handling patent.",
+          "EM": 0.0,
+          "F1": 0.3333333333333333
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" uses an interposer, common protocol interface circuits, and a communication link to form a serial protocol interface. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" wafer-bonds memory and logic dies so exposed conductors on the memory die connect to corresponding conductors on the logic die.",
+          "prediction": "16-266033 uses a common interposer and common protocol interface circuits to carry serial data/control packets between chiplets or SOCs. 16-776279 instead wafer-bonds a memory die to a logic die so exposed conductors on each die directly connect control, address, and data signals for embedded high-bandwidth memory access.",
+          "EM": 0.0,
+          "F1": 0.613861386138614
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" performs decompression on a PIM device after receiving compressed data. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" embeds access to high-bandwidth, high-capacity memory using wafer-bonded memory and logic dies with exposed conductors.",
+          "prediction": "Insufficient context to identify a patent that performs decompression directly in a PIM device. 16-776279 embeds high-bandwidth memory access by wafer-bonding a memory die to a logic die with corresponding exposed conductors electrically connected.",
+          "EM": 0.0,
+          "F1": 0.41558441558441556
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes the GPU execution layer for CNNs through layout, locality, and kernel reconstruction. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" optimizes the package/interconnect layer through common protocol interfaces on an interposer. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" optimizes the memory-operation layer by decompressing compressed data on a PIM device.",
+          "prediction": "15-161080 optimizes the GPU CNN execution/memory-efficiency layer. 18-422386/18-047122 optimize the AI accelerator chiplet architecture and communication layer for transformer workloads. Insufficient context for a PIM decompression layer.",
+          "EM": 0.0,
+          "F1": 0.23404255319148934
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" improves GPU-side CNN memory efficiency via layout transformation, pooling locality, and kernel fusion/thread injection. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" handles in-memory decompression by receiving compressed data at a PIM device and decompressing it there. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides high-bandwidth embedded memory access through wafer-bonded memory and logic dies.",
+          "prediction": "15-161080 covers GPU-side CNN memory efficiency via layout/locality/redundancy optimizations. 16-776279 covers wafer-bonded high-bandwidth memory access between memory and logic dies. Insufficient context for an in-memory decompression patent.",
+          "EM": 0.0,
+          "F1": 0.3762376237623763
+        }
+      ]
+    },
+    "IRCoT + ColBERTv2": {
+      "summary": {
+        "local": {
+          "EM": 0.0,
+          "F1": 76.3
+        },
+        "global": {
+          "EM": 0.0,
+          "F1": 41.3
+        },
+        "average": {
+          "EM": 0.0,
+          "F1": 58.8
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" teaches generating layout transformations, exploiting pooling-layer data locality in GPU on-chip memory, and reducing inter-kernel redundancy while increasing threads through kernel fusion and thread injection.",
+          "prediction": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units.\" It teaches CNN GPU performance improvements via data layout selection/transformations, pooling-layer locality in on-chip memory, and kernel reconstruction including kernel fusion and thread injection.",
+          "EM": 0.0,
+          "F1": 0.7466666666666667
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?",
+          "gold_answer": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" describes executing tensor instructions, collecting statistics for output tensor values, and determining a decimal position based on those statistics.",
+          "prediction": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture.\" It executes tensor instructions for neural-network computation and determines output tensor decimal positions from collected statistics.",
+          "EM": 0.0,
+          "F1": 0.689655172413793
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?",
+          "gold_answer": "Patent 16-088035, \"Wavelet representation for accelerated deep learning,\" uses wavelets of data with routing and instruction-related specifiers to communicate among processing elements in a 2D mesh for accelerated deep learning.",
+          "prediction": "Patent 16-088035, \"Wavelet representation for accelerated deep learning.\" It routes flow-based deep-learning computations across a 2D mesh using wavelets with virtual-channel, task, index, and data element specifiers.",
+          "EM": 0.0,
+          "F1": 0.5454545454545454
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" discloses first and second integrated circuits on an interposer using common protocol interface circuits and a communication link to form a serial protocol interface.",
+          "prediction": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer.\" It discloses common protocol interface circuits on separate ICs on an interposer linked to form a serial protocol interface.",
+          "EM": 0.0,
+          "F1": 0.787878787878788
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?",
+          "gold_answer": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" describes a first die with FeRAM bit-cells and a second vertically stacked die with computational logic including multiplier cells coupled to the FeRAM.",
+          "prediction": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory.\" It describes an AI IC package with a first die containing FeRAM bit-cells and a vertically stacked second die containing computational logic coupled to the memory.",
+          "EM": 0.0,
+          "F1": 0.7999999999999999
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?",
+          "gold_answer": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects a substrate with a conductive via electrode and a stress relief structure having a trench or gap region between the via and a microelectronic component.",
+          "prediction": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects the microelectronic device with a gap-region stress relief structure between a conductive via electrode and a microelectronic component.",
+          "EM": 0.0,
+          "F1": 0.7843137254901961
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data to a PIM device and decompressing it on the PIM device.",
+          "prediction": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data at a PIM device and decompressing it on the PIM device.",
+          "EM": 0.0,
+          "F1": 0.96
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?",
+          "gold_answer": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes an NNU with N at least 512 processing units, registers and multiplexed-registers, and rotation behavior for efficient 3D convolution.",
+          "prediction": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes the neural-network unit with processing units, registers, multiplexed-register rotation, and column-channel-row convolution.",
+          "EM": 0.0,
+          "F1": 0.7058823529411765
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides a memory die with modular 3D storage-transistor arrays wafer-bonded to a logic die for embedded high-bandwidth, high-capacity memory access.",
+          "prediction": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular 3D storage-transistor arrays to a logic die.",
+          "EM": 0.0,
+          "F1": 0.9152542372881356
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?",
+          "gold_answer": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes multiple ANN processing circuits that generate partial results and share them over an interconnect to produce additional or final results.",
+          "prediction": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes ANN processing units receiving input-neuron data and synaptic weights, generating partial results, and sharing them over an interconnect.",
+          "EM": 0.0,
+          "F1": 0.696969696969697
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" targets CNN GPU memory behavior through layout transformation, pooling-layer locality, and reduced inter-kernel redundancy. Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" targets numerical representation by collecting output-tensor statistics and determining decimal positions during tensor-instruction execution.",
+          "prediction": "15-161080 targets CNN execution memory behavior on GPUs: data layout, locality, off-chip memory underuse, inter-kernel redundancy, kernel fusion/thread injection. 15-143293 targets tensor-processing numerical representation by dynamically selecting/storing decimal positions based on output-tensor statistics.",
+          "EM": 0.0,
+          "F1": 0.48837209302325585
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" focuses on protocol-based communication using common protocol interface circuits and a serial protocol interface on an interposer. Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" focuses on vertical stacking of a memory die with FeRAM and a compute die with multiplier-cell logic.",
+          "prediction": "16-266033 focuses on protocol-based chiplet/SOC communication across dies on a common interposer using common protocol interface circuits and serial/parallel packets. 16-357265 focuses on vertical AI memory-compute stacking, with a memory die under a computational/inference or training die.",
+          "EM": 0.0,
+          "F1": 0.5287356321839081
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" moves decompression into the PIM device by receiving compressed data and decompressing it on that device. Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" structures on-chip computation with memory rows, at least 512 processing units, and multiplexed-register rotation for 3D convolution.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" uses wafer-bonded memory and logic dies with exposed conductors to provide embedded high-bandwidth, high-capacity memory access. Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" uses multiple processing circuits connected by an interconnect to share partial ANN results.",
+          "prediction": "16-776279 uses wafer bonding to give logic direct embedded access to high-bandwidth, high-capacity 3D memory via exposed die conductors. 15-521856 distributes ANN computation across multiple processing units that share partial results over an interconnect to produce further partial or final results.",
+          "EM": 0.0,
+          "F1": 0.49462365591397855
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes CNN GPU memory use and kernels through layout transformation, locality exploitation, kernel fusion, and thread injection. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" enables chiplet or SoC communication through common protocol interface circuits and a serial protocol interface on an interposer.",
+          "prediction": "15-161080 addresses CNN/GPU bottlenecks by optimizing memory layout, locality, inter-kernel redundancy, and kernel reconstruction/fusion. 16-266033 addresses package/interconnect bottlenecks by enabling chiplet communication through common protocol interface circuits on an interposer.",
+          "EM": 0.0,
+          "F1": 0.35955056179775285
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" reduces GPU-side CNN memory overhead using data layout selection, on-chip locality, and reduced inter-kernel redundancy. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" reduces data-movement or storage overhead by receiving compressed data at a PIM device and decompressing it there.",
+          "prediction": "15-161080 reduces GPU/CNN memory overhead through data-layout selection, better locality, removing inter-kernel redundancy, kernel fusion, and thread injection. 17-564155 reduces host-memory access overhead by using PIM registers to service or stage non-PIM reads/writes near memory.",
+          "EM": 0.0,
+          "F1": 0.3516483516483516
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" uses an interposer, common protocol interface circuits, and a communication link to form a serial protocol interface. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" wafer-bonds memory and logic dies so exposed conductors on the memory die connect to corresponding conductors on the logic die.",
+          "prediction": "16-266033 uses a common interposer and common protocol interface circuits to form a serial packet-based chiplet/SOC communication link. 16-776279 wafer-bonds a memory die to a logic die so exposed conductors directly connect corresponding control, address, and data paths for embedded high-bandwidth memory access.",
+          "EM": 0.0,
+          "F1": 0.6458333333333333
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" performs decompression on a PIM device after receiving compressed data. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" embeds access to high-bandwidth, high-capacity memory using wafer-bonded memory and logic dies with exposed conductors.",
+          "prediction": "15-072147 performs decompression directly on a PIM device after receiving compressed data. 16-776279 embeds high-bandwidth, high-capacity memory access by wafer-bonding a memory die to a logic die with corresponding exposed conductors connected.",
+          "EM": 0.0,
+          "F1": 0.5789473684210527
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes the GPU execution layer for CNNs through layout, locality, and kernel reconstruction. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" optimizes the package/interconnect layer through common protocol interfaces on an interposer. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" optimizes the memory-operation layer by decompressing compressed data on a PIM device.",
+          "prediction": "15-161080 optimizes the GPU CNN execution/memory-layout layer. 16-266033 optimizes the package-level chiplet interconnect/protocol layer on an interposer. PIM decompression: Insufficient context.",
+          "EM": 0.0,
+          "F1": 0.22727272727272727
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" improves GPU-side CNN memory efficiency via layout transformation, pooling locality, and kernel fusion/thread injection. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" handles in-memory decompression by receiving compressed data at a PIM device and decompressing it there. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides high-bandwidth embedded memory access through wafer-bonded memory and logic dies.",
+          "prediction": "15-161080 targets GPU-side CNN memory efficiency via layout, locality, redundancy removal, and kernel reconstruction. 15-072147 targets in-memory decompression by decompressing compressed data on a PIM device. Wafer-bonded high-bandwidth memory access: Insufficient context.",
+          "EM": 0.0,
+          "F1": 0.4528301886792453
+        }
+      ]
+    },
+    "IRCoT + HippoRAG (ColBERTv2)": {
+      "summary": {
+        "local": {
+          "EM": 0.0,
+          "F1": 74.6
+        },
+        "global": {
+          "EM": 0.0,
+          "F1": 30.5
+        },
+        "average": {
+          "EM": 0.0,
+          "F1": 52.6
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" teaches generating layout transformations, exploiting pooling-layer data locality in GPU on-chip memory, and reducing inter-kernel redundancy while increasing threads through kernel fusion and thread injection.",
+          "prediction": "15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units.\" It teaches CNN GPU memory-efficiency improvements including data layout transformation, locality improvements, kernel fusion, and thread injection.",
+          "EM": 0.0,
+          "F1": 0.6567164179104478
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?",
+          "gold_answer": "Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" describes executing tensor instructions, collecting statistics for output tensor values, and determining a decimal position based on those statistics.",
+          "prediction": "15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture.\" It executes tensor instructions for neural-network computation and determines output tensor decimal positions from collected statistics.",
+          "EM": 0.0,
+          "F1": 0.6666666666666667
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?",
+          "gold_answer": "Patent 16-088035, \"Wavelet representation for accelerated deep learning,\" uses wavelets of data with routing and instruction-related specifiers to communicate among processing elements in a 2D mesh for accelerated deep learning.",
+          "prediction": "16-088035, \"Wavelet representation for accelerated deep learning.\" It uses wavelets with index, virtual-channel, task, and data element specifiers across a 2D mesh of processing elements.",
+          "EM": 0.0,
+          "F1": 0.679245283018868
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" discloses first and second integrated circuits on an interposer using common protocol interface circuits and a communication link to form a serial protocol interface.",
+          "prediction": "16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer.\" It discloses common protocol interface circuits on separate ICs on an interposer coupled by a communication link forming a serial protocol interface.",
+          "EM": 0.0,
+          "F1": 0.7462686567164178
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?",
+          "gold_answer": "Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" describes a first die with FeRAM bit-cells and a second vertically stacked die with computational logic including multiplier cells coupled to the FeRAM.",
+          "prediction": "16-357265, \"Artificial intelligence processor with three-dimensional stacked memory.\" It describes an AI IC package with FeRAM bit-cells in a first die and vertically stacked computational logic in a second die coupled to the memory.",
+          "EM": 0.0,
+          "F1": 0.7796610169491527
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?",
+          "gold_answer": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects a substrate with a conductive via electrode and a stress relief structure having a trench or gap region between the via and a microelectronic component.",
+          "prediction": "Patent 13-418915, \"Semiconductor devices including stress relief structures,\" protects the microelectronic device with a gap-region stress relief structure between a conductive via electrode and a microelectronic component.",
+          "EM": 0.0,
+          "F1": 0.7843137254901961
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data to a PIM device and decompressing it on the PIM device.",
+          "prediction": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" claims receiving compressed data at a PIM device and decompressing it on the PIM device.",
+          "EM": 0.0,
+          "F1": 0.96
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?",
+          "gold_answer": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes an NNU with N at least 512 processing units, registers and multiplexed-registers, and rotation behavior for efficient 3D convolution.",
+          "prediction": "Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" describes the N processing-unit architecture with registers, multiplexed-register rotation, and column-channel-row convolution.",
+          "EM": 0.0,
+          "F1": 0.68
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides a memory die with modular 3D storage-transistor arrays wafer-bonded to a logic die for embedded high-bandwidth, high-capacity memory access.",
+          "prediction": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides wafer-bonded memory and logic dies with modular 3D storage-transistor memory arrays.",
+          "EM": 0.0,
+          "F1": 0.8076923076923076
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?",
+          "gold_answer": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes multiple ANN processing circuits that generate partial results and share them over an interconnect to produce additional or final results.",
+          "prediction": "Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" describes ANN processing units receiving input-neuron data and synaptic weights, generating partial results, and sharing them over an interconnect.",
+          "EM": 0.0,
+          "F1": 0.696969696969697
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" targets CNN GPU memory behavior through layout transformation, pooling-layer locality, and reduced inter-kernel redundancy. Patent 15-143293, \"Dynamic management of numerical representation in a distributed matrix processor architecture,\" targets numerical representation by collecting output-tensor statistics and determining decimal positions during tensor-instruction execution.",
+          "prediction": "15-161080 optimizes CNN execution by improving GPU memory behavior: data layout, locality, off-chip memory use, inter-kernel redundancy, and kernel fusion/thread injection. 15-143293 instead optimizes tensor processing by dynamically managing numerical representation, determining decimal positions from output-tensor statistics.",
+          "EM": 0.0,
+          "F1": 0.48888888888888893
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" focuses on protocol-based communication using common protocol interface circuits and a serial protocol interface on an interposer. Patent 16-357265, \"Artificial intelligence processor with three-dimensional stacked memory,\" focuses on vertical stacking of a memory die with FeRAM and a compute die with multiplier-cell logic.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" moves decompression into the PIM device by receiving compressed data and decompressing it on that device. Patent 15-366035, \"Neural network unit that performs efficient 3-dimensional convolutions,\" structures on-chip computation with memory rows, at least 512 processing units, and multiplexed-register rotation for 3D convolution.",
+          "prediction": "Insufficient context",
+          "EM": 0.0,
+          "F1": 0.0
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?",
+          "gold_answer": "Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" uses wafer-bonded memory and logic dies with exposed conductors to provide embedded high-bandwidth, high-capacity memory access. Patent 15-521856, \"Method and apparatus for distributed and cooperative computation in artificial neural networks,\" uses multiple processing circuits connected by an interconnect to share partial ANN results.",
+          "prediction": "16-776279 focuses on wafer-bonded access between a memory die and logic die using exposed conductors for control, address, and data signals. The supplied context is insufficient to identify the paired cooperative ANN-computation patent.",
+          "EM": 0.0,
+          "F1": 0.3373493975903614
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes CNN GPU memory use and kernels through layout transformation, locality exploitation, kernel fusion, and thread injection. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" enables chiplet or SoC communication through common protocol interface circuits and a serial protocol interface on an interposer.",
+          "prediction": "15-161080 addresses CNN/GPU bottlenecks by optimizing memory layout/locality and CNN kernels. 16-266033 addresses chiplet-level communication by using common protocol interface circuits over links on a shared interposer.",
+          "EM": 0.0,
+          "F1": 0.3023255813953488
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" reduces GPU-side CNN memory overhead using data layout selection, on-chip locality, and reduced inter-kernel redundancy. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" reduces data-movement or storage overhead by receiving compressed data at a PIM device and decompressing it there.",
+          "prediction": "15-161080 reduces GPU-side CNN memory overhead by optimizing data layout, locality, inter-kernel redundancy, kernel fusion, and thread injection. The supplied contexts do not sufficiently identify a PIM data-handling patent in this pair.",
+          "EM": 0.0,
+          "F1": 0.3488372093023256
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?",
+          "gold_answer": "Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" uses an interposer, common protocol interface circuits, and a communication link to form a serial protocol interface. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" wafer-bonds memory and logic dies so exposed conductors on the memory die connect to corresponding conductors on the logic die.",
+          "prediction": "16-266033 uses chiplets/SOCs on a common interposer connected through common protocol interface circuits and a serial packet protocol link. 16-776279 wafer-bonds a memory die to a logic die so exposed surface conductors directly connect corresponding memory and logic signals.",
+          "EM": 0.0,
+          "F1": 0.5869565217391304
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?",
+          "gold_answer": "Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" performs decompression on a PIM device after receiving compressed data. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" embeds access to high-bandwidth, high-capacity memory using wafer-bonded memory and logic dies with exposed conductors.",
+          "prediction": "15-072147 performs decompression directly on a PIM device. 16-776279 embeds high-bandwidth, high-capacity memory access by wafer-bonding a memory die to a logic die with corresponding exposed conductors electrically connected.",
+          "EM": 0.0,
+          "F1": 0.4931506849315068
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" optimizes the GPU execution layer for CNNs through layout, locality, and kernel reconstruction. Patent 16-266033, \"Interface for data communication between chiplets or other integrated circuits on an interposer,\" optimizes the package/interconnect layer through common protocol interfaces on an interposer. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" optimizes the memory-operation layer by decompressing compressed data on a PIM device.",
+          "prediction": "15-161080 optimizes the GPU CNN execution/memory-efficiency layer. The supplied contexts do not include the chiplet interconnect patent or PIM decompression patent needed to answer the full three-way comparison.",
+          "EM": 0.0,
+          "F1": 0.1702127659574468
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?",
+          "gold_answer": "Patent 15-161080, \"Memory efficiency for convolutional neural networks operating on graphics processing units,\" improves GPU-side CNN memory efficiency via layout transformation, pooling locality, and kernel fusion/thread injection. Patent 15-072147, \"Apparatuses and methods for operations using compressed and decompressed data,\" handles in-memory decompression by receiving compressed data at a PIM device and decompressing it there. Patent 16-776279, \"Device with embedded high-bandwidth, high-capacity memory using wafer bonding,\" provides high-bandwidth embedded memory access through wafer-bonded memory and logic dies.",
+          "prediction": "15-161080 addresses GPU-side CNN memory efficiency through layout/locality/redundancy and kernel reconstruction. 16-776279 addresses wafer-bonded high-bandwidth memory access. The supplied contexts do not include the in-memory decompression patent needed for the full division.",
+          "EM": 0.0,
+          "F1": 0.32692307692307687
+        }
+      ]
+    }
+  },
+  "skipped": {},
+  "reasoning_effort": "high",
+  "top_k_context": 5
+}

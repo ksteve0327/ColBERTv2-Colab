@@ -204,7 +204,14 @@ patch_colbert_indexing(WORK_DIR / "src" / "colbertv2_indexing.py")
 patch_hipporag(WORK_DIR / "src" / "hipporag.py")
 print("Patched legacy HippoRAG runtime files.")
 '''
-(WORK_DIR / "colbertv2_colab_runtime_patch.py").write_text(patch_code, encoding="utf-8")
+drive_runtime_patch = DRIVE_DIR / "colbertv2_colab_runtime_patch.py"
+if drive_runtime_patch.exists():
+    shutil.copy2(drive_runtime_patch, WORK_DIR / "colbertv2_colab_runtime_patch.py")
+    print("Using Drive runtime patch:", drive_runtime_patch)
+else:
+    raise FileNotFoundError(
+        f"Missing {drive_runtime_patch}. Upload notebooks/colbertv2_colab_runtime_patch.py to Drive first."
+    )
 run("python colbertv2_colab_runtime_patch.py", cwd=WORK_DIR)
 run(
     "python -m py_compile "
@@ -265,7 +272,7 @@ for name in data_files:
 ner_src = INPUT_DIR / f"{DATASET}_queries.named_entity_output.tsv"
 if not ner_src.exists():
     raise FileNotFoundError(
-        f"Missing {ner_src}. Generate it locally with scripts/generate_query_ner_cache.py and upload it."
+        f"Missing {ner_src}. Generate it locally with patent/generate_query_ner_cache.py and upload it."
     )
 shutil.copy2(ner_src, WORK_DIR / "output" / ner_src.name)
 print("copied", ner_src.name)

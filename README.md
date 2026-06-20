@@ -11,11 +11,24 @@ run was executed in Google Colab instead.
 - `notebooks/colbertv2_aichip_us_batch_eval.ipynb`: Colab notebook for running
   the 20-question ColBERTv2 batch retrieval evaluation after the backend
   artifacts have already been built.
+- `notebooks/table2_colbert_extra_baselines.ipynb`: Colab notebook for
+  Proposition (ColBERTv2) and RAPTOR (ColBERTv2) Table 2-style baselines.
+- `notebooks/table2_raptor_colbertv2_aichip_us.ipynb`: focused Colab notebook
+  for RAPTOR (ColBERTv2) retrieval over prebuilt RAPTOR units.
+- `notebooks/table2_colbert_extra_baselines.py` and
+  `notebooks/table2_raptor_colbertv2_aichip_us.py`: paired percent-format
+  source files for the extra-baseline notebooks.
 - `inputs/colab_inputs_aichip_us.tar.gz`: prepared corpus, OpenIE, value score,
   query NER cache, QA dev set, local Contriever eval JSONs, and ID-map inputs
   required by the notebooks.
+- `inputs/colab_table2_extra_upload_aichip_us.tar.gz`: compact Colab upload pack
+  for the Table 2 extra-baseline runs, containing corpus, QA dev, RAPTOR units,
+  RAPTOR tree, and the local RAPTOR retrieval result.
 - `inputs/aichip_us_queries.named_entity_output.tsv`: expanded query NER cache
   covering the smoke query and all 20 QA dev questions.
+- `inputs/aichip_us*.json` and
+  `inputs/openie_aichip_us_results_ner_gpt-5.5_200.json`: unpacked source
+  inputs used to rebuild or inspect the Colab upload archives.
 - `scripts/colbertv2_colab_runtime_patch.py`: idempotent runtime patch for the
   legacy HippoRAG ColBERTv2 code on current Colab packages.
 - `scripts/colbertv2_aichip_us_batch_eval.py`: paired percent-format source for
@@ -34,8 +47,10 @@ run was executed in Google Colab instead.
   artifacts containing only `aichip_us` graph/index outputs.
 - `artifacts/aichip_us_colbertv2_artifacts.cleaned.manifest.txt`: exact file list
   included in the cleaned artifact archive.
-- `results/`: completed ColBERTv2 single-step and IRCoT batch retrieval outputs,
-  plus JSON handoff files copied between Colab and the local HippoRAG workflow.
+- `artifacts/*.log` and `artifacts/aichip_us_colbertv2_import_manifest.txt`:
+  Colab build/import logs and the exact restored ColBERTv2 artifact file list.
+- `results/`: completed ColBERTv2 single-step, IRCoT, RAPTOR, Proposition, QA,
+  and diagnostic outputs copied between Colab and the local HippoRAG workflow.
 - `security/`: public-release security scan script and result.
 
 ## Artifact Scope
@@ -67,6 +82,9 @@ experiment:
 3. Generate local codex-proxy IRCoT thoughts with
    `scripts/generate_colbert_ircot_thoughts.py`, then upload the thought JSON
    back to Colab for the IRCoT + ColBERTv2 retrieval pass.
+4. Run the Table 2-style extra baselines with
+   `notebooks/table2_colbert_extra_baselines.ipynb` and
+   `notebooks/table2_raptor_colbertv2_aichip_us.ipynb`.
 
 The updated `inputs/colab_inputs_aichip_us.tar.gz` includes the base
 `aichip_us` corpus files, OpenIE output, value scores, ID map, QA dev/eval
@@ -235,12 +253,75 @@ aichip_us_queries.named_entity_output.tsv
 Committed copies of the multi-step ColBERTv2 retrieval outputs are also
 available under `results/`.
 
-These files correspond to the ColBERTv2 side of the report's Table 2 and the
-local handoff files needed to finish Table 3 and Table 4 with the local
-codex-proxy. Colab cannot directly call a Mac-local `codex-proxy` unless that
-endpoint is deliberately exposed to the network, so LLM-only thought generation
-and answer generation are intended to be completed in the main local HippoRAG
-workspace after downloading the JSON handoff files.
+These files correspond to the ColBERTv2 side of the report's Table 2 and Table
+3. Table 4 QA scoring was completed in the main local HippoRAG workspace with
+codex-proxy after downloading the Colab handoff files. The completed local QA
+outputs are also committed under:
+
+```text
+results/aichip_us_qa_eval_colbert.json
+results/aichip_us_qa_eval_colbert.md
+```
+
+Colab cannot directly call a Mac-local `codex-proxy` unless that endpoint is
+deliberately exposed to the network, so LLM-only thought generation and answer
+generation are intended to be completed in the main local HippoRAG workspace
+after downloading the JSON handoff files.
+
+## Table 2 Extra Baselines
+
+The extra-baseline notebooks reproduce the ColBERTv2 side of the paper's
+Table 2-style RAPTOR and Proposition rows for the `aichip_us` patent QA dev set.
+They are intended to run in a Colab GPU runtime and do not call the HippoRAG PPR
+code path.
+
+Upload this compact input bundle to the Drive folder:
+
+```text
+/content/drive/MyDrive/hipporag_colbert_aichip_us/colab_table2_extra_upload_aichip_us.tar.gz
+```
+
+The bundle contains:
+
+```text
+aichip_us_corpus.json
+aichip_us_qa_dev.json
+aichip_us_raptor_units.json
+aichip_us_retrieval_eval_raptor.json
+aichip_us_raptor_tree.pkl
+```
+
+Then run:
+
+```text
+notebooks/table2_raptor_colbertv2_aichip_us.ipynb
+notebooks/table2_colbert_extra_baselines.ipynb
+```
+
+The completed outputs are committed under `results/`:
+
+```text
+results/aichip_us_retrieval_eval_raptor.json
+results/aichip_us_retrieval_eval_raptor.md
+results/aichip_us_retrieval_eval_extra_colbert.json
+results/aichip_us_retrieval_eval_extra_colbert.md
+results/aichip_us_proposition_colbert_rankings.json
+results/aichip_us_raptor_colbert_rankings.json
+results/aichip_us_propositions.json
+results/aichip_us_raptor_units.json
+results/aichip_us_raptor_tree.pkl
+```
+
+Additional diagnostics and QA answer-generation outputs are also committed:
+
+```text
+results/aichip_us_colbert_hipporag_diagnostics.json
+results/aichip_us_colbert_hipporag_diagnostics.md
+results/aichip_us_qa_eval_colbert.json
+results/aichip_us_qa_eval_colbert.md
+results/aichip_us_qa_eval_colbert_fresh.json
+results/aichip_us_qa_eval_colbert_fresh.md
+```
 
 ## Security Note
 

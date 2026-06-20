@@ -1,0 +1,4182 @@
+{
+  "inputs": {
+    "single": "/Users/dabeenkim/Documents/GitHub/HYU-HippoRAG/hipporag_v1/output/aichip_us_retrieval_eval_colbert.json",
+    "ircot": "/Users/dabeenkim/Documents/GitHub/HYU-HippoRAG/hipporag_v1/output/aichip_us_ircot_retrieval_eval_colbert.json",
+    "qa": "/Users/dabeenkim/Documents/GitHub/HYU-HippoRAG/hipporag_v1/data/aichip_us_qa_dev.json",
+    "ner_cache": "/Users/dabeenkim/Documents/GitHub/HYU-HippoRAG/hipporag_v1/output/aichip_us_queries.named_entity_output.tsv",
+    "thoughts": "/Users/dabeenkim/Documents/GitHub/HYU-HippoRAG/hipporag_v1/output/aichip_us_colbert_ircot_thoughts.json"
+  },
+  "summary": {
+    "original_qa_ner_cache_missing": [],
+    "poor_original_ner_ids": [
+      "global_002",
+      "global_003",
+      "global_004",
+      "global_005",
+      "global_006",
+      "global_007",
+      "global_008",
+      "global_010",
+      "local_001"
+    ],
+    "clean_original_ner_ids": [
+      "global_001",
+      "global_009",
+      "local_002",
+      "local_003",
+      "local_004",
+      "local_005",
+      "local_006",
+      "local_007",
+      "local_008",
+      "local_009",
+      "local_010"
+    ],
+    "thought_step_entities_supplied_ids": [
+      "global_001",
+      "global_002",
+      "global_003",
+      "global_004",
+      "global_005",
+      "global_006",
+      "global_007",
+      "global_008",
+      "global_009",
+      "global_010",
+      "local_001",
+      "local_002",
+      "local_003",
+      "local_004",
+      "local_005",
+      "local_006",
+      "local_007",
+      "local_008",
+      "local_009",
+      "local_010"
+    ],
+    "single_low_link_ids": [
+      "global_007",
+      "local_008"
+    ],
+    "ircot_low_link_ids": [],
+    "single_existing_summary": {
+      "local": {
+        "R@2": 70.0,
+        "R@5": 90.0
+      },
+      "global": {
+        "R@2": 16.7,
+        "R@5": 50.0
+      },
+      "average": {
+        "R@2": 43.3,
+        "R@5": 70.0
+      }
+    },
+    "ircot_existing_summary": {
+      "local": {
+        "R@2": 80.0,
+        "R@5": 100.0
+      },
+      "global": {
+        "R@2": 31.7,
+        "R@5": 60.0
+      },
+      "average": {
+        "R@2": 55.8,
+        "R@5": 80.0
+      }
+    },
+    "single_clean_ner_subset": {
+      "ColBERTv2": {
+        "local": {
+          "R@2": 100.0,
+          "R@5": 100.0,
+          "n": 9
+        },
+        "global": {
+          "R@2": 16.7,
+          "R@5": 58.3,
+          "n": 2
+        },
+        "average": {
+          "R@2": 84.8,
+          "R@5": 92.4,
+          "n": 11
+        }
+      },
+      "HippoRAG (ColBERTv2)": {
+        "local": {
+          "R@2": 66.7,
+          "R@5": 88.9,
+          "n": 9
+        },
+        "global": {
+          "R@2": 25.0,
+          "R@5": 66.7,
+          "n": 2
+        },
+        "average": {
+          "R@2": 59.1,
+          "R@5": 84.8,
+          "n": 11
+        }
+      }
+    },
+    "ircot_clean_original_ner_subset": {
+      "IRCoT + ColBERTv2": {
+        "local": {
+          "R@2": 100.0,
+          "R@5": 100.0,
+          "n": 9
+        },
+        "global": {
+          "R@2": 41.7,
+          "R@5": 83.3,
+          "n": 2
+        },
+        "average": {
+          "R@2": 89.4,
+          "R@5": 97.0,
+          "n": 11
+        }
+      },
+      "IRCoT + HippoRAG (ColBERTv2)": {
+        "local": {
+          "R@2": 77.8,
+          "R@5": 100.0,
+          "n": 9
+        },
+        "global": {
+          "R@2": 41.7,
+          "R@5": 66.7,
+          "n": 2
+        },
+        "average": {
+          "R@2": 71.2,
+          "R@5": 93.9,
+          "n": 11
+        }
+      }
+    },
+    "single_low_link_removed_subset": {
+      "ColBERTv2": {
+        "local": {
+          "R@2": 100.0,
+          "R@5": 100.0,
+          "n": 9
+        },
+        "global": {
+          "R@2": 40.7,
+          "R@5": 50.0,
+          "n": 9
+        },
+        "average": {
+          "R@2": 70.4,
+          "R@5": 75.0,
+          "n": 18
+        }
+      },
+      "HippoRAG (ColBERTv2)": {
+        "local": {
+          "R@2": 77.8,
+          "R@5": 100.0,
+          "n": 9
+        },
+        "global": {
+          "R@2": 18.5,
+          "R@5": 44.4,
+          "n": 9
+        },
+        "average": {
+          "R@2": 48.1,
+          "R@5": 72.2,
+          "n": 18
+        }
+      }
+    },
+    "ircot_low_link_removed_subset": {
+      "IRCoT + ColBERTv2": {
+        "local": {
+          "R@2": 100.0,
+          "R@5": 100.0,
+          "n": 10
+        },
+        "global": {
+          "R@2": 51.7,
+          "R@5": 78.3,
+          "n": 10
+        },
+        "average": {
+          "R@2": 75.8,
+          "R@5": 89.2,
+          "n": 20
+        }
+      },
+      "IRCoT + HippoRAG (ColBERTv2)": {
+        "local": {
+          "R@2": 80.0,
+          "R@5": 100.0,
+          "n": 10
+        },
+        "global": {
+          "R@2": 31.7,
+          "R@5": 60.0,
+          "n": 10
+        },
+        "average": {
+          "R@2": 55.8,
+          "R@5": 80.0,
+          "n": 20
+        }
+      }
+    }
+  },
+  "single_trigger_diagnostics": [
+    {
+      "id": "local_001",
+      "type": "local",
+      "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?",
+      "gold_idx": [
+        2
+      ],
+      "retrieved_idx": [
+        2,
+        18,
+        41,
+        110,
+        112
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "cnn",
+        "gpus",
+        "data layout transformations",
+        "pooling layer locality",
+        "on chip memory",
+        "kernel fusion",
+        "thread injection"
+      ],
+      "bad_entities": [
+        "on chip memory"
+      ],
+      "linked_node_scores": [
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "gpus",
+          "linked_node": "gpus",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "data layout transformations",
+          "linked_node": "data structures",
+          "score": 0.4893,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "on chip memory",
+          "linked_node": "memory cells",
+          "score": 0.5483,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "kernel fusion",
+          "linked_node": "kernel fusion",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "thread injection",
+          "linked_node": "thread injection",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 6,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.167,
+      "avg_link_score": 0.8396,
+      "worst_links": [
+        {
+          "entity": "data layout transformations",
+          "linked_node": "data structures",
+          "score": 0.4893,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_001",
+        "type": "local",
+        "gold_idx": [
+          2
+        ],
+        "retrieved_idx": [
+          2,
+          18,
+          41,
+          110,
+          112
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_002",
+      "type": "local",
+      "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?",
+      "gold_idx": [
+        1
+      ],
+      "retrieved_idx": [
+        1,
+        188,
+        185,
+        5,
+        189
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "neural network computation system",
+        "tensor instructions",
+        "decimal position",
+        "output tensor values",
+        "collected statistics"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "neural network computation system",
+          "linked_node": "neural network computation",
+          "score": 0.9036,
+          "token_overlap": 0.75,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "tensor instructions",
+          "linked_node": "tensor instruction",
+          "score": 1.0,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "decimal position",
+          "linked_node": "decimal position",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "output tensor values",
+          "linked_node": "output data",
+          "score": 0.4968,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.25,
+      "avg_link_score": 0.8501,
+      "worst_links": [
+        {
+          "entity": "output tensor values",
+          "linked_node": "output data",
+          "score": 0.4968,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_002",
+        "type": "local",
+        "gold_idx": [
+          1
+        ],
+        "retrieved_idx": [
+          1,
+          188,
+          185,
+          5,
+          189
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_003",
+      "type": "local",
+      "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?",
+      "gold_idx": [
+        9
+      ],
+      "retrieved_idx": [
+        155,
+        63,
+        64,
+        9,
+        142
+      ],
+      "R@2": 0.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "wavelets",
+        "virtual channel specifier",
+        "task specifier",
+        "index specifier",
+        "data specifier",
+        "flow based deep learning computations",
+        "two dimensional mesh of processing elements"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "virtual channel specifier",
+          "linked_node": "channel formation region",
+          "score": 0.4176,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "index specifier",
+          "linked_node": "first sparse index tensor",
+          "score": 0.5782,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "data specifier",
+          "linked_node": "data source device",
+          "score": 0.515,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "flow based deep learning computations",
+          "linked_node": "deep learning",
+          "score": 0.54,
+          "token_overlap": 0.4,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "two dimensional mesh of processing elements",
+          "linked_node": "two dimensional lattice structure",
+          "score": 0.5189,
+          "token_overlap": 0.4,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.2,
+      "avg_link_score": 0.5139,
+      "worst_links": [
+        {
+          "entity": "virtual channel specifier",
+          "linked_node": "channel formation region",
+          "score": 0.4176,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_003",
+        "type": "local",
+        "gold_idx": [
+          9
+        ],
+        "retrieved_idx": [
+          155,
+          63,
+          64,
+          9,
+          142
+        ],
+        "R@2": 0.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_004",
+      "type": "local",
+      "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?",
+      "gold_idx": [
+        76
+      ],
+      "retrieved_idx": [
+        157,
+        76,
+        186,
+        114,
+        54
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "common protocol interface circuits",
+        "separate integrated circuits",
+        "interposer",
+        "communication link",
+        "serial protocol interface"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "common protocol interface circuits",
+          "linked_node": "interface circuit",
+          "score": 0.6826,
+          "token_overlap": 0.25,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "separate integrated circuits",
+          "linked_node": "integrated circuit device",
+          "score": 0.6885,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "communication link",
+          "linked_node": "communication link",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "serial protocol interface",
+          "linked_node": "interface circuit",
+          "score": 0.512,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.7208,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_004",
+        "type": "local",
+        "gold_idx": [
+          76
+        ],
+        "retrieved_idx": [
+          157,
+          76,
+          186,
+          114,
+          54
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_005",
+      "type": "local",
+      "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?",
+      "gold_idx": [
+        77
+      ],
+      "retrieved_idx": [
+        77,
+        59,
+        70,
+        90,
+        87
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "ai ic package",
+        "feram bit cells",
+        "first die",
+        "second vertically stacked die",
+        "computational logic",
+        "multiplier cells"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "ai ic package",
+          "linked_node": "ai solution",
+          "score": 0.6059,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "first die",
+          "linked_node": "first die",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "second vertically stacked die",
+          "linked_node": "second die",
+          "score": 0.5867,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "computational logic",
+          "linked_node": "computational logic",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "multiplier cells",
+          "linked_node": "multiplier",
+          "score": 0.7418,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.7869,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_005",
+        "type": "local",
+        "gold_idx": [
+          77
+        ],
+        "retrieved_idx": [
+          77,
+          59,
+          70,
+          90,
+          87
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_006",
+      "type": "local",
+      "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?",
+      "gold_idx": [
+        53
+      ],
+      "retrieved_idx": [
+        53,
+        68,
+        63,
+        96,
+        71
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "microelectronic device",
+        "trench or gap region stress relief structure",
+        "conductive via electrode",
+        "microelectronic component",
+        "patent"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "microelectronic device",
+          "linked_node": "microelectronic device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "conductive via electrode",
+          "linked_node": "conductive via electrode",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "patent",
+          "linked_node": "patent classification code",
+          "score": 0.8042,
+          "token_overlap": 0.333,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 3,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.9347,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_006",
+        "type": "local",
+        "gold_idx": [
+          53
+        ],
+        "retrieved_idx": [
+          53,
+          68,
+          63,
+          96,
+          71
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_007",
+      "type": "local",
+      "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?",
+      "gold_idx": [
+        101
+      ],
+      "retrieved_idx": [
+        121,
+        101,
+        145,
+        115,
+        118
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "memory device method",
+        "compressed data",
+        "processing in memory device",
+        "decompression"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "memory device method",
+          "linked_node": "processing in memory  pim  device",
+          "score": 0.7288,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "compressed data",
+          "linked_node": "compressed data",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "processing in memory device",
+          "linked_node": "processing in memory  pim  device",
+          "score": 0.9544,
+          "token_overlap": 0.75,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 3,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.8944,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_007",
+        "type": "local",
+        "gold_idx": [
+          101
+        ],
+        "retrieved_idx": [
+          121,
+          101,
+          145,
+          115,
+          118
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_008",
+      "type": "local",
+      "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?",
+      "gold_idx": [
+        103
+      ],
+      "retrieved_idx": [
+        140,
+        29,
+        123,
+        83,
+        161
+      ],
+      "R@2": 0.0,
+      "R@5": 0.0,
+      "named_entities": [
+        "neural network unit",
+        "512 processing units",
+        "registers receiving memory rows",
+        "multiplexed register rotation",
+        "column channel row convolution"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "neural network unit",
+          "linked_node": "neural network operations",
+          "score": 0.7283,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "512 processing units",
+          "linked_node": "processing neural networks",
+          "score": 0.4625,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "registers receiving memory rows",
+          "linked_node": "memory cell array",
+          "score": 0.4691,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "multiplexed register rotation",
+          "linked_node": "register file",
+          "score": 0.3896,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "column channel row convolution",
+          "linked_node": "convolution output",
+          "score": 0.5273,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 3,
+      "suspicious_ratio": 0.6,
+      "avg_link_score": 0.5154,
+      "worst_links": [
+        {
+          "entity": "multiplexed register rotation",
+          "linked_node": "register file",
+          "score": 0.3896,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "512 processing units",
+          "linked_node": "processing neural networks",
+          "score": 0.4625,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "registers receiving memory rows",
+          "linked_node": "memory cell array",
+          "score": 0.4691,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_008",
+        "type": "local",
+        "gold_idx": [
+          103
+        ],
+        "retrieved_idx": [
+          140,
+          29,
+          123,
+          83,
+          161
+        ],
+        "R@2": 0.0,
+        "R@5": 0.0
+      }
+    },
+    {
+      "id": "local_009",
+      "type": "local",
+      "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?",
+      "gold_idx": [
+        167
+      ],
+      "retrieved_idx": [
+        167,
+        69,
+        91,
+        77,
+        88
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "high bandwidth  high capacity memory",
+        "wafer bonding",
+        "memory die",
+        "modular three dimensional storage transistor arrays",
+        "logic die"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "high bandwidth  high capacity memory",
+          "linked_node": "high electric field cell",
+          "score": 0.4452,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "wafer bonding",
+          "linked_node": "wafer bonding",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "memory die",
+          "linked_node": "memory circuit",
+          "score": 0.5829,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "logic die",
+          "linked_node": "logic region",
+          "score": 0.5549,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.25,
+      "avg_link_score": 0.6457,
+      "worst_links": [
+        {
+          "entity": "high bandwidth  high capacity memory",
+          "linked_node": "high electric field cell",
+          "score": 0.4452,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_009",
+        "type": "local",
+        "gold_idx": [
+          167
+        ],
+        "retrieved_idx": [
+          167,
+          69,
+          91,
+          77,
+          88
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "local_010",
+      "type": "local",
+      "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?",
+      "gold_idx": [
+        154
+      ],
+      "retrieved_idx": [
+        140,
+        29,
+        15,
+        154,
+        36
+      ],
+      "R@2": 0.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "ann processing circuits",
+        "input neuron data",
+        "synaptic weights",
+        "partial results",
+        "interconnect"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "ann processing circuits",
+          "linked_node": "reconfigurable processing circuit",
+          "score": 0.621,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "input neuron data",
+          "linked_node": "input data patch",
+          "score": 0.5941,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "synaptic weights",
+          "linked_node": "synaptic weights",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "interconnect",
+          "linked_node": "interconnect unit",
+          "score": 0.9507,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.7914,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_010",
+        "type": "local",
+        "gold_idx": [
+          154
+        ],
+        "retrieved_idx": [
+          140,
+          29,
+          15,
+          154,
+          36
+        ],
+        "R@2": 0.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "global_001",
+      "type": "global",
+      "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?",
+      "gold_idx": [
+        2,
+        1
+      ],
+      "retrieved_idx": [
+        1,
+        198,
+        2,
+        41,
+        46
+      ],
+      "R@2": 0.5,
+      "R@5": 1.0,
+      "named_entities": [
+        "neural computation accelerator patents",
+        "first group",
+        "cnn execution",
+        "tensor processing"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "neural computation accelerator patents",
+          "linked_node": "neural network computation",
+          "score": 0.4961,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "first group",
+          "linked_node": "first input data",
+          "score": 0.5598,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "cnn execution",
+          "linked_node": "cnn",
+          "score": 0.6196,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 3,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.5585,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_001",
+        "type": "global",
+        "gold_idx": [
+          2,
+          1
+        ],
+        "retrieved_idx": [
+          1,
+          198,
+          2,
+          41,
+          46
+        ],
+        "R@2": 0.5,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "global_002",
+      "type": "global",
+      "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?",
+      "gold_idx": [
+        76,
+        77
+      ],
+      "retrieved_idx": [
+        46,
+        176,
+        18,
+        76,
+        22
+      ],
+      "R@2": 0.0,
+      "R@5": 0.5,
+      "named_entities": [
+        "packaging oriented patents",
+        "second group",
+        "protocol based communication",
+        "dies",
+        "interposer",
+        "vertical memory compute stacking",
+        "ai processing"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "second group",
+          "linked_node": "second section",
+          "score": 0.7197,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "protocol based communication",
+          "linked_node": "communication interface",
+          "score": 0.5808,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "vertical memory compute stacking",
+          "linked_node": "in memory compute",
+          "score": 0.4604,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "ai processing",
+          "linked_node": "ai model",
+          "score": 0.6755,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.6091,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_002",
+        "type": "global",
+        "gold_idx": [
+          76,
+          77
+        ],
+        "retrieved_idx": [
+          46,
+          176,
+          18,
+          76,
+          22
+        ],
+        "R@2": 0.0,
+        "R@5": 0.5
+      }
+    },
+    {
+      "id": "global_003",
+      "type": "global",
+      "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?",
+      "gold_idx": [
+        101,
+        103
+      ],
+      "retrieved_idx": [
+        172,
+        144,
+        125,
+        135,
+        77
+      ],
+      "R@2": 0.0,
+      "R@5": 0.0,
+      "named_entities": [
+        "system integration patents",
+        "decompression",
+        "memory",
+        "on chip memory access",
+        "three dimensional convolution"
+      ],
+      "bad_entities": [
+        "on chip memory access"
+      ],
+      "linked_node_scores": [
+        {
+          "entity": "memory",
+          "linked_node": "memory",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "on chip memory access",
+          "linked_node": "memory access operations",
+          "score": 0.6167,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "three dimensional convolution",
+          "linked_node": "3 dimensional convolution engine",
+          "score": 0.9157,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 3,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.8441,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_003",
+        "type": "global",
+        "gold_idx": [
+          101,
+          103
+        ],
+        "retrieved_idx": [
+          172,
+          144,
+          125,
+          135,
+          77
+        ],
+        "R@2": 0.0,
+        "R@5": 0.0
+      }
+    },
+    {
+      "id": "global_004",
+      "type": "global",
+      "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?",
+      "gold_idx": [
+        167,
+        154
+      ],
+      "retrieved_idx": [
+        144,
+        1,
+        194,
+        20,
+        135
+      ],
+      "R@2": 0.0,
+      "R@5": 0.0,
+      "named_entities": [
+        "platform integration patents",
+        "wafer bonded memory access",
+        "cooperative ann computation",
+        "processing units",
+        "ann"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "wafer bonded memory access",
+          "linked_node": "memory access operations",
+          "score": 0.4599,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "cooperative ann computation",
+          "linked_node": "neural network computation",
+          "score": 0.4626,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "processing units",
+          "linked_node": "processing unit",
+          "score": 1.0,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "ann",
+          "linked_node": "ann",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.25,
+      "avg_link_score": 0.7306,
+      "worst_links": [
+        {
+          "entity": "cooperative ann computation",
+          "linked_node": "neural network computation",
+          "score": 0.4626,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_004",
+        "type": "global",
+        "gold_idx": [
+          167,
+          154
+        ],
+        "retrieved_idx": [
+          144,
+          1,
+          194,
+          20,
+          135
+        ],
+        "R@2": 0.0,
+        "R@5": 0.0
+      }
+    },
+    {
+      "id": "global_005",
+      "type": "global",
+      "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?",
+      "gold_idx": [
+        2,
+        76
+      ],
+      "retrieved_idx": [
+        124,
+        192,
+        2,
+        41,
+        143
+      ],
+      "R@2": 0.0,
+      "R@5": 0.5,
+      "named_entities": [
+        "cnn kernels",
+        "gpu memory",
+        "chiplet communication",
+        "common protocol",
+        "interposer",
+        "performance bottlenecks",
+        "paired patents"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "cnn kernels",
+          "linked_node": "cnn hardware core",
+          "score": 0.6596,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "gpu memory",
+          "linked_node": "gpu",
+          "score": 0.6949,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "chiplet communication",
+          "linked_node": "chiplet",
+          "score": 0.7001,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "common protocol",
+          "linked_node": "fabric control protocol",
+          "score": 0.5779,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "performance bottlenecks",
+          "linked_node": "performance data",
+          "score": 0.4104,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.6086,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_005",
+        "type": "global",
+        "gold_idx": [
+          2,
+          76
+        ],
+        "retrieved_idx": [
+          124,
+          192,
+          2,
+          41,
+          143
+        ],
+        "R@2": 0.0,
+        "R@5": 0.5
+      }
+    },
+    {
+      "id": "global_006",
+      "type": "global",
+      "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?",
+      "gold_idx": [
+        2,
+        101
+      ],
+      "retrieved_idx": [
+        2,
+        41,
+        110,
+        39,
+        172
+      ],
+      "R@2": 0.5,
+      "R@5": 0.5,
+      "named_entities": [
+        "cnn",
+        "pim"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "pim",
+          "linked_node": "pim",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 2,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 1.0,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_006",
+        "type": "global",
+        "gold_idx": [
+          2,
+          101
+        ],
+        "retrieved_idx": [
+          2,
+          41,
+          110,
+          39,
+          172
+        ],
+        "R@2": 0.5,
+        "R@5": 0.5
+      }
+    },
+    {
+      "id": "global_007",
+      "type": "global",
+      "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?",
+      "gold_idx": [
+        76,
+        167
+      ],
+      "retrieved_idx": [
+        111,
+        159,
+        76,
+        59,
+        167
+      ],
+      "R@2": 0.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "interposer based serial chiplet communication",
+        "wafer bonded embedded memory to logic connectivity",
+        "die integration patents"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "die integration patents",
+          "linked_node": "inter die communication",
+          "score": 0.4864,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "n_links": 1,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 1.0,
+      "avg_link_score": 0.4864,
+      "worst_links": [
+        {
+          "entity": "die integration patents",
+          "linked_node": "inter die communication",
+          "score": 0.4864,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_007",
+        "type": "global",
+        "gold_idx": [
+          76,
+          167
+        ],
+        "retrieved_idx": [
+          111,
+          159,
+          76,
+          59,
+          167
+        ],
+        "R@2": 0.0,
+        "R@5": 1.0
+      }
+    },
+    {
+      "id": "global_008",
+      "type": "global",
+      "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?",
+      "gold_idx": [
+        101,
+        167
+      ],
+      "retrieved_idx": [
+        91,
+        126,
+        147,
+        167,
+        115
+      ],
+      "R@2": 0.0,
+      "R@5": 0.5,
+      "named_entities": [
+        "pim device",
+        "high bandwidth memory",
+        "memory die",
+        "logic die"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "pim device",
+          "linked_node": "pim device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "high bandwidth memory",
+          "linked_node": "hierarchical memory",
+          "score": 0.4658,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "memory die",
+          "linked_node": "memory circuit",
+          "score": 0.5829,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "logic die",
+          "linked_node": "logic region",
+          "score": 0.5549,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.25,
+      "avg_link_score": 0.6509,
+      "worst_links": [
+        {
+          "entity": "high bandwidth memory",
+          "linked_node": "hierarchical memory",
+          "score": 0.4658,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_008",
+        "type": "global",
+        "gold_idx": [
+          101,
+          167
+        ],
+        "retrieved_idx": [
+          91,
+          126,
+          147,
+          167,
+          115
+        ],
+        "R@2": 0.0,
+        "R@5": 0.5
+      }
+    },
+    {
+      "id": "global_009",
+      "type": "global",
+      "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?",
+      "gold_idx": [
+        2,
+        76,
+        101
+      ],
+      "retrieved_idx": [
+        192,
+        137,
+        2,
+        184,
+        41
+      ],
+      "R@2": 0.0,
+      "R@5": 0.3333333333333333,
+      "named_entities": [
+        "gpu",
+        "cnn",
+        "chiplet interconnects",
+        "pim decompression"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "gpu",
+          "linked_node": "gpu",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "chiplet interconnects",
+          "linked_node": "chiplet",
+          "score": 0.5727,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "pim decompression",
+          "linked_node": "pim microarchitecture",
+          "score": 0.6444,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.8043,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_009",
+        "type": "global",
+        "gold_idx": [
+          2,
+          76,
+          101
+        ],
+        "retrieved_idx": [
+          192,
+          137,
+          2,
+          184,
+          41
+        ],
+        "R@2": 0.0,
+        "R@5": 0.3333333333333333
+      }
+    },
+    {
+      "id": "global_010",
+      "type": "global",
+      "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?",
+      "gold_idx": [
+        2,
+        101,
+        167
+      ],
+      "retrieved_idx": [
+        167,
+        2,
+        31,
+        135,
+        122
+      ],
+      "R@2": 0.6666666666666666,
+      "R@5": 0.6666666666666666,
+      "named_entities": [
+        "gpu side cnn memory efficiency",
+        "in memory decompression",
+        "wafer bonded high bandwidth memory access",
+        "memory performance patents"
+      ],
+      "bad_entities": [
+        "in memory decompression"
+      ],
+      "linked_node_scores": [
+        {
+          "entity": "in memory decompression",
+          "linked_node": "processing in memory",
+          "score": 0.5314,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "memory performance patents",
+          "linked_node": "memory circuit",
+          "score": 0.522,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 2,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.5267,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_010",
+        "type": "global",
+        "gold_idx": [
+          2,
+          101,
+          167
+        ],
+        "retrieved_idx": [
+          167,
+          2,
+          31,
+          135,
+          122
+        ],
+        "R@2": 0.6666666666666666,
+        "R@5": 0.6666666666666666
+      }
+    }
+  ],
+  "ircot_trigger_diagnostics": [
+    {
+      "id": "local_001",
+      "type": "local",
+      "question": "Which patent teaches improving CNN execution on GPUs by generating data layout transformations, exploiting pooling-layer locality in on-chip memory, and using kernel fusion with thread injection?",
+      "gold_idx": [
+        2
+      ],
+      "retrieved_idx": [
+        2,
+        41,
+        112,
+        110,
+        18
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "cnn",
+        "gpu",
+        "fast data layout transformation",
+        "pooling layer working set expansion",
+        "on chip memory",
+        "inter kernel redundancy elimination",
+        "kernel fusion",
+        "thread level parallelism injection"
+      ],
+      "bad_entities": [
+        "on chip memory"
+      ],
+      "linked_node_scores": [
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "gpu",
+          "linked_node": "gpu",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "on chip memory",
+          "linked_node": "memory cells",
+          "score": 0.5483,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "inter kernel redundancy elimination",
+          "linked_node": "inter kernel redundancy",
+          "score": 0.8283,
+          "token_overlap": 0.75,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "kernel fusion",
+          "linked_node": "kernel fusion",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.8753,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_001",
+        "type": "local",
+        "gold_idx": [
+          2
+        ],
+        "retrieved_idx": [
+          2,
+          41,
+          112,
+          110,
+          18
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Retrieve CNN GPU memory-efficiency disclosures on fast data layout transformation, pooling-layer working set expansion in on-chip memory, inter-kernel redundancy elimination, kernel fusion, and thread-level parallelism injection.",
+        "first_step_idx": [
+          2,
+          18,
+          41,
+          110,
+          112
+        ],
+        "second_step_idx": [
+          2,
+          112,
+          41,
+          172,
+          110
+        ]
+      }
+    },
+    {
+      "id": "local_002",
+      "type": "local",
+      "question": "Which patent describes a neural-network computation system that executes tensor instructions and dynamically determines a decimal position for output tensor values from collected statistics?",
+      "gold_idx": [
+        1
+      ],
+      "retrieved_idx": [
+        1,
+        5,
+        189,
+        188,
+        185
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "distributed matrix processor architecture",
+        "tensor instructions",
+        "output tensor value statistics",
+        "decimal position",
+        "fixed point numerical representation"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "distributed matrix processor architecture",
+          "linked_node": "matrix operation accelerator",
+          "score": 0.5051,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "tensor instructions",
+          "linked_node": "tensor instruction",
+          "score": 1.0,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "output tensor value statistics",
+          "linked_node": "output data",
+          "score": 0.4945,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "decimal position",
+          "linked_node": "decimal position",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "fixed point numerical representation",
+          "linked_node": "fixed point arithmetic",
+          "score": 0.6808,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.2,
+      "avg_link_score": 0.7361,
+      "worst_links": [
+        {
+          "entity": "output tensor value statistics",
+          "linked_node": "output data",
+          "score": 0.4945,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_002",
+        "type": "local",
+        "gold_idx": [
+          1
+        ],
+        "retrieved_idx": [
+          1,
+          5,
+          189,
+          188,
+          185
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Retrieve distributed matrix processor architecture claims for tensor instructions that collect output tensor value statistics and dynamically assign a decimal position for fixed-point numerical representation.",
+        "first_step_idx": [
+          1,
+          188,
+          185,
+          5,
+          189
+        ],
+        "second_step_idx": [
+          1,
+          5,
+          196,
+          153,
+          189
+        ]
+      }
+    },
+    {
+      "id": "local_003",
+      "type": "local",
+      "question": "Which patent uses wavelets carrying fields such as virtual-channel, task, index, and data specifiers to route flow-based deep-learning computations across a two-dimensional mesh of processing elements?",
+      "gold_idx": [
+        9
+      ],
+      "retrieved_idx": [
+        9,
+        142,
+        155,
+        63,
+        179
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "accelerated deep learning",
+        "wavelet representation",
+        "index specifier",
+        "virtual channel specifier",
+        "task specifier",
+        "data element specifier",
+        "nearest neighbor routers",
+        "2d mesh",
+        "processing element array"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "accelerated deep learning",
+          "linked_node": "deep learning",
+          "score": 0.6671,
+          "token_overlap": 0.667,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "wavelet representation",
+          "linked_node": "wavelet representation for accelerated deep learning",
+          "score": 0.9415,
+          "token_overlap": 0.4,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "index specifier",
+          "linked_node": "first sparse index tensor",
+          "score": 0.5782,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "virtual channel specifier",
+          "linked_node": "channel formation region",
+          "score": 0.4176,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "data element specifier",
+          "linked_node": "data associated with operation",
+          "score": 0.3957,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "nearest neighbor routers",
+          "linked_node": "nearest neighbor routers",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "2d mesh",
+          "linked_node": "2d mesh",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "processing element array",
+          "linked_node": "processing element",
+          "score": 0.7642,
+          "token_overlap": 0.667,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 8,
+      "n_suspicious_links": 2,
+      "suspicious_ratio": 0.25,
+      "avg_link_score": 0.7205,
+      "worst_links": [
+        {
+          "entity": "data element specifier",
+          "linked_node": "data associated with operation",
+          "score": 0.3957,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "virtual channel specifier",
+          "linked_node": "channel formation region",
+          "score": 0.4176,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_003",
+        "type": "local",
+        "gold_idx": [
+          9
+        ],
+        "retrieved_idx": [
+          9,
+          142,
+          155,
+          63,
+          179
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Retrieve accelerated deep learning wavelet representation using index specifier, virtual channel specifier, task specifier, and data element specifier routed through nearest-neighbor routers in a 2D mesh processing-element array.",
+        "first_step_idx": [
+          155,
+          63,
+          64,
+          9,
+          142
+        ],
+        "second_step_idx": [
+          9,
+          179,
+          183,
+          142,
+          27
+        ]
+      }
+    },
+    {
+      "id": "local_004",
+      "type": "local",
+      "question": "Which patent discloses common protocol interface circuits on separate integrated circuits arranged on an interposer, coupled by a communication link to form a serial protocol interface?",
+      "gold_idx": [
+        76
+      ],
+      "retrieved_idx": [
+        157,
+        76,
+        114,
+        186,
+        192
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "interposer",
+        "chiplet communication interface",
+        "common protocol interface circuits",
+        "communication link",
+        "serial protocol interface",
+        "integrated circuits"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "chiplet communication interface",
+          "linked_node": "chiplet",
+          "score": 0.5621,
+          "token_overlap": 0.333,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "common protocol interface circuits",
+          "linked_node": "interface circuit",
+          "score": 0.6826,
+          "token_overlap": 0.25,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "communication link",
+          "linked_node": "communication link",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "serial protocol interface",
+          "linked_node": "interface circuit",
+          "score": 0.512,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "integrated circuits",
+          "linked_node": "integrated circuit device",
+          "score": 0.9458,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.7405,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_004",
+        "type": "local",
+        "gold_idx": [
+          76
+        ],
+        "retrieved_idx": [
+          157,
+          76,
+          114,
+          186,
+          192
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Retrieve interposer chiplet communication interface disclosures with first and second common protocol interface circuits coupled by a communication link to form a serial protocol interface between integrated circuits.",
+        "first_step_idx": [
+          157,
+          76,
+          186,
+          114,
+          54
+        ],
+        "second_step_idx": [
+          157,
+          76,
+          114,
+          192,
+          111
+        ]
+      }
+    },
+    {
+      "id": "local_005",
+      "type": "local",
+      "question": "Which patent describes an AI IC package where a first die contains FeRAM bit-cells and a second vertically stacked die contains computational logic with multiplier cells coupled to that memory?",
+      "gold_idx": [
+        77
+      ],
+      "retrieved_idx": [
+        77,
+        70,
+        87,
+        59,
+        172
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "ai processor",
+        "three dimensional stacked memory",
+        "first die",
+        "feram bit cells",
+        "vertically stacked inference die",
+        "computational logic",
+        "multiplier cells",
+        "input data",
+        "weights"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "ai processor",
+          "linked_node": "ai processor",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "three dimensional stacked memory",
+          "linked_node": "3 dimensional convolution engine",
+          "score": 0.5792,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "first die",
+          "linked_node": "first die",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "computational logic",
+          "linked_node": "computational logic",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "multiplier cells",
+          "linked_node": "multiplier",
+          "score": 0.7418,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "input data",
+          "linked_node": "input data",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "weights",
+          "linked_node": "weights",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 7,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.903,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_005",
+        "type": "local",
+        "gold_idx": [
+          77
+        ],
+        "retrieved_idx": [
+          77,
+          70,
+          87,
+          59,
+          172
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Retrieve AI processor three-dimensional stacked memory package claims where a first die includes FeRAM bit-cells and a vertically stacked inference die includes computational logic multiplier cells coupled to stored input data and weights.",
+        "first_step_idx": [
+          77,
+          59,
+          70,
+          90,
+          87
+        ],
+        "second_step_idx": [
+          77,
+          172,
+          143,
+          87,
+          70
+        ]
+      }
+    },
+    {
+      "id": "local_006",
+      "type": "local",
+      "question": "Which patent protects a microelectronic device having a trench or gap-region stress relief structure between a conductive via electrode and a microelectronic component?",
+      "gold_idx": [
+        53
+      ],
+      "retrieved_idx": [
+        53,
+        63,
+        96,
+        68,
+        78
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "microelectronic device",
+        "conductive via electrode",
+        "microelectronic component",
+        "trench",
+        "gap region stress relief structure"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "microelectronic device",
+          "linked_node": "microelectronic device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "conductive via electrode",
+          "linked_node": "conductive via electrode",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "trench",
+          "linked_node": "trench",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 3,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 1.0,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_006",
+        "type": "local",
+        "gold_idx": [
+          53
+        ],
+        "retrieved_idx": [
+          53,
+          63,
+          96,
+          68,
+          78
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Search for a microelectronic device with a conductive via electrode separated from a microelectronic component by a trench or gap-region stress relief structure.",
+        "first_step_idx": [
+          53,
+          68,
+          63,
+          96,
+          71
+        ],
+        "second_step_idx": [
+          53,
+          78,
+          63,
+          65,
+          96
+        ]
+      }
+    },
+    {
+      "id": "local_007",
+      "type": "local",
+      "question": "Which patent claims a memory-device method that receives compressed data at a processing-in-memory device and performs decompression on that device?",
+      "gold_idx": [
+        101
+      ],
+      "retrieved_idx": [
+        101,
+        121,
+        115,
+        195,
+        126
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "memory device",
+        "compressed data",
+        "processing in memory",
+        "pim device",
+        "decompressing"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "memory device",
+          "linked_node": "memory device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "compressed data",
+          "linked_node": "compressed data",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "processing in memory",
+          "linked_node": "processing in memory",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "pim device",
+          "linked_node": "pim device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 1.0,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_007",
+        "type": "local",
+        "gold_idx": [
+          101
+        ],
+        "retrieved_idx": [
+          101,
+          121,
+          115,
+          195,
+          126
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Find memory-device claims reciting receiving compressed data to a processing-in-memory PIM device and decompressing the compressed data on the PIM device.",
+        "first_step_idx": [
+          121,
+          101,
+          145,
+          115,
+          118
+        ],
+        "second_step_idx": [
+          101,
+          195,
+          126,
+          115,
+          121
+        ]
+      }
+    },
+    {
+      "id": "local_008",
+      "type": "local",
+      "question": "Which patent describes a neural-network unit with at least 512 processing units, registers receiving memory rows, and multiplexed-register rotation for column-channel-row convolution?",
+      "gold_idx": [
+        103
+      ],
+      "retrieved_idx": [
+        140,
+        123,
+        161,
+        29,
+        103
+      ],
+      "R@2": 0.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "neural network unit",
+        "processing units",
+        "registers",
+        "memory rows",
+        "multiplexed register rotation",
+        "column channel row convolution"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "neural network unit",
+          "linked_node": "neural network operations",
+          "score": 0.7283,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "processing units",
+          "linked_node": "processing unit",
+          "score": 1.0,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "registers",
+          "linked_node": "register",
+          "score": 1.0,
+          "token_overlap": 0.0,
+          "exactish": true,
+          "suspicious": true
+        },
+        {
+          "entity": "memory rows",
+          "linked_node": "memory cell array",
+          "score": 0.672,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "multiplexed register rotation",
+          "linked_node": "register file",
+          "score": 0.3896,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "column channel row convolution",
+          "linked_node": "convolution output",
+          "score": 0.5273,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 6,
+      "n_suspicious_links": 2,
+      "suspicious_ratio": 0.333,
+      "avg_link_score": 0.7195,
+      "worst_links": [
+        {
+          "entity": "multiplexed register rotation",
+          "linked_node": "register file",
+          "score": 0.3896,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "registers",
+          "linked_node": "register",
+          "score": 1.0,
+          "token_overlap": 0.0,
+          "exactish": true,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_008",
+        "type": "local",
+        "gold_idx": [
+          103
+        ],
+        "retrieved_idx": [
+          140,
+          123,
+          161,
+          29,
+          103
+        ],
+        "R@2": 0.0,
+        "R@5": 1.0,
+        "thought": "Retrieve neural network unit claims with at least 512 processing units, registers reading memory rows, multiplexed-register rotation, and column-channel-row convolution.",
+        "first_step_idx": [
+          140,
+          29,
+          123,
+          83,
+          161
+        ],
+        "second_step_idx": [
+          140,
+          123,
+          103,
+          166,
+          161
+        ]
+      }
+    },
+    {
+      "id": "local_009",
+      "type": "local",
+      "question": "Which patent provides embedded access to high-bandwidth, high-capacity memory by wafer-bonding a memory die with modular three-dimensional storage-transistor arrays to a logic die?",
+      "gold_idx": [
+        167
+      ],
+      "retrieved_idx": [
+        167,
+        91,
+        77,
+        88,
+        69
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "memory die",
+        "logic die",
+        "wafer bonding",
+        "high bandwidth memory",
+        "high capacity memory",
+        "modular three dimensional storage transistor arrays"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "memory die",
+          "linked_node": "memory circuit",
+          "score": 0.5829,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "logic die",
+          "linked_node": "logic region",
+          "score": 0.5549,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "wafer bonding",
+          "linked_node": "wafer bonding",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "high bandwidth memory",
+          "linked_node": "hierarchical memory",
+          "score": 0.4658,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "high capacity memory",
+          "linked_node": "hierarchical memory",
+          "score": 0.5266,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.2,
+      "avg_link_score": 0.626,
+      "worst_links": [
+        {
+          "entity": "high bandwidth memory",
+          "linked_node": "hierarchical memory",
+          "score": 0.4658,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "local_009",
+        "type": "local",
+        "gold_idx": [
+          167
+        ],
+        "retrieved_idx": [
+          167,
+          91,
+          77,
+          88,
+          69
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Search for wafer-bonded memory die and logic die providing embedded high-bandwidth high-capacity memory using modular three-dimensional storage-transistor arrays.",
+        "first_step_idx": [
+          167,
+          69,
+          91,
+          77,
+          88
+        ],
+        "second_step_idx": [
+          167,
+          91,
+          147,
+          77,
+          88
+        ]
+      }
+    },
+    {
+      "id": "local_010",
+      "type": "local",
+      "question": "Which patent describes ANN processing circuits that receive input-neuron data and synaptic weights, generate partial results, and share those partial results over an interconnect?",
+      "gold_idx": [
+        154
+      ],
+      "retrieved_idx": [
+        140,
+        29,
+        154,
+        15,
+        36
+      ],
+      "R@2": 0.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "artificial neural network",
+        "processing circuits",
+        "input neuron data",
+        "synaptic weights",
+        "partial results",
+        "interconnect"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "artificial neural network",
+          "linked_node": "artificial neural network",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "processing circuits",
+          "linked_node": "processing cores",
+          "score": 0.6944,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "input neuron data",
+          "linked_node": "input data patch",
+          "score": 0.5941,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "synaptic weights",
+          "linked_node": "synaptic weights",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "interconnect",
+          "linked_node": "interconnect unit",
+          "score": 0.9507,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.8478,
+      "worst_links": [],
+      "per_query": {
+        "id": "local_010",
+        "type": "local",
+        "gold_idx": [
+          154
+        ],
+        "retrieved_idx": [
+          140,
+          29,
+          154,
+          15,
+          36
+        ],
+        "R@2": 0.0,
+        "R@5": 1.0,
+        "thought": "Find artificial neural network processing circuits receiving input-neuron data and synaptic weights, generating partial results, and sharing partial results over an interconnect.",
+        "first_step_idx": [
+          140,
+          29,
+          15,
+          154,
+          36
+        ],
+        "second_step_idx": [
+          140,
+          154,
+          15,
+          29,
+          112
+        ]
+      }
+    },
+    {
+      "id": "global_001",
+      "type": "global",
+      "question": "Across the two neural-computation accelerator patents in the first group, how do their optimization targets differ between memory behavior for CNN execution and numerical representation for tensor processing?",
+      "gold_idx": [
+        2,
+        1
+      ],
+      "retrieved_idx": [
+        2,
+        41,
+        1,
+        155,
+        198
+      ],
+      "R@2": 0.5,
+      "R@5": 1.0,
+      "named_entities": [
+        "tensor accelerator",
+        "numerical representation",
+        "data type conversion",
+        "precision formats",
+        "tensor processing",
+        "cnn",
+        "gpu",
+        "data layout",
+        "data locality",
+        "inter kernel redundancy"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "tensor accelerator",
+          "linked_node": "intermediate tensor",
+          "score": 0.5716,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "data type conversion",
+          "linked_node": "data transfer",
+          "score": 0.597,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "gpu",
+          "linked_node": "gpu",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "data locality",
+          "linked_node": "data signals",
+          "score": 0.4932,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "inter kernel redundancy",
+          "linked_node": "inter kernel redundancy",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 7,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.143,
+      "avg_link_score": 0.7358,
+      "worst_links": [
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_001",
+        "type": "global",
+        "gold_idx": [
+          2,
+          1
+        ],
+        "retrieved_idx": [
+          2,
+          41,
+          1,
+          155,
+          198
+        ],
+        "R@2": 0.5,
+        "R@5": 1.0,
+        "thought": "Retrieve tensor accelerator claims on numerical representation, data type conversion, precision formats, and tensor processing optimization to compare with CNN GPU memory data layout, locality, and inter-kernel redundancy.",
+        "first_step_idx": [
+          1,
+          198,
+          2,
+          41,
+          46
+        ],
+        "second_step_idx": [
+          155,
+          2,
+          189,
+          41,
+          125
+        ]
+      }
+    },
+    {
+      "id": "global_002",
+      "type": "global",
+      "question": "For the two packaging-oriented patents in the second group, which one focuses on protocol-based communication across dies on an interposer, and which one focuses on vertical memory-compute stacking for AI processing?",
+      "gold_idx": [
+        76,
+        77
+      ],
+      "retrieved_idx": [
+        46,
+        124,
+        63,
+        176,
+        18
+      ],
+      "R@2": 0.0,
+      "R@5": 0.0,
+      "named_entities": [
+        "semiconductor package",
+        "interposer mounted dies",
+        "common protocol",
+        "vertically stacked memory compute dies",
+        "ai processing"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "semiconductor package",
+          "linked_node": "semiconductor devices",
+          "score": 0.6667,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "common protocol",
+          "linked_node": "fabric control protocol",
+          "score": 0.5779,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "ai processing",
+          "linked_node": "ai model",
+          "score": 0.6755,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 3,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.64,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_002",
+        "type": "global",
+        "gold_idx": [
+          76,
+          77
+        ],
+        "retrieved_idx": [
+          46,
+          124,
+          63,
+          176,
+          18
+        ],
+        "R@2": 0.0,
+        "R@5": 0.0,
+        "thought": "Retrieve semiconductor package claims for interposer-mounted dies communicating through a common protocol and for vertically stacked memory-compute dies used in AI processing.",
+        "first_step_idx": [
+          46,
+          176,
+          18,
+          76,
+          22
+        ],
+        "second_step_idx": [
+          124,
+          63,
+          77,
+          70,
+          111
+        ]
+      }
+    },
+    {
+      "id": "global_003",
+      "type": "global",
+      "question": "In the paired system-integration patents, how does one move decompression into memory while the other structures on-chip memory access for three-dimensional convolution?",
+      "gold_idx": [
+        101,
+        103
+      ],
+      "retrieved_idx": [
+        172,
+        144,
+        125,
+        135,
+        176
+      ],
+      "R@2": 0.0,
+      "R@5": 0.0,
+      "named_entities": [
+        "system integration",
+        "memory side decompression engines",
+        "on chip memory access",
+        "address generation",
+        "three dimensional convolution"
+      ],
+      "bad_entities": [
+        "on chip memory access"
+      ],
+      "linked_node_scores": [
+        {
+          "entity": "on chip memory access",
+          "linked_node": "memory access operations",
+          "score": 0.6167,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "three dimensional convolution",
+          "linked_node": "3 dimensional convolution engine",
+          "score": 0.9157,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 2,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.7662,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_003",
+        "type": "global",
+        "gold_idx": [
+          101,
+          103
+        ],
+        "retrieved_idx": [
+          172,
+          144,
+          125,
+          135,
+          176
+        ],
+        "R@2": 0.0,
+        "R@5": 0.0,
+        "thought": "Retrieve system-integration claims covering memory-side decompression engines and on-chip memory access scheduling, buffers, or address generation for three-dimensional convolution.",
+        "first_step_idx": [
+          172,
+          144,
+          125,
+          135,
+          77
+        ],
+        "second_step_idx": [
+          172,
+          144,
+          125,
+          176,
+          129
+        ]
+      }
+    },
+    {
+      "id": "global_004",
+      "type": "global",
+      "question": "For the two platform-integration patents, how do their approaches differ between wafer-bonded memory access and cooperative ANN computation across processing units?",
+      "gold_idx": [
+        167,
+        154
+      ],
+      "retrieved_idx": [
+        194,
+        20,
+        144,
+        167,
+        1
+      ],
+      "R@2": 0.0,
+      "R@5": 0.5,
+      "named_entities": [
+        "platform integration",
+        "wafer bonded logic",
+        "memory die conductors",
+        "high bandwidth access",
+        "ann computation",
+        "multiple processing units"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "wafer bonded logic",
+          "linked_node": "wafer bonding",
+          "score": 0.7572,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "memory die conductors",
+          "linked_node": "memory circuit",
+          "score": 0.5838,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "high bandwidth access",
+          "linked_node": "high electric field cell",
+          "score": 0.4459,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "ann computation",
+          "linked_node": "ann",
+          "score": 0.6362,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "multiple processing units",
+          "linked_node": "processing neural networks",
+          "score": 0.4584,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "n_links": 5,
+      "n_suspicious_links": 2,
+      "suspicious_ratio": 0.4,
+      "avg_link_score": 0.5763,
+      "worst_links": [
+        {
+          "entity": "high bandwidth access",
+          "linked_node": "high electric field cell",
+          "score": 0.4459,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "multiple processing units",
+          "linked_node": "processing neural networks",
+          "score": 0.4584,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_004",
+        "type": "global",
+        "gold_idx": [
+          167,
+          154
+        ],
+        "retrieved_idx": [
+          194,
+          20,
+          144,
+          167,
+          1
+        ],
+        "R@2": 0.0,
+        "R@5": 0.5,
+        "thought": "Retrieve platform-integration claims comparing wafer-bonded logic and memory die conductors for high-bandwidth access with cooperative ANN computation across multiple processing units.",
+        "first_step_idx": [
+          144,
+          1,
+          194,
+          20,
+          135
+        ],
+        "second_step_idx": [
+          167,
+          69,
+          194,
+          83,
+          20
+        ]
+      }
+    },
+    {
+      "id": "global_005",
+      "type": "global",
+      "question": "Which paired patents address performance bottlenecks at different layers, one by optimizing CNN kernels and GPU memory use, and the other by enabling chiplet communication through a common protocol on an interposer?",
+      "gold_idx": [
+        2,
+        76
+      ],
+      "retrieved_idx": [
+        2,
+        192,
+        124,
+        155,
+        76
+      ],
+      "R@2": 0.5,
+      "R@5": 1.0,
+      "named_entities": [
+        "interposer",
+        "chiplet communication",
+        "common protocol interface",
+        "cnn",
+        "gpu",
+        "data layout",
+        "data locality",
+        "tlp",
+        "kernel reconstruction"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "chiplet communication",
+          "linked_node": "chiplet",
+          "score": 0.7001,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "common protocol interface",
+          "linked_node": "interface",
+          "score": 0.5736,
+          "token_overlap": 0.333,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "gpu",
+          "linked_node": "gpu",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "data locality",
+          "linked_node": "data signals",
+          "score": 0.4932,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "tlp",
+          "linked_node": "tlp",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        }
+      ],
+      "n_links": 7,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.143,
+      "avg_link_score": 0.7508,
+      "worst_links": [
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_005",
+        "type": "global",
+        "gold_idx": [
+          2,
+          76
+        ],
+        "retrieved_idx": [
+          2,
+          192,
+          124,
+          155,
+          76
+        ],
+        "R@2": 0.5,
+        "R@5": 1.0,
+        "thought": "Retrieve interposer chiplet communication claims using a common protocol interface to pair with CNN GPU optimization claims on data layout, locality, TLP, and kernel reconstruction.",
+        "first_step_idx": [
+          124,
+          192,
+          2,
+          41,
+          143
+        ],
+        "second_step_idx": [
+          155,
+          2,
+          76,
+          192,
+          111
+        ]
+      }
+    },
+    {
+      "id": "global_006",
+      "type": "global",
+      "question": "In the group pairing CNN memory optimization with PIM data handling, how does each patent reduce memory-related overhead in a different place in the system?",
+      "gold_idx": [
+        2,
+        101
+      ],
+      "retrieved_idx": [
+        2,
+        41,
+        155,
+        157,
+        110
+      ],
+      "R@2": 0.5,
+      "R@5": 0.5,
+      "named_entities": [
+        "cnn",
+        "off chip memory",
+        "data layout",
+        "data locality",
+        "inter kernel redundancy",
+        "pim device",
+        "compressed data decompression"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "off chip memory",
+          "linked_node": "memory cells",
+          "score": 0.4727,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "data locality",
+          "linked_node": "data signals",
+          "score": 0.4932,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "inter kernel redundancy",
+          "linked_node": "inter kernel redundancy",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "pim device",
+          "linked_node": "pim device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "compressed data decompression",
+          "linked_node": "compressed checkpoint",
+          "score": 0.535,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 7,
+      "n_suspicious_links": 2,
+      "suspicious_ratio": 0.286,
+      "avg_link_score": 0.7128,
+      "worst_links": [
+        {
+          "entity": "off chip memory",
+          "linked_node": "memory cells",
+          "score": 0.4727,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_006",
+        "type": "global",
+        "gold_idx": [
+          2,
+          101
+        ],
+        "retrieved_idx": [
+          2,
+          41,
+          155,
+          157,
+          110
+        ],
+        "R@2": 0.5,
+        "R@5": 0.5,
+        "thought": "Retrieve evidence linking CNN off-chip memory data layout, data locality, and inter-kernel redundancy to PIM device compressed-data decompression operations.",
+        "first_step_idx": [
+          2,
+          41,
+          110,
+          39,
+          172
+        ],
+        "second_step_idx": [
+          155,
+          157,
+          2,
+          126,
+          41
+        ]
+      }
+    },
+    {
+      "id": "global_007",
+      "type": "global",
+      "question": "For the two die-integration patents, how does interposer-based serial chiplet communication differ from wafer-bonded embedded memory-to-logic connectivity?",
+      "gold_idx": [
+        76,
+        167
+      ],
+      "retrieved_idx": [
+        167,
+        76,
+        91,
+        111,
+        159
+      ],
+      "R@2": 1.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "common interposer",
+        "chiplet",
+        "serial protocol interface",
+        "wafer bonded memory",
+        "logic die",
+        "surface conductor"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "chiplet",
+          "linked_node": "chiplet",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "serial protocol interface",
+          "linked_node": "interface circuit",
+          "score": 0.512,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "wafer bonded memory",
+          "linked_node": "wafer bonding",
+          "score": 0.693,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "logic die",
+          "linked_node": "logic region",
+          "score": 0.5549,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.69,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_007",
+        "type": "global",
+        "gold_idx": [
+          76,
+          167
+        ],
+        "retrieved_idx": [
+          167,
+          76,
+          91,
+          111,
+          159
+        ],
+        "R@2": 1.0,
+        "R@5": 1.0,
+        "thought": "Retrieve claim language comparing common interposer chiplet serial protocol interfaces with wafer-bonded memory and logic die surface conductor connectivity.",
+        "first_step_idx": [
+          111,
+          159,
+          76,
+          59,
+          167
+        ],
+        "second_step_idx": [
+          91,
+          167,
+          192,
+          114,
+          76
+        ]
+      }
+    },
+    {
+      "id": "global_008",
+      "type": "global",
+      "question": "In the memory-centric pair, which patent performs decompression directly in a PIM device, and which embeds high-bandwidth memory access by bonding memory and logic dies?",
+      "gold_idx": [
+        101,
+        167
+      ],
+      "retrieved_idx": [
+        91,
+        126,
+        167,
+        115,
+        101
+      ],
+      "R@2": 0.0,
+      "R@5": 1.0,
+      "named_entities": [
+        "compressed data",
+        "pim device",
+        "wafer bonded high bandwidth memory",
+        "memory die",
+        "logic die"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "compressed data",
+          "linked_node": "compressed data",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "pim device",
+          "linked_node": "pim device",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "memory die",
+          "linked_node": "memory circuit",
+          "score": 0.5829,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "logic die",
+          "linked_node": "logic region",
+          "score": 0.5549,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 0,
+      "suspicious_ratio": 0.0,
+      "avg_link_score": 0.7844,
+      "worst_links": [],
+      "per_query": {
+        "id": "global_008",
+        "type": "global",
+        "gold_idx": [
+          101,
+          167
+        ],
+        "retrieved_idx": [
+          91,
+          126,
+          167,
+          115,
+          101
+        ],
+        "R@2": 0.0,
+        "R@5": 1.0,
+        "thought": "Retrieve patents describing decompression of compressed data on a PIM device and wafer-bonded high-bandwidth memory access between memory and logic dies.",
+        "first_step_idx": [
+          91,
+          126,
+          147,
+          167,
+          115
+        ],
+        "second_step_idx": [
+          101,
+          91,
+          126,
+          167,
+          115
+        ]
+      }
+    },
+    {
+      "id": "global_009",
+      "type": "global",
+      "question": "Across the three patents that span GPU CNN optimization, chiplet interconnects, and PIM decompression, what technical layer does each one optimize?",
+      "gold_idx": [
+        2,
+        76,
+        101
+      ],
+      "retrieved_idx": [
+        192,
+        2,
+        184,
+        157,
+        137
+      ],
+      "R@2": 0.3333333333333333,
+      "R@5": 0.3333333333333333,
+      "named_entities": [
+        "gpu",
+        "cnn",
+        "memory efficiency techniques",
+        "interposer",
+        "chiplet communication",
+        "protocol circuitry",
+        "pim",
+        "compressed data decompression"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "gpu",
+          "linked_node": "gpu",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "cnn",
+          "linked_node": "cnn",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "memory efficiency techniques",
+          "linked_node": "memory devices",
+          "score": 0.4415,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "chiplet communication",
+          "linked_node": "chiplet",
+          "score": 0.7001,
+          "token_overlap": 0.5,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "protocol circuitry",
+          "linked_node": "sensing circuitry",
+          "score": 0.6428,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "pim",
+          "linked_node": "pim",
+          "score": 1.0,
+          "token_overlap": 1.0,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "compressed data decompression",
+          "linked_node": "compressed checkpoint",
+          "score": 0.535,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 7,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.143,
+      "avg_link_score": 0.7599,
+      "worst_links": [
+        {
+          "entity": "memory efficiency techniques",
+          "linked_node": "memory devices",
+          "score": 0.4415,
+          "token_overlap": 0.333,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_009",
+        "type": "global",
+        "gold_idx": [
+          2,
+          76,
+          101
+        ],
+        "retrieved_idx": [
+          192,
+          2,
+          184,
+          157,
+          137
+        ],
+        "R@2": 0.3333333333333333,
+        "R@5": 0.3333333333333333,
+        "thought": "Retrieve technical layers for GPU CNN memory-efficiency techniques, interposer chiplet communication protocol circuitry, and PIM compressed-data decompression.",
+        "first_step_idx": [
+          192,
+          137,
+          2,
+          184,
+          41
+        ],
+        "second_step_idx": [
+          157,
+          2,
+          192,
+          199,
+          184
+        ]
+      }
+    },
+    {
+      "id": "global_010",
+      "type": "global",
+      "question": "Across the three memory-performance patents, how do their approaches divide between GPU-side CNN memory efficiency, in-memory decompression, and wafer-bonded high-bandwidth memory access?",
+      "gold_idx": [
+        2,
+        101,
+        167
+      ],
+      "retrieved_idx": [
+        2,
+        155,
+        167,
+        31,
+        137
+      ],
+      "R@2": 0.3333333333333333,
+      "R@5": 0.6666666666666666,
+      "named_entities": [
+        "gpu side cnn",
+        "data layout",
+        "locality optimization",
+        "pim decompression",
+        "wafer bonded high bandwidth memory",
+        "memory to logic access"
+      ],
+      "bad_entities": [],
+      "linked_node_scores": [
+        {
+          "entity": "gpu side cnn",
+          "linked_node": "gpu",
+          "score": 0.5343,
+          "token_overlap": 0.333,
+          "exactish": true,
+          "suspicious": false
+        },
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        },
+        {
+          "entity": "pim decompression",
+          "linked_node": "pim microarchitecture",
+          "score": 0.6444,
+          "token_overlap": 0.5,
+          "exactish": false,
+          "suspicious": false
+        },
+        {
+          "entity": "memory to logic access",
+          "linked_node": "memory access operations",
+          "score": 0.6249,
+          "token_overlap": 0.667,
+          "exactish": false,
+          "suspicious": false
+        }
+      ],
+      "n_links": 4,
+      "n_suspicious_links": 1,
+      "suspicious_ratio": 0.25,
+      "avg_link_score": 0.5731,
+      "worst_links": [
+        {
+          "entity": "data layout",
+          "linked_node": "data stream assembly control",
+          "score": 0.4888,
+          "token_overlap": 0.25,
+          "exactish": false,
+          "suspicious": true
+        }
+      ],
+      "per_query": {
+        "id": "global_010",
+        "type": "global",
+        "gold_idx": [
+          2,
+          101,
+          167
+        ],
+        "retrieved_idx": [
+          2,
+          155,
+          167,
+          31,
+          137
+        ],
+        "R@2": 0.3333333333333333,
+        "R@5": 0.6666666666666666,
+        "thought": "Retrieve evidence separating GPU-side CNN data layout locality optimization, in-memory PIM decompression, and wafer-bonded high-bandwidth memory-to-logic access.",
+        "first_step_idx": [
+          167,
+          2,
+          31,
+          135,
+          122
+        ],
+        "second_step_idx": [
+          155,
+          2,
+          137,
+          101,
+          129
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+cache exists= True
+                                         query                                       question                                                                      triples
+Intel neural network accelerator memory buffer Intel neural network accelerator memory buffer {"named_entities": ["Intel", "neural network accelerator", "memory buffer"]}
+Building Graph:   0%|          | 0/62914 [00:00<?, ?it/s]Building Graph:  99%|█████████▉| 62354/62914 [00:00<00:00, 623488.57it/s]Building Graph: 100%|██████████| 62914/62914 [00:00<00:00, 620749.10it/s]
+2026-06-17 07:29:57,101 - src.hipporag - INFO - Graph built: num vertices: 2936, num_edges: 62896
+
+
+[Jun 17, 07:29:57] #> Note: Output directory data/lm_vectors/colbert/aichip_us/phrase/indexes/nbits_2 already exists
+
+
+[Jun 17, 07:29:57] #> Loading collection...
+0M
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:12: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+[Jun 17, 07:29:58] #> Loading codec...
+[Jun 17, 07:29:58] Loading decompress_residuals_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Jun 17, 07:29:58] Loading packbits_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Jun 17, 07:29:58] #> Loading IVF...
+[Jun 17, 07:29:58] #> Loading doclens...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 5562.74it/s]
+[Jun 17, 07:29:58] #> Loading codes and residuals...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 689.51it/s]
+
+
+[Jun 17, 07:29:59] #> Note: Output directory data/lm_vectors/colbert/aichip_us/corpus/indexes/nbits_2 already exists
+
+
+[Jun 17, 07:29:59] #> Loading collection...
+0M
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:12: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+[Jun 17, 07:29:59] #> Loading codec...
+[Jun 17, 07:29:59] #> Loading IVF...
+[Jun 17, 07:29:59] #> Loading doclens...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 5683.34it/s]
+[Jun 17, 07:29:59] #> Loading codes and residuals...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 671.52it/s]
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+0it [00:00, ?it/s]1it [00:00,  5.36it/s]1it [00:00,  5.35it/s]
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+0it [00:00, ?it/s]1it [00:00, 16.75it/s]
+0it [00:00, ?it/s]1it [00:00, 131.91it/s]
+0it [00:00, ?it/s]1it [00:00, 143.73it/s]
+pagerank chunk:   0%|          | 0/1 [00:00<?, ?it/s]pagerank chunk: 100%|██████████| 1/1 [00:00<00:00, 97.92it/s]
+ranks= [195, 136, 119, 170, 127, 30, 160, 41, 112, 110]
+scores= [0.5409338722677246, 0.5072311545928838, 0.5068297081239592, 0.5, 0.4493369562018621, 0.4483310477683261, 0.4313690701272116, 0.4255762505450916, 0.4144043951536936, 0.4097438613787373]
+logs keys= dict_keys(['named_entities', 'linked_node_scores', '1-hop_graph_for_linked_nodes', 'top_ranked_nodes', 'nodes_in_retrieved_doc'])
+named entities= ['intel', 'neural network accelerator', 'memory buffer']
+linked nodes= [['intel', np.str_('integration process management system users'), 0.25251278281211853], ['neural network accelerator', np.str_('neural network'), 0.5866885185241699], ['memory buffer', np.str_('memory component'), 0.5714243650436401]]

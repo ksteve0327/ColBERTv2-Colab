@@ -1,0 +1,374 @@
+{
+  "qa_path": "hipporag_v1/data/aichip_us_qa_dev.json",
+  "n_queries": 20,
+  "k_values": [
+    2,
+    5
+  ],
+  "sources": {
+    "gtr": "sentence-transformers/gtr-t5-large",
+    "raptor": "https://github.com/parthsarthi03/raptor",
+    "proposition": "https://github.com/chentong0/factoid-wiki"
+  },
+  "methods": {
+    "RAPTOR": {
+      "summary": {
+        "local": {
+          "R@2": 90.0,
+          "R@5": 90.0
+        },
+        "global": {
+          "R@2": 36.7,
+          "R@5": 45.0
+        },
+        "average": {
+          "R@2": 63.3,
+          "R@5": 67.5
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "gold_idx": [
+            2
+          ],
+          "retrieved_idx": [
+            2,
+            41,
+            110,
+            16,
+            29
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "gold_idx": [
+            1
+          ],
+          "retrieved_idx": [
+            1,
+            20,
+            175,
+            189,
+            190
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "gold_idx": [
+            9
+          ],
+          "retrieved_idx": [
+            9,
+            28,
+            162,
+            1,
+            20
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "gold_idx": [
+            76
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            96
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "gold_idx": [
+            77
+          ],
+          "retrieved_idx": [
+            77,
+            87,
+            88,
+            90,
+            94
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "gold_idx": [
+            53
+          ],
+          "retrieved_idx": [
+            53,
+            80,
+            78,
+            141,
+            50
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "gold_idx": [
+            101
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            32
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "gold_idx": [
+            103
+          ],
+          "retrieved_idx": [
+            14,
+            33,
+            42,
+            86,
+            120
+          ],
+          "R@2": 0.0,
+          "R@5": 0.0
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "gold_idx": [
+            167
+          ],
+          "retrieved_idx": [
+            167,
+            102,
+            114,
+            77,
+            87
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "gold_idx": [
+            154
+          ],
+          "retrieved_idx": [
+            154,
+            7,
+            19,
+            21,
+            22
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "gold_idx": [
+            2,
+            1
+          ],
+          "retrieved_idx": [
+            1,
+            20,
+            175,
+            189,
+            190
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "gold_idx": [
+            76,
+            77
+          ],
+          "retrieved_idx": [
+            96,
+            59,
+            62,
+            70,
+            76
+          ],
+          "R@2": 0.0,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "gold_idx": [
+            101,
+            103
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "gold_idx": [
+            167,
+            154
+          ],
+          "retrieved_idx": [
+            0,
+            1,
+            6,
+            10,
+            11
+          ],
+          "R@2": 0.0,
+          "R@5": 0.0
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76
+          ],
+          "retrieved_idx": [
+            2,
+            16,
+            83,
+            128,
+            29
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "gold_idx": [
+            76,
+            167
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            59
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "gold_idx": [
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76,
+            101
+          ],
+          "retrieved_idx": [
+            2,
+            41,
+            110,
+            16,
+            83
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.3333333333333333
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            2,
+            114,
+            167,
+            102,
+            41
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.6666666666666666
+        }
+      ],
+      "meta": {
+        "tree_path": "hipporag_v1/output/aichip_us_raptor_tree.pkl",
+        "units_path": "hipporag_v1/output/aichip_us_raptor_units.json",
+        "n_nodes": 363,
+        "n_leaf_nodes": 200,
+        "n_layers": 3,
+        "raptor_repo": "external/raptor"
+      }
+    }
+  },
+  "skipped": {}
+}

@@ -1,0 +1,6416 @@
+{
+  "components": [
+    "cited_by_count",
+    "family_country_count",
+    "claim_count"
+  ],
+  "normalization": "min_max(log1p(raw_value))",
+  "records": {
+    "0": {
+      "idx": 0,
+      "patent_id": "14-045305",
+      "claim_count": 15,
+      "cited_by_count": 9,
+      "backward_citation_count": 28,
+      "patent_citation_count": 27,
+      "non_patent_citation_count": 1,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.47157044858669794,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.5973278166162466
+      },
+      "value_score": 0.44928
+    },
+    "1": {
+      "idx": 1,
+      "patent_id": "15-143293",
+      "claim_count": 26,
+      "cited_by_count": 65,
+      "backward_citation_count": 34,
+      "patent_citation_count": 7,
+      "non_patent_citation_count": 27,
+      "family_country_count": 2,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "WO(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.8580431499066846,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.7476329177689789
+      },
+      "value_score": 0.682597
+    },
+    "2": {
+      "idx": 2,
+      "patent_id": "15-161080",
+      "claim_count": 4,
+      "cited_by_count": 131,
+      "backward_citation_count": 10,
+      "patent_citation_count": 2,
+      "non_patent_citation_count": 8,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 1.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.2632081408809142
+      },
+      "value_score": 0.51405
+    },
+    "3": {
+      "idx": 3,
+      "patent_id": "15-268007",
+      "claim_count": 18,
+      "cited_by_count": 7,
+      "backward_citation_count": 9,
+      "patent_citation_count": 7,
+      "non_patent_citation_count": 2,
+      "family_country_count": 1,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "US(3)",
+      "value_components": {
+        "cited_by_count": 0.42587055027994597,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.450502
+    },
+    "4": {
+      "idx": 4,
+      "patent_id": "15-341991",
+      "claim_count": 25,
+      "cited_by_count": 15,
+      "backward_citation_count": 11,
+      "patent_citation_count": 7,
+      "non_patent_citation_count": 4,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.5678274003732613,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7367918591190858
+      },
+      "value_score": 0.527854
+    },
+    "5": {
+      "idx": 5,
+      "patent_id": "15-476769",
+      "claim_count": 18,
+      "cited_by_count": 16,
+      "backward_citation_count": 10,
+      "patent_citation_count": 4,
+      "non_patent_citation_count": 6,
+      "family_country_count": 11,
+      "family_doc_count": 27,
+      "family_countries": [
+        {
+          "country": "NO",
+          "count": 1
+        },
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "HK",
+          "count": 1
+        },
+        {
+          "country": "TW",
+          "count": 7
+        },
+        {
+          "country": "FI",
+          "count": 3
+        },
+        {
+          "country": "DK",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "GB",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "NO(1), DE(1), HK(1), TW(7), FI(3), DK(2), WO(1), GB(2), EP(2), CN(2), US(5)",
+      "value_components": {
+        "cited_by_count": 0.5802433498173712,
+        "family_country_count": 1.0,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.742312
+    },
+    "6": {
+      "idx": 6,
+      "patent_id": "15-933225",
+      "claim_count": 18,
+      "cited_by_count": 26,
+      "backward_citation_count": 37,
+      "patent_citation_count": 22,
+      "non_patent_citation_count": 15,
+      "family_country_count": 5,
+      "family_doc_count": 20,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 5
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 3
+        },
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 8
+        }
+      ],
+      "family_countries_raw": "JP(5), WO(1), EP(3), CN(3), US(8)",
+      "value_components": {
+        "cited_by_count": 0.6749888523551981,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.680913
+    },
+    "7": {
+      "idx": 7,
+      "patent_id": "16-008949",
+      "claim_count": 24,
+      "cited_by_count": 15,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 6,
+      "family_doc_count": 11,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "GB",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "DE(1), JP(2), WO(1), CN(2), GB(3), US(2)",
+      "value_components": {
+        "cited_by_count": 0.5678274003732613,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.7255255539672439
+      },
+      "value_score": 0.692148
+    },
+    "8": {
+      "idx": 8,
+      "patent_id": "16-064427",
+      "claim_count": 17,
+      "cited_by_count": 17,
+      "backward_citation_count": 8,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 5,
+      "family_country_count": 4,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "FR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "WO(1), EP(2), FR(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.591949418330114,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.623599
+    },
+    "9": {
+      "idx": 9,
+      "patent_id": "16-088035",
+      "claim_count": 42,
+      "cited_by_count": 62,
+      "backward_citation_count": 113,
+      "patent_citation_count": 72,
+      "non_patent_citation_count": 41,
+      "family_country_count": 7,
+      "family_doc_count": 102,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 15
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 12
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "EP",
+          "count": 14
+        },
+        {
+          "country": "US",
+          "count": 40
+        },
+        {
+          "country": "CA",
+          "count": 15
+        }
+      ],
+      "family_countries_raw": "JP(15), KR(2), WO(12), CN(4), EP(14), US(40), CA(15)",
+      "value_components": {
+        "cited_by_count": 0.848515830066061,
+        "family_country_count": 0.8368288369533894,
+        "claim_count": 0.8813103538972169
+      },
+      "value_score": 0.855552
+    },
+    "10": {
+      "idx": 10,
+      "patent_id": "16-124138",
+      "claim_count": 17,
+      "cited_by_count": 3,
+      "backward_citation_count": 22,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 14,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.398006
+    },
+    "11": {
+      "idx": 11,
+      "patent_id": "16-161867",
+      "claim_count": 21,
+      "cited_by_count": 6,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.39852326182926223,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.455424
+    },
+    "12": {
+      "idx": 12,
+      "patent_id": "16-164964",
+      "claim_count": 17,
+      "cited_by_count": 8,
+      "backward_citation_count": 3,
+      "patent_citation_count": 1,
+      "non_patent_citation_count": 2,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.4499925682367988,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.453366
+    },
+    "13": {
+      "idx": 13,
+      "patent_id": "16-212161",
+      "claim_count": 20,
+      "cited_by_count": 13,
+      "backward_citation_count": 65,
+      "patent_citation_count": 39,
+      "non_patent_citation_count": 26,
+      "family_country_count": 2,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "WO(4), US(4)",
+      "value_components": {
+        "cited_by_count": 0.5404801119225775,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.552679
+    },
+    "14": {
+      "idx": 14,
+      "patent_id": "16-330906",
+      "claim_count": 9,
+      "cited_by_count": 0,
+      "backward_citation_count": 18,
+      "patent_citation_count": 12,
+      "non_patent_citation_count": 6,
+      "family_country_count": 6,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "DE(1), JP(2), KR(2), WO(1), CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.4623174130863298
+      },
+      "value_score": 0.415136
+    },
+    "15": {
+      "idx": 15,
+      "patent_id": "16-451586",
+      "claim_count": 20,
+      "cited_by_count": 3,
+      "backward_citation_count": 14,
+      "patent_citation_count": 10,
+      "non_patent_citation_count": 4,
+      "family_country_count": 2,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "KR(2), US(3)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.467157
+    },
+    "16": {
+      "idx": 16,
+      "patent_id": "16-566991",
+      "claim_count": 18,
+      "cited_by_count": 3,
+      "backward_citation_count": 33,
+      "patent_citation_count": 12,
+      "non_patent_citation_count": 21,
+      "family_country_count": 2,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "EP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.457573
+    },
+    "17": {
+      "idx": 17,
+      "patent_id": "16-583201",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 2,
+      "patent_citation_count": 2,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "18": {
+      "idx": 18,
+      "patent_id": "16-785708",
+      "claim_count": 18,
+      "cited_by_count": 1,
+      "backward_citation_count": 16,
+      "patent_citation_count": 10,
+      "non_patent_citation_count": 6,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.355864
+    },
+    "19": {
+      "idx": 19,
+      "patent_id": "16-854564",
+      "claim_count": 18,
+      "cited_by_count": 1,
+      "backward_citation_count": 21,
+      "patent_citation_count": 7,
+      "non_patent_citation_count": 14,
+      "family_country_count": 8,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "AU",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 4
+        },
+        {
+          "country": "CA",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "AU(1), JP(1), KR(1), WO(1), CN(1), EP(1), US(4), CA(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.8842282173954806,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.557626
+    },
+    "20": {
+      "idx": 20,
+      "patent_id": "16-879766",
+      "claim_count": 20,
+      "cited_by_count": 19,
+      "backward_citation_count": 430,
+      "patent_citation_count": 411,
+      "non_patent_citation_count": 19,
+      "family_country_count": 5,
+      "family_doc_count": 61,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 10
+        },
+        {
+          "country": "WO",
+          "count": 5
+        },
+        {
+          "country": "EP",
+          "count": 10
+        },
+        {
+          "country": "CN",
+          "count": 9
+        },
+        {
+          "country": "US",
+          "count": 27
+        }
+      ],
+      "family_countries_raw": "JP(10), WO(5), EP(10), CN(9), US(27)",
+      "value_components": {
+        "cited_by_count": 0.6135272986800132,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.670009
+    },
+    "21": {
+      "idx": 21,
+      "patent_id": "16-886103",
+      "claim_count": 25,
+      "cited_by_count": 3,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "US(4)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7367918591190858
+      },
+      "value_score": 0.433216
+    },
+    "22": {
+      "idx": 22,
+      "patent_id": "16-900584",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 25,
+      "patent_citation_count": 22,
+      "non_patent_citation_count": 3,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "23": {
+      "idx": 23,
+      "patent_id": "16-940293",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 5,
+      "patent_citation_count": 2,
+      "non_patent_citation_count": 3,
+      "family_country_count": 5,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "IN(1), WO(1), EP(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.4655
+    },
+    "24": {
+      "idx": 24,
+      "patent_id": "17-007790",
+      "claim_count": 20,
+      "cited_by_count": 2,
+      "backward_citation_count": 21,
+      "patent_citation_count": 17,
+      "non_patent_citation_count": 4,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "DE(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.486108
+    },
+    "25": {
+      "idx": 25,
+      "patent_id": "17-102804",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "26": {
+      "idx": 26,
+      "patent_id": "17-134814",
+      "claim_count": 25,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7367918591190858
+      },
+      "value_score": 0.338578
+    },
+    "27": {
+      "idx": 27,
+      "patent_id": "17-148676",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "28": {
+      "idx": 28,
+      "patent_id": "17-149043",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.365447
+    },
+    "29": {
+      "idx": 29,
+      "patent_id": "17-482176",
+      "claim_count": 30,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 5,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "IN(1), WO(1), CN(1), EP(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.7873171495184701
+      },
+      "value_score": 0.502791
+    },
+    "30": {
+      "idx": 30,
+      "patent_id": "17-494422",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "DE(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "31": {
+      "idx": 31,
+      "patent_id": "17-503770",
+      "claim_count": 52,
+      "cited_by_count": 0,
+      "backward_citation_count": 7,
+      "patent_citation_count": 7,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "TW(1), KR(1), CN(1), US(4)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.9413728007531761
+      },
+      "value_score": 0.529686
+    },
+    "32": {
+      "idx": 32,
+      "patent_id": "17-558284",
+      "claim_count": 39,
+      "cited_by_count": 2,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 8,
+      "family_doc_count": 23,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 3
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "NL",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 9
+        }
+      ],
+      "family_countries_raw": "DE(1), TW(1), IN(1), WO(3), EP(2), CN(4), NL(2), US(9)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.8842282173954806,
+        "claim_count": 0.8605359574971608
+      },
+      "value_score": 0.656587
+    },
+    "33": {
+      "idx": 33,
+      "patent_id": "17-655348",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 7
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "KR(7), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "34": {
+      "idx": 34,
+      "patent_id": "17-665370",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "DE(1), CN(2), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "35": {
+      "idx": 35,
+      "patent_id": "17-857731",
+      "claim_count": 16,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "IN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6147424792826195
+      },
+      "value_score": 0.352286
+    },
+    "36": {
+      "idx": 36,
+      "patent_id": "17-870053",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "TW(2), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "37": {
+      "idx": 37,
+      "patent_id": "17-872801",
+      "claim_count": 40,
+      "cited_by_count": 9,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "MX",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "MX(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.47157044858669794,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.8676290082367563
+      },
+      "value_score": 0.593771
+    },
+    "38": {
+      "idx": 38,
+      "patent_id": "17-978377",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "39": {
+      "idx": 39,
+      "patent_id": "18-032322",
+      "claim_count": 31,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 6,
+      "family_doc_count": 207,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 8
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "CA",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 189
+        }
+      ],
+      "family_countries_raw": "JP(2), WO(2), EP(8), CN(2), CA(4), US(189)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.7964370888216622
+      },
+      "value_score": 0.573829
+    },
+    "40": {
+      "idx": 40,
+      "patent_id": "18-246479",
+      "claim_count": 31,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "GB",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(2), EP(1), GB(3), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.7964370888216622
+      },
+      "value_score": 0.481374
+    },
+    "41": {
+      "idx": 41,
+      "patent_id": "18-389336",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 9,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(3), US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "42": {
+      "idx": 42,
+      "patent_id": "18-433384",
+      "claim_count": 21,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.322583
+    },
+    "43": {
+      "idx": 43,
+      "patent_id": "18-434823",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "44": {
+      "idx": 44,
+      "patent_id": "18-460053",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "45": {
+      "idx": 45,
+      "patent_id": "18-497453",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "46": {
+      "idx": 46,
+      "patent_id": "18-714933",
+      "claim_count": 24,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.7255255539672439
+      },
+      "value_score": 0.427804
+    },
+    "47": {
+      "idx": 47,
+      "patent_id": "18-724126",
+      "claim_count": 21,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(2), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.415564
+    },
+    "48": {
+      "idx": 48,
+      "patent_id": "18-805370",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "WO(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "49": {
+      "idx": 49,
+      "patent_id": "18-814438",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "WO(1), EP(1), US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "50": {
+      "idx": 50,
+      "patent_id": "13-026635",
+      "claim_count": 17,
+      "cited_by_count": 9,
+      "backward_citation_count": 4,
+      "patent_citation_count": 4,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "JP(1), US(4)",
+      "value_components": {
+        "cited_by_count": 0.47157044858669794,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.514949
+    },
+    "51": {
+      "idx": 51,
+      "patent_id": "13-156702",
+      "claim_count": 20,
+      "cited_by_count": 36,
+      "backward_citation_count": 26,
+      "patent_citation_count": 26,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.7395175904927058,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.619025
+    },
+    "52": {
+      "idx": 52,
+      "patent_id": "13-218335",
+      "claim_count": 21,
+      "cited_by_count": 4,
+      "backward_citation_count": 49,
+      "patent_citation_count": 39,
+      "non_patent_citation_count": 10,
+      "family_country_count": 3,
+      "family_doc_count": 31,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 7
+        },
+        {
+          "country": "EP",
+          "count": 6
+        },
+        {
+          "country": "US",
+          "count": 18
+        }
+      ],
+      "family_countries_raw": "WO(7), EP(6), US(18)",
+      "value_components": {
+        "cited_by_count": 0.32961359849338256,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.525435
+    },
+    "53": {
+      "idx": 53,
+      "patent_id": "13-418915",
+      "claim_count": 26,
+      "cited_by_count": 54,
+      "backward_citation_count": 51,
+      "patent_citation_count": 46,
+      "non_patent_citation_count": 5,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.8207036141883526,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.7476329177689789
+      },
+      "value_score": 0.67015
+    },
+    "54": {
+      "idx": 54,
+      "patent_id": "13-438731",
+      "claim_count": 19,
+      "cited_by_count": 6,
+      "backward_citation_count": 11,
+      "patent_citation_count": 10,
+      "non_patent_citation_count": 1,
+      "family_country_count": 4,
+      "family_doc_count": 16,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 4
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "TW(4), JP(2), CN(4), US(6)",
+      "value_components": {
+        "cited_by_count": 0.39852326182926223,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.569212
+    },
+    "55": {
+      "idx": 55,
+      "patent_id": "13-486948",
+      "claim_count": 29,
+      "cited_by_count": 1,
+      "backward_citation_count": 157,
+      "patent_citation_count": 129,
+      "non_patent_citation_count": 28,
+      "family_country_count": 6,
+      "family_doc_count": 37,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 4
+        },
+        {
+          "country": "GB",
+          "count": 4
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 22
+        }
+      ],
+      "family_countries_raw": "DE(2), JP(1), KR(4), GB(4), CN(4), US(22)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.7778981430777946
+      },
+      "value_score": 0.567649
+    },
+    "56": {
+      "idx": 56,
+      "patent_id": "13-717038",
+      "claim_count": 6,
+      "cited_by_count": 25,
+      "backward_citation_count": 23,
+      "patent_citation_count": 21,
+      "non_patent_citation_count": 2,
+      "family_country_count": 4,
+      "family_doc_count": 11,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "JP(2), WO(1), CN(2), US(6)",
+      "value_components": {
+        "cited_by_count": 0.6672596164408204,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.3598611231477651
+      },
+      "value_score": 0.558269
+    },
+    "57": {
+      "idx": 57,
+      "patent_id": "14-469920",
+      "claim_count": 18,
+      "cited_by_count": 7,
+      "backward_citation_count": 28,
+      "patent_citation_count": 24,
+      "non_patent_citation_count": 4,
+      "family_country_count": 5,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "TW(2), JP(2), KR(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.42587055027994597,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.597873
+    },
+    "58": {
+      "idx": 58,
+      "patent_id": "14-476644",
+      "claim_count": 16,
+      "cited_by_count": 6,
+      "backward_citation_count": 22,
+      "patent_citation_count": 18,
+      "non_patent_citation_count": 4,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.39852326182926223,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6147424792826195
+      },
+      "value_score": 0.430736
+    },
+    "59": {
+      "idx": 59,
+      "patent_id": "14-588715",
+      "claim_count": 20,
+      "cited_by_count": 43,
+      "backward_citation_count": 3,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "US(6)",
+      "value_components": {
+        "cited_by_count": 0.7750037158816007,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.576463
+    },
+    "60": {
+      "idx": 60,
+      "patent_id": "14-822166",
+      "claim_count": 7,
+      "cited_by_count": 10,
+      "backward_citation_count": 12,
+      "patent_citation_count": 12,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 13,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 9
+        }
+      ],
+      "family_countries_raw": "TW(1), JP(2), CN(1), US(9)",
+      "value_components": {
+        "cited_by_count": 0.4910900156949701,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.398218544410831
+      },
+      "value_score": 0.512331
+    },
+    "61": {
+      "idx": 61,
+      "patent_id": "14-995597",
+      "claim_count": 19,
+      "cited_by_count": 0,
+      "backward_citation_count": 29,
+      "patent_citation_count": 26,
+      "non_patent_citation_count": 3,
+      "family_country_count": 3,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "JP(2), CN(4), US(6)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.406438
+    },
+    "62": {
+      "idx": 62,
+      "patent_id": "15-078071",
+      "claim_count": 20,
+      "cited_by_count": 10,
+      "backward_citation_count": 13,
+      "patent_citation_count": 13,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.4910900156949701,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.536215
+    },
+    "63": {
+      "idx": 63,
+      "patent_id": "15-187106",
+      "claim_count": 33,
+      "cited_by_count": 15,
+      "backward_citation_count": 291,
+      "patent_citation_count": 220,
+      "non_patent_citation_count": 71,
+      "family_country_count": 5,
+      "family_doc_count": 52,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 6
+        },
+        {
+          "country": "JP",
+          "count": 16
+        },
+        {
+          "country": "KR",
+          "count": 9
+        },
+        {
+          "country": "CN",
+          "count": 5
+        },
+        {
+          "country": "US",
+          "count": 16
+        }
+      ],
+      "family_countries_raw": "TW(6), JP(16), KR(9), CN(5), US(16)",
+      "value_components": {
+        "cited_by_count": 0.5678274003732613,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.8138517514880351
+      },
+      "value_score": 0.700912
+    },
+    "64": {
+      "idx": 64,
+      "patent_id": "15-189060",
+      "claim_count": 18,
+      "cited_by_count": 0,
+      "backward_citation_count": 3,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "DE(2), CN(4), US(4)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.401526
+    },
+    "65": {
+      "idx": 65,
+      "patent_id": "15-221091",
+      "claim_count": 4,
+      "cited_by_count": 0,
+      "backward_citation_count": 94,
+      "patent_citation_count": 82,
+      "non_patent_citation_count": 12,
+      "family_country_count": 1,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 10
+        }
+      ],
+      "family_countries_raw": "US(10)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.2632081408809142
+      },
+      "value_score": 0.180717
+    },
+    "66": {
+      "idx": 66,
+      "patent_id": "15-369409",
+      "claim_count": 20,
+      "cited_by_count": 4,
+      "backward_citation_count": 26,
+      "patent_citation_count": 26,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "CN(2), US(4)",
+      "value_components": {
+        "cited_by_count": 0.32961359849338256,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.48239
+    },
+    "67": {
+      "idx": 67,
+      "patent_id": "15-495962",
+      "claim_count": 20,
+      "cited_by_count": 8,
+      "backward_citation_count": 17,
+      "patent_citation_count": 17,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "TW(2), CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.4499925682367988,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.561107
+    },
+    "68": {
+      "idx": 68,
+      "patent_id": "15-573200",
+      "claim_count": 10,
+      "cited_by_count": 4,
+      "backward_citation_count": 13,
+      "patent_citation_count": 13,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(2), WO(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.32961359849338256,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.4896956396258594
+      },
+      "value_score": 0.459065
+    },
+    "69": {
+      "idx": 69,
+      "patent_id": "15-594717",
+      "claim_count": 5,
+      "cited_by_count": 3,
+      "backward_citation_count": 15,
+      "patent_citation_count": 14,
+      "non_patent_citation_count": 1,
+      "family_country_count": 3,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "DE(1), JP(2), US(4)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.3155807299914648
+      },
+      "value_score": 0.385793
+    },
+    "70": {
+      "idx": 70,
+      "patent_id": "15-681776",
+      "claim_count": 20,
+      "cited_by_count": 45,
+      "backward_citation_count": 28,
+      "patent_citation_count": 24,
+      "non_patent_citation_count": 4,
+      "family_country_count": 3,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "TW(2), CN(2), US(4)",
+      "value_components": {
+        "cited_by_count": 0.784107456577125,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.672478
+    },
+    "71": {
+      "idx": 71,
+      "patent_id": "15-738437",
+      "claim_count": 12,
+      "cited_by_count": 0,
+      "backward_citation_count": 18,
+      "patent_citation_count": 17,
+      "non_patent_citation_count": 1,
+      "family_country_count": 6,
+      "family_doc_count": 11,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(2), KR(2), WO(1), EP(2), CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.5376825869136703
+      },
+      "value_score": 0.440258
+    },
+    "72": {
+      "idx": 72,
+      "patent_id": "15-899911",
+      "claim_count": 19,
+      "cited_by_count": 2,
+      "backward_citation_count": 115,
+      "patent_citation_count": 106,
+      "non_patent_citation_count": 9,
+      "family_country_count": 4,
+      "family_doc_count": 32,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 6
+        },
+        {
+          "country": "WO",
+          "count": 3
+        },
+        {
+          "country": "CN",
+          "count": 6
+        },
+        {
+          "country": "US",
+          "count": 17
+        }
+      ],
+      "family_countries_raw": "TW(6), WO(3), CN(6), US(17)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.511369
+    },
+    "73": {
+      "idx": 73,
+      "patent_id": "15-931043",
+      "claim_count": 20,
+      "cited_by_count": 3,
+      "backward_citation_count": 25,
+      "patent_citation_count": 25,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.467157
+    },
+    "74": {
+      "idx": 74,
+      "patent_id": "16-227270",
+      "claim_count": 18,
+      "cited_by_count": 0,
+      "backward_citation_count": 64,
+      "patent_citation_count": 58,
+      "non_patent_citation_count": 6,
+      "family_country_count": 4,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 3
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "DE(2), JP(3), WO(1), US(4)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.431459
+    },
+    "75": {
+      "idx": 75,
+      "patent_id": "16-243146",
+      "claim_count": 18,
+      "cited_by_count": 0,
+      "backward_citation_count": 12,
+      "patent_citation_count": 12,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.362936
+    },
+    "76": {
+      "idx": 76,
+      "patent_id": "16-266033",
+      "claim_count": 20,
+      "cited_by_count": 103,
+      "backward_citation_count": 3,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "US(4)",
+      "value_components": {
+        "cited_by_count": 0.9511733166274511,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.635186
+    },
+    "77": {
+      "idx": 77,
+      "patent_id": "16-357265",
+      "claim_count": 22,
+      "cited_by_count": 79,
+      "backward_citation_count": 76,
+      "patent_citation_count": 58,
+      "non_patent_citation_count": 18,
+      "family_country_count": 6,
+      "family_doc_count": 28,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "TW",
+          "count": 11
+        },
+        {
+          "country": "JP",
+          "count": 3
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 10
+        }
+      ],
+      "family_countries_raw": "DE(1), TW(11), JP(3), KR(2), WO(1), US(10)",
+      "value_components": {
+        "cited_by_count": 0.8974409988666439,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.7015738566412022
+      },
+      "value_score": 0.794036
+    },
+    "78": {
+      "idx": 78,
+      "patent_id": "16-389276",
+      "claim_count": 13,
+      "cited_by_count": 5,
+      "backward_citation_count": 6,
+      "patent_citation_count": 6,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(2), CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.3669531342117147,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.5589703953531806
+      },
+      "value_score": 0.494603
+    },
+    "79": {
+      "idx": 79,
+      "patent_id": "16-410279",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 21,
+      "patent_citation_count": 15,
+      "non_patent_citation_count": 6,
+      "family_country_count": 1,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 8
+        }
+      ],
+      "family_countries_raw": "US(8)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.365447
+    },
+    "80": {
+      "idx": 80,
+      "patent_id": "16-905612",
+      "claim_count": 14,
+      "cited_by_count": 0,
+      "backward_citation_count": 2,
+      "patent_citation_count": 2,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "DE(2), JP(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.578788870872379
+      },
+      "value_score": 0.378892
+    },
+    "81": {
+      "idx": 81,
+      "patent_id": "16-948406",
+      "claim_count": 31,
+      "cited_by_count": 0,
+      "backward_citation_count": 113,
+      "patent_citation_count": 100,
+      "non_patent_citation_count": 13,
+      "family_country_count": 7,
+      "family_doc_count": 22,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 4
+        },
+        {
+          "country": "SG",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 8
+        }
+      ],
+      "family_countries_raw": "TW(4), SG(2), JP(2), WO(1), CN(3), EP(2), US(8)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.8368288369533894,
+        "claim_count": 0.7964370888216622
+      },
+      "value_score": 0.544422
+    },
+    "82": {
+      "idx": 82,
+      "patent_id": "17-407224",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 6,
+      "patent_citation_count": 6,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "TW(1), CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "83": {
+      "idx": 83,
+      "patent_id": "17-511417",
+      "claim_count": 23,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 7
+        }
+      ],
+      "family_countries_raw": "WO(2), CN(2), EP(1), US(7)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.713799274402296
+      },
+      "value_score": 0.501147
+    },
+    "84": {
+      "idx": 84,
+      "patent_id": "17-648163",
+      "claim_count": 18,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(2), EP(2), US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.478778
+    },
+    "85": {
+      "idx": 85,
+      "patent_id": "17-840995",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "86": {
+      "idx": 86,
+      "patent_id": "17-949817",
+      "claim_count": 22,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7015738566412022
+      },
+      "value_score": 0.326839
+    },
+    "87": {
+      "idx": 87,
+      "patent_id": "17-994374",
+      "claim_count": 32,
+      "cited_by_count": 0,
+      "backward_citation_count": 78,
+      "patent_citation_count": 75,
+      "non_patent_citation_count": 3,
+      "family_country_count": 4,
+      "family_doc_count": 204,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 5
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 87
+        },
+        {
+          "country": "US",
+          "count": 110
+        }
+      ],
+      "family_countries_raw": "WO(5), EP(2), CN(87), US(110)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.8052763696173242
+      },
+      "value_score": 0.484321
+    },
+    "88": {
+      "idx": 88,
+      "patent_id": "18-047146",
+      "claim_count": 24,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.7255255539672439
+      },
+      "value_score": 0.389213
+    },
+    "89": {
+      "idx": 89,
+      "patent_id": "18-090471",
+      "claim_count": 25,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 7,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "IL",
+          "count": 1
+        },
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "IL(1), TW(1), JP(1), KR(1), WO(1), EP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.8368288369533894,
+        "claim_count": 0.7367918591190858
+      },
+      "value_score": 0.52454
+    },
+    "90": {
+      "idx": 90,
+      "patent_id": "18-115891",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.419838
+    },
+    "91": {
+      "idx": 91,
+      "patent_id": "18-195905",
+      "claim_count": 8,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "TW(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.43205218777751414
+      },
+      "value_score": 0.291389
+    },
+    "92": {
+      "idx": 92,
+      "patent_id": "18-292860",
+      "claim_count": 15,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 8,
+      "family_doc_count": 11,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "AU",
+          "count": 3
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "TW(1), AU(3), JP(1), KR(1), WO(1), EP(2), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.8842282173954806,
+        "claim_count": 0.5973278166162466
+      },
+      "value_score": 0.493852
+    },
+    "93": {
+      "idx": 93,
+      "patent_id": "18-360734",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 3,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "TW(1), CN(1), US(6)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "94": {
+      "idx": 94,
+      "patent_id": "18-362192",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "TW(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "95": {
+      "idx": 95,
+      "patent_id": "18-366788",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "TW(1), CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "96": {
+      "idx": 96,
+      "patent_id": "18-437236",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "JP(1), KR(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.441042
+    },
+    "97": {
+      "idx": 97,
+      "patent_id": "18-447263",
+      "claim_count": 18,
+      "cited_by_count": 0,
+      "backward_citation_count": 8,
+      "patent_citation_count": 6,
+      "non_patent_citation_count": 2,
+      "family_country_count": 3,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "JP(1), KR(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.401526
+    },
+    "98": {
+      "idx": 98,
+      "patent_id": "18-551263",
+      "claim_count": 10,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "JP(1), WO(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.4896956396258594
+      },
+      "value_score": 0.379127
+    },
+    "99": {
+      "idx": 99,
+      "patent_id": "18-963643",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "JP(1), KR(1), CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.441042
+    },
+    "100": {
+      "idx": 100,
+      "patent_id": "13-158002",
+      "claim_count": 20,
+      "cited_by_count": 10,
+      "backward_citation_count": 4,
+      "patent_citation_count": 4,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 12
+        }
+      ],
+      "family_countries_raw": "US(12)",
+      "value_components": {
+        "cited_by_count": 0.4910900156949701,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.481825
+    },
+    "101": {
+      "idx": 101,
+      "patent_id": "15-072147",
+      "claim_count": 42,
+      "cited_by_count": 65,
+      "backward_citation_count": 348,
+      "patent_citation_count": 328,
+      "non_patent_citation_count": 20,
+      "family_country_count": 5,
+      "family_doc_count": 11,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "TW(2), WO(1), EP(1), CN(2), US(5)",
+      "value_components": {
+        "cited_by_count": 0.8580431499066846,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.8813103538972169
+      },
+      "value_score": 0.820137
+    },
+    "102": {
+      "idx": 102,
+      "patent_id": "15-282966",
+      "claim_count": 20,
+      "cited_by_count": 8,
+      "backward_citation_count": 39,
+      "patent_citation_count": 29,
+      "non_patent_citation_count": 10,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.4499925682367988,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.468126
+    },
+    "103": {
+      "idx": 103,
+      "patent_id": "15-366035",
+      "claim_count": 31,
+      "cited_by_count": 41,
+      "backward_citation_count": 83,
+      "patent_citation_count": 39,
+      "non_patent_citation_count": 44,
+      "family_country_count": 5,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(2), KR(2), CN(2), EP(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.765476396040977,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.7964370888216622
+      },
+      "value_score": 0.76099
+    },
+    "104": {
+      "idx": 104,
+      "patent_id": "15-729196",
+      "claim_count": 17,
+      "cited_by_count": 29,
+      "backward_citation_count": 5,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 2,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.6965667327050973,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.535557
+    },
+    "105": {
+      "idx": 105,
+      "patent_id": "15-981270",
+      "claim_count": 20,
+      "cited_by_count": 20,
+      "backward_citation_count": 83,
+      "patent_citation_count": 42,
+      "non_patent_citation_count": 41,
+      "family_country_count": 6,
+      "family_doc_count": 147,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 14
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 58
+        },
+        {
+          "country": "EP",
+          "count": 17
+        },
+        {
+          "country": "US",
+          "count": 54
+        }
+      ],
+      "family_countries_raw": "TW(14), JP(2), KR(2), CN(58), EP(17), US(54)",
+      "value_components": {
+        "cited_by_count": 0.6235195459476617,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.694018
+    },
+    "106": {
+      "idx": 106,
+      "patent_id": "15-987072",
+      "claim_count": 4,
+      "cited_by_count": 7,
+      "backward_citation_count": 6,
+      "patent_citation_count": 6,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.42587055027994597,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.2632081408809142
+      },
+      "value_score": 0.377064
+    },
+    "107": {
+      "idx": 107,
+      "patent_id": "16-004864",
+      "claim_count": 19,
+      "cited_by_count": 4,
+      "backward_citation_count": 357,
+      "patent_citation_count": 336,
+      "non_patent_citation_count": 21,
+      "family_country_count": 6,
+      "family_doc_count": 24,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "IL",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 13
+        }
+      ],
+      "family_countries_raw": "TW(2), IL(2), WO(1), EP(2), CN(4), US(13)",
+      "value_components": {
+        "cited_by_count": 0.32961359849338256,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.591377
+    },
+    "108": {
+      "idx": 108,
+      "patent_id": "16-219610",
+      "claim_count": 18,
+      "cited_by_count": 1,
+      "backward_citation_count": 16,
+      "patent_citation_count": 15,
+      "non_patent_citation_count": 1,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.355864
+    },
+    "109": {
+      "idx": 109,
+      "patent_id": "16-224498",
+      "claim_count": 19,
+      "cited_by_count": 0,
+      "backward_citation_count": 328,
+      "patent_citation_count": 304,
+      "non_patent_citation_count": 24,
+      "family_country_count": 5,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "TW(2), WO(1), EP(1), CN(2), US(6)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.460828
+    },
+    "110": {
+      "idx": 110,
+      "patent_id": "16-272997",
+      "claim_count": 21,
+      "cited_by_count": 1,
+      "backward_citation_count": 10,
+      "patent_citation_count": 9,
+      "non_patent_citation_count": 1,
+      "family_country_count": 3,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(1), US(5)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.462883
+    },
+    "111": {
+      "idx": 111,
+      "patent_id": "16-368688",
+      "claim_count": 20,
+      "cited_by_count": 39,
+      "backward_citation_count": 18,
+      "patent_citation_count": 14,
+      "non_patent_citation_count": 4,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "EP(1), CN(1), US(4)",
+      "value_components": {
+        "cited_by_count": 0.7554841487733286,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.662937
+    },
+    "112": {
+      "idx": 112,
+      "patent_id": "16-405178",
+      "claim_count": 20,
+      "cited_by_count": 33,
+      "backward_citation_count": 62,
+      "patent_citation_count": 33,
+      "non_patent_citation_count": 29,
+      "family_country_count": 3,
+      "family_doc_count": 20,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 5
+        },
+        {
+          "country": "CN",
+          "count": 6
+        },
+        {
+          "country": "US",
+          "count": 9
+        }
+      ],
+      "family_countries_raw": "DE(5), CN(6), US(9)",
+      "value_components": {
+        "cited_by_count": 0.7222001999106866,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.651843
+    },
+    "113": {
+      "idx": 113,
+      "patent_id": "16-414143",
+      "claim_count": 20,
+      "cited_by_count": 41,
+      "backward_citation_count": 64,
+      "patent_citation_count": 34,
+      "non_patent_citation_count": 30,
+      "family_country_count": 3,
+      "family_doc_count": 20,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 5
+        },
+        {
+          "country": "CN",
+          "count": 6
+        },
+        {
+          "country": "US",
+          "count": 9
+        }
+      ],
+      "family_countries_raw": "DE(5), CN(6), US(9)",
+      "value_components": {
+        "cited_by_count": 0.765476396040977,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.666268
+    },
+    "114": {
+      "idx": 114,
+      "patent_id": "16-833043",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 10,
+      "patent_citation_count": 9,
+      "non_patent_citation_count": 1,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.365447
+    },
+    "115": {
+      "idx": 115,
+      "patent_id": "16-833864",
+      "claim_count": 18,
+      "cited_by_count": 12,
+      "backward_citation_count": 13,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 5,
+      "family_country_count": 4,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "KR(1), CN(1), EP(2), US(4)",
+      "value_components": {
+        "cited_by_count": 0.5253027663475051,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.60656
+    },
+    "116": {
+      "idx": 116,
+      "patent_id": "16-847872",
+      "claim_count": 16,
+      "cited_by_count": 3,
+      "backward_citation_count": 19,
+      "patent_citation_count": 16,
+      "non_patent_citation_count": 3,
+      "family_country_count": 2,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6147424792826195
+      },
+      "value_score": 0.446923
+    },
+    "117": {
+      "idx": 117,
+      "patent_id": "16-984801",
+      "claim_count": 28,
+      "cited_by_count": 0,
+      "backward_citation_count": 17,
+      "patent_citation_count": 17,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.7681597881221757
+      },
+      "value_score": 0.442015
+    },
+    "118": {
+      "idx": 118,
+      "patent_id": "17-002341",
+      "claim_count": 20,
+      "cited_by_count": 6,
+      "backward_citation_count": 23,
+      "patent_citation_count": 23,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 25,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 20
+        }
+      ],
+      "family_countries_raw": "TW(2), KR(1), CN(2), US(20)",
+      "value_components": {
+        "cited_by_count": 0.39852326182926223,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.573884
+    },
+    "119": {
+      "idx": 119,
+      "patent_id": "17-039559",
+      "claim_count": 20,
+      "cited_by_count": 2,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 6,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "GB",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "DE(1), JP(1), WO(1), CN(1), GB(2), US(1)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.561177
+    },
+    "120": {
+      "idx": 120,
+      "patent_id": "17-049197",
+      "claim_count": 10,
+      "cited_by_count": 0,
+      "backward_citation_count": 16,
+      "patent_citation_count": 13,
+      "non_patent_citation_count": 3,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "JP(2), WO(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.4896956396258594
+      },
+      "value_score": 0.349194
+    },
+    "121": {
+      "idx": 121,
+      "patent_id": "17-090462",
+      "claim_count": 64,
+      "cited_by_count": 0,
+      "backward_citation_count": 41,
+      "patent_citation_count": 40,
+      "non_patent_citation_count": 1,
+      "family_country_count": 4,
+      "family_doc_count": 121,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 6
+        },
+        {
+          "country": "KR",
+          "count": 4
+        },
+        {
+          "country": "CN",
+          "count": 10
+        },
+        {
+          "country": "US",
+          "count": 101
+        }
+      ],
+      "family_countries_raw": "TW(6), KR(4), CN(10), US(101)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 1.0
+      },
+      "value_score": 0.549228
+    },
+    "122": {
+      "idx": 122,
+      "patent_id": "17-093538",
+      "claim_count": 20,
+      "cited_by_count": 2,
+      "backward_citation_count": 1,
+      "patent_citation_count": 1,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.486108
+    },
+    "123": {
+      "idx": 123,
+      "patent_id": "17-150891",
+      "claim_count": 21,
+      "cited_by_count": 4,
+      "backward_citation_count": 15,
+      "patent_citation_count": 15,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "KR(1), US(4)",
+      "value_components": {
+        "cited_by_count": 0.32961359849338256,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.486844
+    },
+    "124": {
+      "idx": 124,
+      "patent_id": "17-304654",
+      "claim_count": 23,
+      "cited_by_count": 1,
+      "backward_citation_count": 385,
+      "patent_citation_count": 307,
+      "non_patent_citation_count": 78,
+      "family_country_count": 3,
+      "family_doc_count": 30,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 3
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 23
+        }
+      ],
+      "family_countries_raw": "WO(3), CN(4), US(23)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.713799274402296
+      },
+      "value_score": 0.471214
+    },
+    "125": {
+      "idx": 125,
+      "patent_id": "17-391320",
+      "claim_count": 20,
+      "cited_by_count": 3,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 15,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 3
+        },
+        {
+          "country": "JP",
+          "count": 3
+        },
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "DE(3), JP(3), CN(3), US(6)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.53568
+    },
+    "126": {
+      "idx": 126,
+      "patent_id": "17-474372",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 12,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 4,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.372519
+    },
+    "127": {
+      "idx": 127,
+      "patent_id": "17-521846",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.419838
+    },
+    "128": {
+      "idx": 128,
+      "patent_id": "17-540050",
+      "claim_count": 23,
+      "cited_by_count": 1,
+      "backward_citation_count": 28,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 20,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "DE(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.713799274402296
+      },
+      "value_score": 0.471214
+    },
+    "129": {
+      "idx": 129,
+      "patent_id": "17-561406",
+      "claim_count": 20,
+      "cited_by_count": 5,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.3669531342117147,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.494836
+    },
+    "130": {
+      "idx": 130,
+      "patent_id": "17-564155",
+      "claim_count": 31,
+      "cited_by_count": 6,
+      "backward_citation_count": 56,
+      "patent_citation_count": 29,
+      "non_patent_citation_count": 27,
+      "family_country_count": 7,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "IN(1), JP(1), KR(1), WO(1), EP(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.39852326182926223,
+        "family_country_count": 0.8368288369533894,
+        "claim_count": 0.7964370888216622
+      },
+      "value_score": 0.677263
+    },
+    "131": {
+      "idx": 131,
+      "patent_id": "17-571440",
+      "claim_count": 19,
+      "cited_by_count": 0,
+      "backward_citation_count": 30,
+      "patent_citation_count": 11,
+      "non_patent_citation_count": 19,
+      "family_country_count": 4,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(1), CN(1), EP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.436371
+    },
+    "132": {
+      "idx": 132,
+      "patent_id": "17-740479",
+      "claim_count": 17,
+      "cited_by_count": 0,
+      "backward_citation_count": 13,
+      "patent_citation_count": 9,
+      "non_patent_citation_count": 4,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.303368
+    },
+    "133": {
+      "idx": 133,
+      "patent_id": "17-752235",
+      "claim_count": 19,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(2), US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.415166
+    },
+    "134": {
+      "idx": 134,
+      "patent_id": "17-829838",
+      "claim_count": 31,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 5,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "JP(1), KR(2), EP(2), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.7964370888216622
+      },
+      "value_score": 0.505831
+    },
+    "135": {
+      "idx": 135,
+      "patent_id": "17-885980",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "136": {
+      "idx": 136,
+      "patent_id": "17-899531",
+      "claim_count": 35,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.8302707321883451
+      },
+      "value_score": 0.369738
+    },
+    "137": {
+      "idx": 137,
+      "patent_id": "17-950560",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 39,
+      "patent_citation_count": 5,
+      "non_patent_citation_count": 34,
+      "family_country_count": 1,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "US(4)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "138": {
+      "idx": 138,
+      "patent_id": "18-145095",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 18,
+      "patent_citation_count": 17,
+      "non_patent_citation_count": 1,
+      "family_country_count": 1,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "139": {
+      "idx": 139,
+      "patent_id": "18-170753",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(1), US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "140": {
+      "idx": 140,
+      "patent_id": "18-217353",
+      "claim_count": 1,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 15,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 4
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 9
+        }
+      ],
+      "family_countries_raw": "TW(4), WO(1), CN(1), US(9)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.0
+      },
+      "value_score": 0.215895
+    },
+    "141": {
+      "idx": 141,
+      "patent_id": "18-366002",
+      "claim_count": 18,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "JP(2), WO(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.431459
+    },
+    "142": {
+      "idx": 142,
+      "patent_id": "18-407816",
+      "claim_count": 30,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 7
+        }
+      ],
+      "family_countries_raw": "US(7)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7873171495184701
+      },
+      "value_score": 0.35542
+    },
+    "143": {
+      "idx": 143,
+      "patent_id": "18-416156",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "WO(1), EP(1), US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "144": {
+      "idx": 144,
+      "patent_id": "18-494696",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 5,
+      "family_doc_count": 9,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 3
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "JP(1), KR(3), WO(1), EP(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.4655
+    },
+    "145": {
+      "idx": 145,
+      "patent_id": "18-515565",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "146": {
+      "idx": 146,
+      "patent_id": "18-587207",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 6,
+      "family_doc_count": 24,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "IL",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 13
+        }
+      ],
+      "family_countries_raw": "TW(2), IL(2), WO(1), EP(2), CN(4), US(13)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.486178
+    },
+    "147": {
+      "idx": 147,
+      "patent_id": "18-775392",
+      "claim_count": 23,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "JP(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.713799274402296
+      },
+      "value_score": 0.385304
+    },
+    "148": {
+      "idx": 148,
+      "patent_id": "18-777807",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "TW(2), CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "149": {
+      "idx": 149,
+      "patent_id": "18-941878",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 0,
+      "family_doc_count": 0,
+      "family_countries": [],
+      "family_countries_raw": "",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.0,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.225147
+    },
+    "150": {
+      "idx": 150,
+      "patent_id": "12-762439",
+      "claim_count": 18,
+      "cited_by_count": 12,
+      "backward_citation_count": 18,
+      "patent_citation_count": 15,
+      "non_patent_citation_count": 3,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.5253027663475051,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.483646
+    },
+    "151": {
+      "idx": 151,
+      "patent_id": "13-170789",
+      "claim_count": 13,
+      "cited_by_count": 38,
+      "backward_citation_count": 21,
+      "patent_citation_count": 18,
+      "non_patent_citation_count": 3,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.7502990504659044,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.5589703953531806
+      },
+      "value_score": 0.529404
+    },
+    "152": {
+      "idx": 152,
+      "patent_id": "14-228142",
+      "claim_count": 18,
+      "cited_by_count": 31,
+      "backward_citation_count": 76,
+      "patent_citation_count": 65,
+      "non_patent_citation_count": 11,
+      "family_country_count": 6,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "AU",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "AU(1), JP(2), WO(1), EP(2), CN(2), US(2)",
+      "value_components": {
+        "cited_by_count": 0.7097842504665767,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.71319
+    },
+    "153": {
+      "idx": 153,
+      "patent_id": "15-395654",
+      "claim_count": 21,
+      "cited_by_count": 11,
+      "backward_citation_count": 16,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 8,
+      "family_country_count": 4,
+      "family_doc_count": 20,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 7
+        },
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "EP",
+          "count": 6
+        },
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "JP(7), CN(3), EP(6), US(4)",
+      "value_components": {
+        "cited_by_count": 0.5089099843050301,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.615133
+    },
+    "154": {
+      "idx": 154,
+      "patent_id": "15-521856",
+      "claim_count": 24,
+      "cited_by_count": 52,
+      "backward_citation_count": 30,
+      "patent_citation_count": 11,
+      "non_patent_citation_count": 19,
+      "family_country_count": 6,
+      "family_doc_count": 21,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 6
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "TW(2), KR(6), WO(1), EP(2), CN(4), US(6)",
+      "value_components": {
+        "cited_by_count": 0.8131175453148627,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.7255255539672439
+      },
+      "value_score": 0.773912
+    },
+    "155": {
+      "idx": 155,
+      "patent_id": "15-771250",
+      "claim_count": 10,
+      "cited_by_count": 0,
+      "backward_citation_count": 44,
+      "patent_citation_count": 35,
+      "non_patent_citation_count": 9,
+      "family_country_count": 4,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "GB",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(2), GB(3), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.4896956396258594
+      },
+      "value_score": 0.379127
+    },
+    "156": {
+      "idx": 156,
+      "patent_id": "15-807810",
+      "claim_count": 18,
+      "cited_by_count": 1,
+      "backward_citation_count": 27,
+      "patent_citation_count": 25,
+      "non_patent_citation_count": 2,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.355864
+    },
+    "157": {
+      "idx": 157,
+      "patent_id": "15-956193",
+      "claim_count": 20,
+      "cited_by_count": 43,
+      "backward_citation_count": 65,
+      "patent_citation_count": 54,
+      "non_patent_citation_count": 11,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.7750037158816007,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.576463
+    },
+    "158": {
+      "idx": 158,
+      "patent_id": "15-978626",
+      "claim_count": 13,
+      "cited_by_count": 21,
+      "backward_citation_count": 64,
+      "patent_citation_count": 62,
+      "non_patent_citation_count": 2,
+      "family_country_count": 5,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "TW(2), KR(2), WO(1), CN(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.6330468657882854,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.5589703953531806
+      },
+      "value_score": 0.637691
+    },
+    "159": {
+      "idx": 159,
+      "patent_id": "16-103709",
+      "claim_count": 20,
+      "cited_by_count": 3,
+      "backward_citation_count": 26,
+      "patent_citation_count": 25,
+      "non_patent_citation_count": 1,
+      "family_country_count": 3,
+      "family_doc_count": 6,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "CN(1), EP(2), US(3)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.505747
+    },
+    "160": {
+      "idx": 160,
+      "patent_id": "16-123098",
+      "claim_count": 20,
+      "cited_by_count": 12,
+      "backward_citation_count": 17,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 9,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.5253027663475051,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.493229
+    },
+    "161": {
+      "idx": 161,
+      "patent_id": "16-229138",
+      "claim_count": 18,
+      "cited_by_count": 6,
+      "backward_citation_count": 2,
+      "patent_citation_count": 2,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.39852326182926223,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.441386
+    },
+    "162": {
+      "idx": 162,
+      "patent_id": "16-256400",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 9,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 1,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.365447
+    },
+    "163": {
+      "idx": 163,
+      "patent_id": "16-364563",
+      "claim_count": 18,
+      "cited_by_count": 4,
+      "backward_citation_count": 26,
+      "patent_citation_count": 2,
+      "non_patent_citation_count": 24,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.32961359849338256,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.418416
+    },
+    "164": {
+      "idx": 164,
+      "patent_id": "16-443858",
+      "claim_count": 20,
+      "cited_by_count": 5,
+      "backward_citation_count": 12,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 4,
+      "family_country_count": 5,
+      "family_doc_count": 10,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "IN(1), WO(1), EP(1), CN(1), US(6)",
+      "value_components": {
+        "cited_by_count": 0.3669531342117147,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.587817
+    },
+    "165": {
+      "idx": 165,
+      "patent_id": "16-662981",
+      "claim_count": 21,
+      "cited_by_count": 2,
+      "backward_citation_count": 13,
+      "patent_citation_count": 3,
+      "non_patent_citation_count": 10,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6888049118312749
+      },
+      "value_score": 0.397581
+    },
+    "166": {
+      "idx": 166,
+      "patent_id": "16-670461",
+      "claim_count": 19,
+      "cited_by_count": 3,
+      "backward_citation_count": 355,
+      "patent_citation_count": 333,
+      "non_patent_citation_count": 22,
+      "family_country_count": 2,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "CN(2), US(6)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6614266852917452
+      },
+      "value_score": 0.462485
+    },
+    "167": {
+      "idx": 167,
+      "patent_id": "16-776279",
+      "claim_count": 61,
+      "cited_by_count": 84,
+      "backward_citation_count": 87,
+      "patent_citation_count": 79,
+      "non_patent_citation_count": 8,
+      "family_country_count": 5,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 7
+        }
+      ],
+      "family_countries_raw": "JP(2), WO(1), CN(1), EP(1), US(7)",
+      "value_components": {
+        "cited_by_count": 0.9098569483107538,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.9864264217238857
+      },
+      "value_score": 0.872447
+    },
+    "168": {
+      "idx": 168,
+      "patent_id": "16-869281",
+      "claim_count": 20,
+      "cited_by_count": 2,
+      "backward_citation_count": 4,
+      "patent_citation_count": 4,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.447517
+    },
+    "169": {
+      "idx": 169,
+      "patent_id": "16-890159",
+      "claim_count": 18,
+      "cited_by_count": 1,
+      "backward_citation_count": 5,
+      "patent_citation_count": 5,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.355864
+    },
+    "170": {
+      "idx": 170,
+      "patent_id": "16-927295",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 3,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "171": {
+      "idx": 171,
+      "patent_id": "17-100748",
+      "claim_count": 18,
+      "cited_by_count": 0,
+      "backward_citation_count": 15,
+      "patent_citation_count": 13,
+      "non_patent_citation_count": 2,
+      "family_country_count": 1,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 4
+        }
+      ],
+      "family_countries_raw": "US(4)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6466924833776972
+      },
+      "value_score": 0.308545
+    },
+    "172": {
+      "idx": 172,
+      "patent_id": "17-136370",
+      "claim_count": 9,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "IN(1), EP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.4623174130863298
+      },
+      "value_score": 0.340068
+    },
+    "173": {
+      "idx": 173,
+      "patent_id": "17-510884",
+      "claim_count": 10,
+      "cited_by_count": 0,
+      "backward_citation_count": 14,
+      "patent_citation_count": 14,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "KR(2), WO(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.4896956396258594
+      },
+      "value_score": 0.349194
+    },
+    "174": {
+      "idx": 174,
+      "patent_id": "17-515976",
+      "claim_count": 20,
+      "cited_by_count": 3,
+      "backward_citation_count": 8,
+      "patent_citation_count": 7,
+      "non_patent_citation_count": 1,
+      "family_country_count": 7,
+      "family_doc_count": 9,
+      "family_countries": [
+        {
+          "country": "IN",
+          "count": 1
+        },
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "IN(1), JP(1), KR(1), WO(1), EP(1), CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.28391370018663065,
+        "family_country_count": 0.8368288369533894,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.598728
+    },
+    "175": {
+      "idx": 175,
+      "patent_id": "17-534309",
+      "claim_count": 22,
+      "cited_by_count": 1,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7015738566412022
+      },
+      "value_score": 0.374158
+    },
+    "176": {
+      "idx": 176,
+      "patent_id": "17-548220",
+      "claim_count": 24,
+      "cited_by_count": 0,
+      "backward_citation_count": 14,
+      "patent_citation_count": 14,
+      "non_patent_citation_count": 0,
+      "family_country_count": 5,
+      "family_doc_count": 13,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 2
+        },
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 6
+        }
+      ],
+      "family_countries_raw": "TW(2), JP(2), KR(2), CN(1), US(6)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.7255255539672439
+      },
+      "value_score": 0.482194
+    },
+    "177": {
+      "idx": 177,
+      "patent_id": "17-631666",
+      "claim_count": 15,
+      "cited_by_count": 0,
+      "backward_citation_count": 23,
+      "patent_citation_count": 12,
+      "non_patent_citation_count": 11,
+      "family_country_count": 4,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(1), EP(1), US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.5973278166162466
+      },
+      "value_score": 0.415004
+    },
+    "178": {
+      "idx": 178,
+      "patent_id": "17-636805",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 27,
+      "patent_citation_count": 17,
+      "non_patent_citation_count": 10,
+      "family_country_count": 7,
+      "family_doc_count": 12,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 2
+        },
+        {
+          "country": "JP",
+          "count": 3
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "TW(2), JP(3), KR(1), WO(1), CN(1), EP(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.8368288369533894,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.50409
+    },
+    "179": {
+      "idx": 179,
+      "patent_id": "17-656631",
+      "claim_count": 20,
+      "cited_by_count": 2,
+      "backward_citation_count": 12,
+      "patent_citation_count": 12,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 4
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "KR(4), US(3)",
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.447517
+    },
+    "180": {
+      "idx": 180,
+      "patent_id": "17-773477",
+      "claim_count": 17,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(2), EP(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6311614599829296
+      },
+      "value_score": 0.426282
+    },
+    "181": {
+      "idx": 181,
+      "patent_id": "17-878631",
+      "claim_count": 20,
+      "cited_by_count": 1,
+      "backward_citation_count": 120,
+      "patent_citation_count": 37,
+      "non_patent_citation_count": 83,
+      "family_country_count": 2,
+      "family_doc_count": 8,
+      "family_countries": [
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 7
+        }
+      ],
+      "family_countries_raw": "EP(1), US(7)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.419838
+    },
+    "182": {
+      "idx": 182,
+      "patent_id": "17-904360",
+      "claim_count": 16,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), CN(2), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6147424792826195
+      },
+      "value_score": 0.390876
+    },
+    "183": {
+      "idx": 183,
+      "patent_id": "17-965681",
+      "claim_count": 20,
+      "cited_by_count": 9,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 2,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "WO(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.47157044858669794,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.529709
+    },
+    "184": {
+      "idx": 184,
+      "patent_id": "18-047122",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 14,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 12
+        }
+      ],
+      "family_countries_raw": "DE(1), KR(1), US(12)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "185": {
+      "idx": 185,
+      "patent_id": "18-096521",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 16,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "GB",
+          "count": 6
+        },
+        {
+          "country": "EP",
+          "count": 2
+        },
+        {
+          "country": "US",
+          "count": 7
+        }
+      ],
+      "family_countries_raw": "CN(1), GB(6), EP(2), US(7)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.441042
+    },
+    "186": {
+      "idx": 186,
+      "patent_id": "18-221640",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 17,
+      "patent_citation_count": 14,
+      "non_patent_citation_count": 3,
+      "family_country_count": 1,
+      "family_doc_count": 2,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 2
+        }
+      ],
+      "family_countries_raw": "US(2)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "187": {
+      "idx": 187,
+      "patent_id": "18-230375",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 10,
+      "patent_citation_count": 8,
+      "non_patent_citation_count": 2,
+      "family_country_count": 1,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "188": {
+      "idx": 188,
+      "patent_id": "18-315625",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 5,
+      "family_doc_count": 13,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 3
+        },
+        {
+          "country": "PL",
+          "count": 1
+        },
+        {
+          "country": "ES",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 7
+        }
+      ],
+      "family_countries_raw": "CN(1), EP(3), PL(1), ES(1), US(7)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.4655
+    },
+    "189": {
+      "idx": 189,
+      "patent_id": "18-385556",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 18,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "GB",
+          "count": 9
+        },
+        {
+          "country": "EP",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "CN(3), GB(9), EP(3), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.441042
+    },
+    "190": {
+      "idx": 190,
+      "patent_id": "18-385690",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 4,
+      "family_doc_count": 18,
+      "family_countries": [
+        {
+          "country": "CN",
+          "count": 3
+        },
+        {
+          "country": "GB",
+          "count": 9
+        },
+        {
+          "country": "EP",
+          "count": 3
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "CN(3), GB(9), EP(3), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.647685462377997,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.441042
+    },
+    "191": {
+      "idx": 191,
+      "patent_id": "18-391328",
+      "claim_count": 12,
+      "cited_by_count": 1,
+      "backward_citation_count": 12,
+      "patent_citation_count": 10,
+      "non_patent_citation_count": 2,
+      "family_country_count": 3,
+      "family_doc_count": 4,
+      "family_countries": [
+        {
+          "country": "KR",
+          "count": 2
+        },
+        {
+          "country": "WO",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "KR(2), WO(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.5376825869136703
+      },
+      "value_score": 0.412508
+    },
+    "192": {
+      "idx": 192,
+      "patent_id": "18-422386",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 1,
+      "patent_citation_count": 1,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 11,
+      "family_countries": [
+        {
+          "country": "DE",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 9
+        }
+      ],
+      "family_countries_raw": "DE(1), KR(1), US(9)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "193": {
+      "idx": 193,
+      "patent_id": "18-483307",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "194": {
+      "idx": 194,
+      "patent_id": "18-497308",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 1,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.318128
+    },
+    "195": {
+      "idx": 195,
+      "patent_id": "18-587593",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "TW",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 3
+        }
+      ],
+      "family_countries_raw": "TW(1), CN(1), US(3)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.411109
+    },
+    "196": {
+      "idx": 196,
+      "patent_id": "18-626599",
+      "claim_count": 40,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 3,
+      "family_doc_count": 7,
+      "family_countries": [
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "EP(1), CN(1), US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.8676290082367563
+      },
+      "value_score": 0.475172
+    },
+    "197": {
+      "idx": 197,
+      "patent_id": "18-791020",
+      "claim_count": 28,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 1,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "US",
+          "count": 5
+        }
+      ],
+      "family_countries_raw": "US(5)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.7681597881221757
+      },
+      "value_score": 0.349034
+    },
+    "198": {
+      "idx": 198,
+      "patent_id": "18-817733",
+      "claim_count": 20,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 5,
+      "family_doc_count": 5,
+      "family_countries": [
+        {
+          "country": "JP",
+          "count": 1
+        },
+        {
+          "country": "KR",
+          "count": 1
+        },
+        {
+          "country": "EP",
+          "count": 1
+        },
+        {
+          "country": "CN",
+          "count": 1
+        },
+        {
+          "country": "US",
+          "count": 1
+        }
+      ],
+      "family_countries_raw": "JP(1), KR(1), EP(1), CN(1), US(1)",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.7210570543488701,
+        "claim_count": 0.6754418531392299
+      },
+      "value_score": 0.4655
+    },
+    "199": {
+      "idx": 199,
+      "patent_id": "18-834582",
+      "claim_count": 45,
+      "cited_by_count": 0,
+      "backward_citation_count": 0,
+      "patent_citation_count": 0,
+      "non_patent_citation_count": 0,
+      "family_country_count": 0,
+      "family_doc_count": 0,
+      "family_countries": [],
+      "family_countries_raw": "",
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.0,
+        "claim_count": 0.9006831288466177
+      },
+      "value_score": 0.300228
+    }
+  }
+}

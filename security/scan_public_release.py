@@ -29,7 +29,9 @@ PATTERNS = {
 TEXT_SUFFIXES = {
     ".ipynb",
     ".json",
+    ".log",
     ".md",
+    ".pkl",
     ".py",
     ".sh",
     ".txt",

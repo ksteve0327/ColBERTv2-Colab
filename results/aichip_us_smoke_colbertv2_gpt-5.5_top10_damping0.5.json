@@ -1,0 +1,182 @@
+{
+  "dataset": "aichip_us",
+  "retriever": "colbertv2",
+  "llm": "openai",
+  "model_name": "gpt-5.5",
+  "query": "Intel neural network accelerator memory buffer",
+  "top_k": 10,
+  "damping": 0.5,
+  "sim_threshold": 0.8,
+  "doc_ensemble": true,
+  "source_log": "drive-download-20260617T074433Z-3-001/smoke_colbert.log",
+  "ranks": [
+    195,
+    136,
+    119,
+    170,
+    127,
+    30,
+    160,
+    41,
+    112,
+    110
+  ],
+  "scores": [
+    0.5409338722677246,
+    0.5072311545928838,
+    0.5068297081239592,
+    0.5,
+    0.4493369562018621,
+    0.4483310477683261,
+    0.4313690701272116,
+    0.4255762505450916,
+    0.4144043951536936,
+    0.4097438613787373
+  ],
+  "docs": [
+    {
+      "rank": 195,
+      "idx": 195,
+      "title": "Memory device",
+      "score": 0.5409338722677246,
+      "value_score": 0.411109,
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 136,
+      "idx": 136,
+      "title": "Memory device with embedded deep learning accelerator in multi-client environment",
+      "score": 0.5072311545928838,
+      "value_score": 0.369738,
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.8302707321883451
+      }
+    },
+    {
+      "rank": 119,
+      "idx": 119,
+      "title": "Memory-mapped neural network accelerator for deployable inference systems",
+      "score": 0.5068297081239592,
+      "value_score": 0.561177,
+      "value_components": {
+        "cited_by_count": 0.2249962841183994,
+        "family_country_count": 0.783091851446946,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 170,
+      "idx": 170,
+      "title": "System and method for matching integration process management system users using deep learning and matrix factorization",
+      "score": 0.5,
+      "value_score": 0.318128,
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 127,
+      "idx": 127,
+      "title": "Weight-sparse neural processing unit with multi-dimensional routing of non-zero values",
+      "score": 0.4493369562018621,
+      "value_score": 0.419838,
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.4421141086977403,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 30,
+      "idx": 30,
+      "title": "Systems and methods for increasing hardware accelerator performance in neural network applications",
+      "score": 0.4483310477683261,
+      "value_score": 0.411109,
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 160,
+      "idx": 160,
+      "title": "Hardware environment and method of performing matrix multiplication in artificial intelligence applications",
+      "score": 0.4313690701272116,
+      "value_score": 0.493229,
+      "value_components": {
+        "cited_by_count": 0.5253027663475051,
+        "family_country_count": 0.2789429456511298,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 41,
+      "idx": 41,
+      "title": "Secure convolutional neural networks (cnn) accelerator",
+      "score": 0.4255762505450916,
+      "value_score": 0.411109,
+      "value_components": {
+        "cited_by_count": 0.0,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 112,
+      "idx": 112,
+      "title": "Differential non-volatile memory cell for artificial neural network",
+      "score": 0.4144043951536936,
+      "value_score": 0.651843,
+      "value_components": {
+        "cited_by_count": 0.7222001999106866,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6754418531392299
+      }
+    },
+    {
+      "rank": 110,
+      "idx": 110,
+      "title": "Customizable chip for ai applications",
+      "score": 0.4097438613787373,
+      "value_score": 0.462883,
+      "value_components": {
+        "cited_by_count": 0.14195685009331532,
+        "family_country_count": 0.5578858913022596,
+        "claim_count": 0.6888049118312749
+      }
+    }
+  ],
+  "logs": {
+    "named_entities": [
+      "intel",
+      "neural network accelerator",
+      "memory buffer"
+    ],
+    "linked_node_scores": [
+      [
+        "intel",
+        "integration process management system users",
+        0.25251278281211853
+      ],
+      [
+        "neural network accelerator",
+        "neural network",
+        0.5866885185241699
+      ],
+      [
+        "memory buffer",
+        "memory component",
+        0.5714243650436401
+      ]
+    ]
+  }
+}

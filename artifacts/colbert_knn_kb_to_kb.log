@@ -1,0 +1,126 @@
+
+
+[Jun 17, 07:17:49] #> Note: Output directory colbert/indexes/nbits_2 already exists
+
+
+[Jun 17, 07:17:49] #> Will delete 10 files already at colbert/indexes/nbits_2 in 20 seconds...
+#> Starting...
+nranks = 1 	 num_gpus = 1 	 device=0
+{
+    "query_token_id": "[unused0]",
+    "doc_token_id": "[unused1]",
+    "query_token": "[Q]",
+    "doc_token": "[D]",
+    "ncells": null,
+    "centroid_score_threshold": null,
+    "ndocs": null,
+    "load_index_with_mmap": false,
+    "index_path": null,
+    "index_bsize": 64,
+    "nbits": 2,
+    "kmeans_niters": 20,
+    "resume": false,
+    "similarity": "cosine",
+    "bsize": 64,
+    "accumsteps": 1,
+    "lr": 1e-5,
+    "maxsteps": 400000,
+    "save_every": null,
+    "warmup": 20000,
+    "warmup_bert": null,
+    "relu": false,
+    "nway": 64,
+    "use_ib_negatives": true,
+    "reranker": false,
+    "distillation_alpha": 1.0,
+    "ignore_scores": false,
+    "model_name": null,
+    "query_maxlen": 32,
+    "attend_to_mask_tokens": false,
+    "interaction": "colbert",
+    "dim": 128,
+    "doc_maxlen": 180,
+    "mask_punctuation": true,
+    "checkpoint": "exp\/colbertv2.0",
+    "triples": "\/future\/u\/okhattab\/root\/unit\/experiments\/2021.10\/downstream.distillation.round2.2_score\/round2.nway6.cosine.ib\/examples.64.json",
+    "collection": "data\/lm_vectors\/colbert\/corpus.tsv",
+    "queries": "\/future\/u\/okhattab\/data\/MSMARCO\/queries.train.tsv",
+    "index_name": "nbits_2",
+    "overwrite": false,
+    "root": "",
+    "experiment": "colbert",
+    "index_root": null,
+    "name": "2026-06\/17\/07.17.47",
+    "rank": 0,
+    "nranks": 1,
+    "amp": true,
+    "gpus": 1,
+    "avoid_fork_if_possible": false
+}
+[Jun 17, 07:18:18] #> Loading collection...
+0M /usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:12: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+
+[Jun 17, 07:18:18] [0] 		 # of sampled PIDs = 2935 	 sampled_pids[:3] = [1706, 41, 1223]
+[Jun 17, 07:18:18] [0] 		 #> Encoding 2935 passages..
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+[Jun 17, 07:18:21] [0] 		 avg_doclen_est = 8.578875541687012 	 len(local_sample) = 2,935
+[Jun 17, 07:18:21] [0] 		 Creating 2,048 partitions.
+[Jun 17, 07:18:21] [0] 		 *Estimated* 25,178 embeddings.
+[Jun 17, 07:18:21] [0] 		 #> Saving the indexing plan to colbert/indexes/nbits_2/plan.json ..
+WARNING clustering 23921 points to 2048 centroids: please provide at least 79872 training points
+Clustering 23921 points in 128D to 2048 clusters, redo 1 times, 20 iterations
+  Preprocessing in 0.00 s
+  Iteration 0 (0.08 s, search 0.08 s): objective=7494.1 imbalance=1.573 nsplit=0         Iteration 1 (0.08 s, search 0.08 s): objective=4691.32 imbalance=1.512 nsplit=5         Iteration 2 (0.09 s, search 0.08 s): objective=4248.2 imbalance=1.504 nsplit=0         Iteration 3 (0.09 s, search 0.09 s): objective=4050.11 imbalance=1.497 nsplit=0         Iteration 4 (0.10 s, search 0.09 s): objective=3970.08 imbalance=1.495 nsplit=0         Iteration 5 (0.10 s, search 0.10 s): objective=3932.92 imbalance=1.496 nsplit=0         Iteration 6 (0.11 s, search 0.10 s): objective=3913.82 imbalance=1.498 nsplit=0         Iteration 7 (0.11 s, search 0.10 s): objective=3903.63 imbalance=1.498 nsplit=0         Iteration 8 (0.12 s, search 0.11 s): objective=3897.08 imbalance=1.498 nsplit=0         Iteration 9 (0.12 s, search 0.11 s): objective=3893.17 imbalance=1.498 nsplit=0         Iteration 10 (0.13 s, search 0.12 s): objective=3891.54 imbalance=1.498 nsplit=0         Iteration 11 (0.13 s, search 0.12 s): objective=3890.88 imbalance=1.497 nsplit=0         Iteration 12 (0.14 s, search 0.12 s): objective=3890.65 imbalance=1.497 nsplit=0         Iteration 13 (0.14 s, search 0.13 s): objective=3890.39 imbalance=1.496 nsplit=0         Iteration 14 (0.15 s, search 0.13 s): objective=3890.23 imbalance=1.496 nsplit=0         Iteration 15 (0.15 s, search 0.14 s): objective=3890.15 imbalance=1.496 nsplit=0         Iteration 16 (0.16 s, search 0.14 s): objective=3890.08 imbalance=1.496 nsplit=0         Iteration 17 (0.16 s, search 0.14 s): objective=3890.07 imbalance=1.496 nsplit=0         Iteration 18 (0.17 s, search 0.15 s): objective=3890.05 imbalance=1.496 nsplit=0         Iteration 19 (0.17 s, search 0.15 s): objective=3890.05 imbalance=1.496 nsplit=0       [Jun 17, 07:18:22] Loading decompress_residuals_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Jun 17, 07:18:23] Loading packbits_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[0.029, 0.028, 0.028, 0.029, 0.027, 0.03, 0.027, 0.028, 0.028, 0.028, 0.03, 0.029, 0.028, 0.027, 0.027, 0.03, 0.027, 0.026, 0.025, 0.028, 0.03, 0.026, 0.029, 0.027, 0.027, 0.027, 0.028, 0.027, 0.027, 0.03, 0.026, 0.029, 0.029, 0.028, 0.026, 0.027, 0.028, 0.028, 0.025, 0.028, 0.026, 0.029, 0.029, 0.029, 0.03, 0.027, 0.028, 0.029, 0.028, 0.028, 0.028, 0.027, 0.028, 0.03, 0.029, 0.028, 0.03, 0.027, 0.028, 0.03, 0.026, 0.028, 0.027, 0.029, 0.029, 0.028, 0.03, 0.027, 0.027, 0.027, 0.028, 0.029, 0.031, 0.026, 0.028, 0.03, 0.027, 0.028, 0.028, 0.028, 0.03, 0.027, 0.028, 0.028, 0.027, 0.026, 0.029, 0.026, 0.026, 0.027, 0.027, 0.029, 0.027, 0.03, 0.028, 0.028, 0.03, 0.027, 0.029, 0.027, 0.027, 0.025, 0.024, 0.027, 0.029, 0.026, 0.028, 0.027, 0.027, 0.027, 0.03, 0.027, 0.028, 0.026, 0.028, 0.028, 0.028, 0.027, 0.028, 0.029, 0.028, 0.027, 0.027, 0.029, 0.024, 0.032, 0.028, 0.024]
+[Jun 17, 07:18:23] #> Got bucket_cutoffs_quantiles = tensor([0.2500, 0.5000, 0.7500], device='cuda:0') and bucket_weights_quantiles = tensor([0.1250, 0.3750, 0.6250, 0.8750], device='cuda:0')
+[Jun 17, 07:18:23] #> Got bucket_cutoffs = tensor([-1.5823e-02, -3.0518e-05,  1.5503e-02], device='cuda:0') and bucket_weights = tensor([-0.0381, -0.0057,  0.0056,  0.0380], device='cuda:0')
+[Jun 17, 07:18:23] avg_residual = 0.0277862548828125
+0it [00:00, ?it/s][Jun 17, 07:18:23] [0] 		 #> Encoding 2935 passages..
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+[Jun 17, 07:18:24] [0] 		 #> Saving chunk 0: 	 2,935 passages and 25,179 embeddings. From #0 onward.
+1it [00:00,  1.18it/s]1it [00:00,  1.18it/s]
+[Jun 17, 07:18:24] [0] 		 #> Checking all files were saved...
+[Jun 17, 07:18:24] [0] 		 Found all files!
+[Jun 17, 07:18:24] [0] 		 #> Building IVF...
+[Jun 17, 07:18:24] [0] 		 #> Loading codes...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1450.31it/s]
+[Jun 17, 07:18:24] [0] 		 Sorting codes...
+[Jun 17, 07:18:24] [0] 		 Getting unique codes...
+[Jun 17, 07:18:24] #> Optimizing IVF to store map from centroids to list of pids..
+[Jun 17, 07:18:24] #> Building the emb2pid mapping..
+[Jun 17, 07:18:24] len(emb2pid) = 25179
+  0%|          | 0/2048 [00:00<?, ?it/s]100%|██████████| 2048/2048 [00:00<00:00, 51301.26it/s]
+[Jun 17, 07:18:24] #> Saved optimized IVF to colbert/indexes/nbits_2/ivf.pid.pt
+[Jun 17, 07:18:24] [0] 		 #> Saving the indexing metadata to colbert/indexes/nbits_2/metadata.json ..
+
+  Converged at iteration 19: objective did not change
+
+[rank0]:[W617 07:18:25.947540382 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+#> Joined...
+[Jun 17, 07:18:27] #> Loading collection...
+0M
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:12: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+[Jun 17, 07:18:27] #> Loading codec...
+[Jun 17, 07:18:27] Loading decompress_residuals_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Jun 17, 07:18:28] Loading packbits_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Jun 17, 07:18:28] #> Loading IVF...
+[Jun 17, 07:18:28] #> Loading doclens...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 5133.79it/s]
+[Jun 17, 07:18:28] #> Loading codes and residuals...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 524.48it/s]
+[Jun 17, 07:18:28] #> Loading the queries from data/lm_vectors/colbert/queries.tsv ...
+[Jun 17, 07:18:28] #> Got 2935 queries. All QIDs are unique.
+
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+/usr/local/lib/python3.12/dist-packages/colbert/utils/amp.py:15: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast() if self.activated else NullContextManager()
+0it [00:00, ?it/s]1it [00:00,  5.72it/s]15it [00:00, 65.82it/s]30it [00:00, 97.83it/s]45it [00:00, 115.51it/s]59it [00:00, 122.95it/s]73it [00:00, 128.11it/s]88it [00:00, 132.61it/s]104it [00:00, 139.03it/s]120it [00:00, 144.36it/s]136it [00:01, 147.72it/s]152it [00:01, 150.95it/s]169it [00:01, 153.88it/s]186it [00:01, 156.22it/s]202it [00:01, 155.93it/s]218it [00:01, 153.13it/s]234it [00:01, 145.81it/s]249it [00:01, 141.31it/s]264it [00:01, 142.85it/s]279it [00:02, 139.96it/s]294it [00:02, 141.46it/s]310it [00:02, 145.84it/s]326it [00:02, 149.54it/s]342it [00:02, 152.46it/s]359it [00:02, 155.18it/s]375it [00:02, 155.94it/s]392it [00:02, 158.11it/s]409it [00:02, 159.45it/s]426it [00:03, 159.67it/s]443it [00:03, 160.71it/s]460it [00:03, 161.13it/s]477it [00:03, 162.19it/s]494it [00:03, 161.32it/s]511it [00:03, 161.61it/s]528it [00:03, 162.50it/s]545it [00:03, 163.33it/s]562it [00:03, 161.85it/s]579it [00:03, 160.67it/s]596it [00:04, 159.20it/s]612it [00:04, 158.55it/s]628it [00:04, 158.23it/s]644it [00:04, 157.67it/s]661it [00:04, 158.38it/s]678it [00:04, 159.17it/s]695it [00:04, 159.89it/s]712it [00:04, 160.47it/s]729it [00:04, 160.88it/s]746it [00:04, 160.53it/s]763it [00:05, 161.53it/s]780it [00:05, 161.40it/s]797it [00:05, 161.47it/s]814it [00:05, 161.69it/s]831it [00:05, 159.77it/s]848it [00:05, 160.40it/s]865it [00:05, 161.20it/s]882it [00:05, 161.57it/s]899it [00:05, 161.46it/s]916it [00:06, 160.80it/s]933it [00:06, 162.03it/s]950it [00:06, 162.20it/s]967it [00:06, 162.18it/s]984it [00:06, 162.43it/s]1001it [00:06, 160.26it/s]1018it [00:06, 161.34it/s]1035it [00:06, 161.68it/s]1052it [00:06, 162.15it/s]1069it [00:06, 161.85it/s]1086it [00:07, 161.93it/s]1103it [00:07, 162.08it/s]1120it [00:07, 162.36it/s]1137it [00:07, 163.31it/s]1154it [00:07, 163.98it/s]1171it [00:07, 163.85it/s]1188it [00:07, 163.78it/s]1205it [00:07, 163.51it/s]1222it [00:07, 162.99it/s]1239it [00:08, 161.75it/s]1256it [00:08, 161.97it/s]1273it [00:08, 162.13it/s]1290it [00:08, 162.89it/s]1307it [00:08, 162.40it/s]1324it [00:08, 160.18it/s]1341it [00:08, 158.53it/s]1358it [00:08, 159.19it/s]1375it [00:08, 160.37it/s]1392it [00:08, 160.83it/s]1409it [00:09, 161.48it/s]1426it [00:09, 161.45it/s]1443it [00:09, 161.54it/s]1460it [00:09, 161.89it/s]1477it [00:09, 161.86it/s]1494it [00:09, 161.58it/s]1511it [00:09, 161.63it/s]1528it [00:09, 161.90it/s]1545it [00:09, 162.66it/s]1562it [00:10, 162.67it/s]1579it [00:10, 162.40it/s]1596it [00:10, 162.33it/s]1613it [00:10, 162.33it/s]1630it [00:10, 162.71it/s]1647it [00:10, 163.29it/s]1664it [00:10, 163.19it/s]1681it [00:10, 162.40it/s]1698it [00:10, 162.54it/s]1715it [00:10, 161.61it/s]1732it [00:11, 161.17it/s]1749it [00:11, 160.86it/s]1766it [00:11, 160.71it/s]1783it [00:11, 160.93it/s]1800it [00:11, 160.91it/s]1817it [00:11, 161.22it/s]1834it [00:11, 160.39it/s]1851it [00:11, 160.06it/s]1868it [00:11, 159.45it/s]1885it [00:12, 160.41it/s]1902it [00:12, 161.17it/s]1919it [00:12, 156.87it/s]1935it [00:12, 153.72it/s]1951it [00:12, 154.53it/s]1968it [00:12, 157.55it/s]1985it [00:12, 159.71it/s]2001it [00:12, 154.56it/s]2017it [00:12, 155.70it/s]2033it [00:12, 156.06it/s]2049it [00:13, 157.07it/s]2065it [00:13, 157.64it/s]2081it [00:13, 154.10it/s]2097it [00:13, 153.93it/s]2113it [00:13, 154.58it/s]2130it [00:13, 156.32it/s]2146it [00:13, 157.13it/s]2162it [00:13, 154.22it/s]2178it [00:13, 154.20it/s]2194it [00:14, 154.46it/s]2210it [00:14, 155.00it/s]2226it [00:14, 154.50it/s]2242it [00:14, 151.09it/s]2258it [00:14, 149.59it/s]2273it [00:14, 146.99it/s]2289it [00:14, 148.67it/s]2305it [00:14, 150.08it/s]2321it [00:14, 150.44it/s]2337it [00:14, 150.33it/s]2353it [00:15, 152.18it/s]2370it [00:15, 154.75it/s]2386it [00:15, 155.20it/s]2403it [00:15, 157.12it/s]2419it [00:15, 157.13it/s]2435it [00:15, 157.56it/s]2451it [00:15, 158.21it/s]2468it [00:15, 158.93it/s]2484it [00:15, 158.21it/s]2500it [00:16, 158.08it/s]2517it [00:16, 158.79it/s]2534it [00:16, 159.52it/s]2550it [00:16, 159.46it/s]2567it [00:16, 160.41it/s]2584it [00:16, 160.83it/s]2601it [00:16, 161.06it/s]2618it [00:16, 159.77it/s]2635it [00:16, 160.12it/s]2652it [00:16, 160.19it/s]2669it [00:17, 159.73it/s]2686it [00:17, 160.67it/s]2703it [00:17, 161.05it/s]2720it [00:17, 161.85it/s]2737it [00:17, 162.70it/s]2754it [00:17, 162.97it/s]2771it [00:17, 163.10it/s]2788it [00:17, 162.33it/s]2805it [00:17, 162.04it/s]2822it [00:18, 161.95it/s]2839it [00:18, 161.70it/s]2856it [00:18, 161.62it/s]2873it [00:18, 161.49it/s]2890it [00:18, 161.69it/s]2907it [00:18, 162.03it/s]2924it [00:18, 162.48it/s]2935it [00:18, 156.89it/s]
+Saved nearest neighbors to data/lm_vectors/colbert/nearest_neighbor_kb_to_kb.p

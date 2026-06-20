@@ -13,3 +13,4 @@ exp/
 *.tar.gz
 !artifacts/aichip_us_colbertv2_artifacts.cleaned.tar.gz
 !inputs/colab_inputs_aichip_us.tar.gz
+!inputs/colab_table2_extra_upload_aichip_us.tar.gz

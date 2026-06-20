@@ -1,0 +1,1071 @@
+{
+  "qa_path": "/Users/dabeenkim/Library/CloudStorage/GoogleDrive-ksteve0327@gmail.com/내 드라이브/hipporag_colbert_aichip_us/aichip_us_qa_dev.json",
+  "n_queries": 20,
+  "methods": {
+    "Proposition (ColBERTv2)": {
+      "summary": {
+        "local": {
+          "R@2": 100.0,
+          "R@5": 100.0
+        },
+        "global": {
+          "R@2": 31.7,
+          "R@5": 50.0
+        },
+        "average": {
+          "R@2": 65.8,
+          "R@5": 75.0
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "gold_idx": [
+            2
+          ],
+          "retrieved_idx": [
+            2,
+            125,
+            41,
+            30,
+            102
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "gold_idx": [
+            1
+          ],
+          "retrieved_idx": [
+            1,
+            185,
+            188,
+            5,
+            189
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "gold_idx": [
+            9
+          ],
+          "retrieved_idx": [
+            9,
+            192,
+            184,
+            157,
+            47
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "gold_idx": [
+            76
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            46
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "gold_idx": [
+            77
+          ],
+          "retrieved_idx": [
+            77,
+            87,
+            90,
+            159,
+            111
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "gold_idx": [
+            53
+          ],
+          "retrieved_idx": [
+            53,
+            66,
+            52,
+            58,
+            62
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "gold_idx": [
+            101
+          ],
+          "retrieved_idx": [
+            101,
+            145,
+            136,
+            121,
+            118
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "gold_idx": [
+            103
+          ],
+          "retrieved_idx": [
+            103,
+            119,
+            83,
+            154,
+            161
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "gold_idx": [
+            167
+          ],
+          "retrieved_idx": [
+            167,
+            111,
+            88,
+            77,
+            102
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "gold_idx": [
+            154
+          ],
+          "retrieved_idx": [
+            154,
+            179,
+            15,
+            41,
+            7
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "gold_idx": [
+            2,
+            1
+          ],
+          "retrieved_idx": [
+            30,
+            41,
+            2,
+            196,
+            127
+          ],
+          "R@2": 0.0,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "gold_idx": [
+            76,
+            77
+          ],
+          "retrieved_idx": [
+            111,
+            159,
+            77,
+            187,
+            96
+          ],
+          "R@2": 0.0,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "gold_idx": [
+            101,
+            103
+          ],
+          "retrieved_idx": [
+            135,
+            94,
+            125,
+            83,
+            157
+          ],
+          "R@2": 0.0,
+          "R@5": 0.0
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "gold_idx": [
+            167,
+            154
+          ],
+          "retrieved_idx": [
+            167,
+            154,
+            52,
+            194,
+            30
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76
+          ],
+          "retrieved_idx": [
+            2,
+            125,
+            41,
+            137,
+            30
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101
+          ],
+          "retrieved_idx": [
+            2,
+            30,
+            102,
+            125,
+            137
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "gold_idx": [
+            76,
+            167
+          ],
+          "retrieved_idx": [
+            111,
+            159,
+            167,
+            88,
+            52
+          ],
+          "R@2": 0.0,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "gold_idx": [
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            101,
+            122,
+            135,
+            137,
+            129
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76,
+            101
+          ],
+          "retrieved_idx": [
+            2,
+            125,
+            83,
+            149,
+            101
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.6666666666666666
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            2,
+            135,
+            30,
+            103,
+            102
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.3333333333333333
+        }
+      ]
+    },
+    "RAPTOR": {
+      "summary": {
+        "local": {
+          "R@2": 90.0,
+          "R@5": 90.0
+        },
+        "global": {
+          "R@2": 36.7,
+          "R@5": 45.0
+        },
+        "average": {
+          "R@2": 63.3,
+          "R@5": 67.5
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "gold_idx": [
+            2
+          ],
+          "retrieved_idx": [
+            2,
+            41,
+            110,
+            16,
+            29
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "gold_idx": [
+            1
+          ],
+          "retrieved_idx": [
+            1,
+            20,
+            175,
+            189,
+            190
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "gold_idx": [
+            9
+          ],
+          "retrieved_idx": [
+            9,
+            28,
+            162,
+            1,
+            20
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "gold_idx": [
+            76
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            96
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "gold_idx": [
+            77
+          ],
+          "retrieved_idx": [
+            77,
+            87,
+            88,
+            90,
+            94
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "gold_idx": [
+            53
+          ],
+          "retrieved_idx": [
+            53,
+            80,
+            78,
+            141,
+            50
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "gold_idx": [
+            101
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            32
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "gold_idx": [
+            103
+          ],
+          "retrieved_idx": [
+            14,
+            33,
+            42,
+            86,
+            120
+          ],
+          "R@2": 0.0,
+          "R@5": 0.0
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "gold_idx": [
+            167
+          ],
+          "retrieved_idx": [
+            167,
+            102,
+            114,
+            77,
+            87
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "gold_idx": [
+            154
+          ],
+          "retrieved_idx": [
+            154,
+            7,
+            19,
+            21,
+            22
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "gold_idx": [
+            2,
+            1
+          ],
+          "retrieved_idx": [
+            1,
+            20,
+            175,
+            189,
+            190
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "gold_idx": [
+            76,
+            77
+          ],
+          "retrieved_idx": [
+            96,
+            59,
+            62,
+            70,
+            76
+          ],
+          "R@2": 0.0,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "gold_idx": [
+            101,
+            103
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "gold_idx": [
+            167,
+            154
+          ],
+          "retrieved_idx": [
+            0,
+            1,
+            6,
+            10,
+            11
+          ],
+          "R@2": 0.0,
+          "R@5": 0.0
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76
+          ],
+          "retrieved_idx": [
+            2,
+            16,
+            83,
+            128,
+            29
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "gold_idx": [
+            76,
+            167
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            59
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "gold_idx": [
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76,
+            101
+          ],
+          "retrieved_idx": [
+            2,
+            41,
+            110,
+            16,
+            83
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.3333333333333333
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            2,
+            114,
+            167,
+            102,
+            41
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.6666666666666666
+        }
+      ],
+      "meta": {
+        "tree_path": "hipporag_v1/output/aichip_us_raptor_tree.pkl",
+        "units_path": "hipporag_v1/output/aichip_us_raptor_units.json",
+        "n_nodes": 363,
+        "n_leaf_nodes": 200,
+        "n_layers": 3,
+        "raptor_repo": "external/raptor"
+      }
+    },
+    "RAPTOR (ColBERTv2)": {
+      "summary": {
+        "local": {
+          "R@2": 100.0,
+          "R@5": 100.0
+        },
+        "global": {
+          "R@2": 50.0,
+          "R@5": 55.0
+        },
+        "average": {
+          "R@2": 75.0,
+          "R@5": 77.5
+        }
+      },
+      "per_query": [
+        {
+          "id": "local_001",
+          "type": "local",
+          "gold_idx": [
+            2
+          ],
+          "retrieved_idx": [
+            2,
+            41,
+            110,
+            142,
+            157
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_002",
+          "type": "local",
+          "gold_idx": [
+            1
+          ],
+          "retrieved_idx": [
+            1,
+            175,
+            20,
+            189,
+            190
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_003",
+          "type": "local",
+          "gold_idx": [
+            9
+          ],
+          "retrieved_idx": [
+            9,
+            14,
+            33,
+            42,
+            86
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_004",
+          "type": "local",
+          "gold_idx": [
+            76
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            72
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_005",
+          "type": "local",
+          "gold_idx": [
+            77
+          ],
+          "retrieved_idx": [
+            77,
+            90,
+            87,
+            88,
+            94
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_006",
+          "type": "local",
+          "gold_idx": [
+            53
+          ],
+          "retrieved_idx": [
+            53,
+            78,
+            141,
+            50,
+            56
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_007",
+          "type": "local",
+          "gold_idx": [
+            101
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            144
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_008",
+          "type": "local",
+          "gold_idx": [
+            103
+          ],
+          "retrieved_idx": [
+            103,
+            152,
+            120,
+            180,
+            14
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_009",
+          "type": "local",
+          "gold_idx": [
+            167
+          ],
+          "retrieved_idx": [
+            167,
+            76,
+            111,
+            159,
+            187
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "local_010",
+          "type": "local",
+          "gold_idx": [
+            154
+          ],
+          "retrieved_idx": [
+            154,
+            7,
+            19,
+            21,
+            22
+          ],
+          "R@2": 1.0,
+          "R@5": 1.0
+        },
+        {
+          "id": "global_001",
+          "type": "global",
+          "gold_idx": [
+            2,
+            1
+          ],
+          "retrieved_idx": [
+            2,
+            16,
+            29,
+            35,
+            39
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_002",
+          "type": "global",
+          "gold_idx": [
+            76,
+            77
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            59
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_003",
+          "type": "global",
+          "gold_idx": [
+            101,
+            103
+          ],
+          "retrieved_idx": [
+            94,
+            103,
+            152,
+            77,
+            87
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_004",
+          "type": "global",
+          "gold_idx": [
+            167,
+            154
+          ],
+          "retrieved_idx": [
+            154,
+            7,
+            19,
+            21,
+            22
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_005",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76
+          ],
+          "retrieved_idx": [
+            2,
+            41,
+            110,
+            172,
+            142
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_006",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101
+          ],
+          "retrieved_idx": [
+            2,
+            106,
+            133,
+            172,
+            101
+          ],
+          "R@2": 0.5,
+          "R@5": 1.0
+        },
+        {
+          "id": "global_007",
+          "type": "global",
+          "gold_idx": [
+            76,
+            167
+          ],
+          "retrieved_idx": [
+            76,
+            111,
+            159,
+            187,
+            184
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_008",
+          "type": "global",
+          "gold_idx": [
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            101,
+            115,
+            122,
+            145,
+            107
+          ],
+          "R@2": 0.5,
+          "R@5": 0.5
+        },
+        {
+          "id": "global_009",
+          "type": "global",
+          "gold_idx": [
+            2,
+            76,
+            101
+          ],
+          "retrieved_idx": [
+            2,
+            77,
+            87,
+            88,
+            90
+          ],
+          "R@2": 0.3333333333333333,
+          "R@5": 0.3333333333333333
+        },
+        {
+          "id": "global_010",
+          "type": "global",
+          "gold_idx": [
+            2,
+            101,
+            167
+          ],
+          "retrieved_idx": [
+            2,
+            101,
+            115,
+            122,
+            145
+          ],
+          "R@2": 0.6666666666666666,
+          "R@5": 0.6666666666666666
+        }
+      ]
+    }
+  },
+  "skipped": {},
+  "sources": {
+    "proposition": "https://github.com/chentong0/factoid-wiki",
+    "colbertv2": "colbert-ai==0.2.19 + colbertv2.0 checkpoint",
+    "raptor": "https://github.com/parthsarthi03/raptor",
+    "raptor_units": "/content/drive/MyDrive/hipporag_colbert_aichip_us/aichip_us_raptor_units.json"
+  }
+}
